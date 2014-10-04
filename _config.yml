@@ -19,7 +19,7 @@ date_format: "%Y年%m月%d日"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:kesalin@gmail.com
+email: kesalin@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -64,7 +64,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:kesalin@gmail.com
+github_user: kesalin@gmail.com
 github_repo_count: 0
 github_show_profile_link: false
 github_skip_forks: true
@@ -79,7 +79,7 @@ google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:kesalin@gmail.com
+googleplus_user: kesalin@gmail.com
 googleplus_hidden: false
 
 # Pinboard
@@ -91,11 +91,11 @@ googleplus_hidden: false
 #delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:飘飘白云
+disqus_short_name: 飘飘白云
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:UA-622255-7
+google_analytics_tracking_id: UA-622255-7
 
 # Facebook Like
 #facebook_like: false

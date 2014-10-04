@@ -51,36 +51,36 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [custom/asides/recent_comments.html, asides/github.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-# blog_index_asides:
-# post_asides:
-# page_asides:
+#blog_index_asides: [custom/asides/recent_comments.html]
+#post_asides: [custom/asides/recent_comments.html]
+#page_asides: [custom/asides/recent_comments.html]
 
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
 
 # Github repositories
-github_user: kesalin@gmail.com
-github_repo_count: 0
-github_show_profile_link: false
-github_skip_forks: true
+#github_user: kesalin@gmail.com
+#github_repo_count: 0
+#github_show_profile_link: false
+#github_skip_forks: true
 
 # Twitter
 #twitter_user:
 #twitter_tweet_button: true
 
 # Google +1
-google_plus_one: true
-google_plus_one_size: medium
+#google_plus_one: true
+#google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user: kesalin@gmail.com
-googleplus_hidden: false
+#googleplus_user: kesalin@gmail.com
+#googleplus_hidden: true
 
 # Pinboard
 #pinboard_user:
@@ -91,11 +91,26 @@ googleplus_hidden: false
 #delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: 飘飘白云
-disqus_show_comment_count: false
+#disqus_short_name: kesalin
+#disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id: UA-622255-7
+#google_analytics_tracking_id: UA-622255-7
 
 # Facebook Like
 #facebook_like: false
+
+# 微博共享
+weibo_share: true
+
+# 多说评论
+duoshuo_short_name: kesalin
+duoshuo_comments: true
+
+duoshuo_asides_num: 10      # 侧边栏评论显示条目数
+duoshuo_asides_avatars: 1   # 侧边栏评论是否显示头像
+duoshuo_asides_time: 1      # 侧边栏评论是否显示时间
+duoshuo_asides_title: 1     # 侧边栏评论是否显示标题
+duoshuo_asides_admin: 0     # 侧边栏评论是否显示作者评论
+duoshuo_asides_length: 18   # 侧边栏评论截取的长度
+

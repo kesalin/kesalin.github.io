@@ -20,7 +20,7 @@ footer: true
 <br />     
 ###技术专栏：    
 
-* [深入浅出 Cocoa](http://blog.csdn.net/column/details/cocoa.html) 写了一些 Object-C 以及 iOS 常用库使用相关的文章；  
+* [深入浅出 Cocoa](http://blog.csdn.net/column/details/cocoa.html) 写了一些 Objective-C 以及 iOS 常用库使用相关的文章；  
 * [OpenGL ES 2.0 iOS 教程](http://blog.csdn.net/column/details/opengl-es2-ios.html) 写了一些在 iOS 平台上使用 OpenGL ES 相关的文章；  
   
 <br /> 

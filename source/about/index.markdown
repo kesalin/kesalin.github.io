@@ -35,11 +35,3 @@ footer: true
 * 新浪微博：[@kesalin](http://weibo.com/kesalin)
 * 电子邮箱：<code>kesalin</code>@<code>gmail.com</code>    
 
-<br /> 
-        {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}
-           | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread"
-             data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
-        {% endif %}
-        {% if site.duoshuo_short_name and page.comments != false and site.duoshuo_comments == true %}
-          | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#comments">Comments</a>
-        {% endif %}

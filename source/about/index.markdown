@@ -26,6 +26,7 @@ footer: true
 <br /> 
 ###其它站点
 
+* [Github](http://github.com/kesalin/) 我的 Github；
 * [CSDN博客](http://blog.csdn.net/kesalin) 以前的技术博客，写了一些 C++，iOS，OpenGL ES 及移动开发相关的文章；
 * [网易博客](http://blog.163.com/l_zhaohui) 以前的生活博客，写了一些生活，心智成长及社会见解相关的文章；  
 * [我的豆瓣](http://www.douban.com/people/kesalin) 我读过的书籍，看过的电影，以及推荐的一些书单，爱读书的人可以逛逛；  

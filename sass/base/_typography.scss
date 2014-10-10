@@ -76,7 +76,7 @@ ol { list-style-type: decimal;
 ul, ol { &, ul, ol { margin-bottom: 0em; }}
 ul, ol { ul, ol { margin-bottom: 0em; }}
 
-strong { font-weight: bold; }
+strong { font-size: 1.1em; color: #0000ff; font-weight: bold;}
 
 em { font-style: italic; }
 
@@ -111,8 +111,8 @@ article blockquote {
   $bq-margin: 1.2em;
   font-style: normal;
   position: relative;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 1.0em;
+  line-height: 1.2em;
   padding-left: 1em;
   border-left: 4px solid rgba($text-color-light, .5);
   cite {

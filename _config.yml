@@ -48,10 +48,11 @@ excerpt_link: "阅读全文 &rarr;"  # "Continue reading" link text at the botto
 excerpt_separator: "<!--继续阅读-->"
 
 titlecase: true       # Converts page and post titles to titlecase
+post_license: true    # Show license
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [custom/asides/recent_comments.html, asides/github.html]
+default_asides: [custom/asides/category_list.html, asides/recent_posts.html, custom/asides/recent_comments.html, custom/asides/weibo.html, custom/asides/douban.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -99,6 +100,9 @@ default_asides: [custom/asides/recent_comments.html, asides/github.html]
 
 # Facebook Like
 #facebook_like: false
+
+# 最新文章
+recent_posts: 5
 
 # 微博共享
 weibo_share: true

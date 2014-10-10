@@ -9,9 +9,9 @@
   <meta name="author" content="飘飘白云">
 
   
-  <meta name="description" content="步骤 按 ctrl + ` 调出 console；
-粘贴以下代码到底部命令行并回车： import urllib2,os; pf=&lsquo;Package Control.sublime-package&rsquo;; ipp = sublime.installed_packages_path &hellip;">
-  <meta name="keywords" content="MarkdownSubline Text">
+  <meta name="description" content="简介 本文介绍如何在 Subline Text 2 中安装 Markdown 插件。 步骤 按 ctrl + ` 调出 console；
+粘贴以下代码到底部命令行并回车： import urllib2,os; pf=&lsquo;Package Control.sublime-package& &hellip;">
+  
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -56,7 +56,8 @@
   
 <ul class="main-navigation">
   <li><a href="/">首页</a></li>
-  <li><a href="/blog/archives">文章归档</a></li>
+  <li><a href="/blog/archives">归档</a></li>
+  <li><a href="/blog/archives/tags.html">标签</a></li>
   <li><a href="/about">关于我</a></li>
 </ul>
 
@@ -87,7 +88,14 @@
   </header>
 
 
-<div class="entry-content"><h2>步骤</h2>
+<div class="entry-content"><h2>简介</h2>
+
+<p>本文介绍如何在 Subline Text 2 中安装 Markdown 插件。</p>
+
+<!--more-->
+
+
+<h2>步骤</h2>
 
 <ol>
 <li><p>按 ctrl + ` 调出 console；</p></li>
@@ -95,13 +103,6 @@
 <code>
 import urllib2,os; pf=&lsquo;Package Control.sublime-package&rsquo;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), &lsquo;wb&rsquo; ).write( urllib2.urlopen( &lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&rsquo; +pf.replace( &lsquo; &rsquo;,&lsquo;%20&rsquo; )).read()); print( &lsquo;Please restart Sublime Text to finish installation&rsquo;)
 </code></p></li>
-</ol>
-
-
-<!--more-->
-
-
-<ol>
 <li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
 
 <blockquote><p>Please restart Sublime Text to finish installation</p></blockquote></li>
@@ -139,6 +140,15 @@ import urllib2,os; pf=&lsquo;Package Control.sublime-package&rsquo;; ipp = subli
 <span class="categories">
   
     <a class='category' href='/blog/categories/gong-ju-shi-yong/'>工具使用</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tags/markdown/'>Markdown</a>, <a class='tag' href='/tags/subline-text/'>Subline Text</a>
   
 </span>
 

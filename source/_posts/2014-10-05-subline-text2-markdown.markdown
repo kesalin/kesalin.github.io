@@ -4,8 +4,11 @@ title: "Subline Text 2 安装 Markdown 插件"
 date: 2014-10-05 22:35:02 +0800
 comments: true
 categories: [工具使用]
-keywords: [Markdown,Subline Text]
+tags: [Markdown, Subline Text]
 ---
+##简介
+本文介绍如何在 Subline Text 2 中安装 Markdown 插件。
+<!--more-->
 
 ## 步骤
 
@@ -15,8 +18,6 @@ keywords: [Markdown,Subline Text]
 <code>
 import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
 </code>  
-
-<!--more-->
 
 3. 稍作等待，若在 output 窗口输出如下信息，表示安装成功：  
 > Please restart Sublime Text to finish installation   

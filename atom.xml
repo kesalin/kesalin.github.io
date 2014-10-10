@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://kesalin.github.io/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-10T22:49:34+08:00</updated>
+  <updated>2014-10-10T23:11:47+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -30,13 +30,10 @@
 <h2>定义/What</h2>
 
 <ul>
-<li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。</li>
-</ul>
+<li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。
+&lt;!—more—>
 
-
-<h2>解释/How</h2>
-
-<ul>
+<h2>解释/How</h2></li>
 <li>可证伪性是说要存在被证明为假的这种可能性（即证明为假的方法要存在），但和证明目前是不是可实施并没有关系。</li>
 <li>可证伪性是科学理论的必要属性，但非充分属性。科学理论必须具备可证伪性，且仍未被证伪。</li>
 <li>不具备可证伪性的理论都是非科学的。</li>
@@ -82,7 +79,8 @@
 <li><p>粘贴以下代码到底部命令行并回车：<br/>
 <code>
 import urllib2,os; pf=&lsquo;Package Control.sublime-package&rsquo;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), &lsquo;wb&rsquo; ).write( urllib2.urlopen( &lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&rsquo; +pf.replace( &lsquo; &rsquo;,&lsquo;%20&rsquo; )).read()); print( &lsquo;Please restart Sublime Text to finish installation&rsquo;)
-</code></p></li>
+</code><br/>
+&lt;!—more—></p></li>
 <li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
 
 <blockquote><p>Please restart Sublime Text to finish installation</p></blockquote></li>

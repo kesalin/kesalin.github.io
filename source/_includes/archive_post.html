@@ -4,10 +4,10 @@
 {% if category != '0' or tag != '0' %}
 <footer>
 {% if category != '0' %}
-  <span class="categories">posted in {{ post.categories | category_links }}</span>
+  <span class="categories">分类： {{ post.categories | category_links }}</span>
 {% endif %}
 {% if tag != '0' %}
-  <span class="tags">tagged with {{ post.tags | tag_links }}</span>
+  <span class="tags">标签： {{ post.tags | tag_links }}</span>
 {% endif %}
 </footer>
 {% endif %}

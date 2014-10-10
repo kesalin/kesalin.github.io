@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[心智思维]可证伪性"
+title: "科学理论之可证伪性"
 date: 2014-10-08 20:49:18 +0800
 comments: true
 categories: [心智思维]

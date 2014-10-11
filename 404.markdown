@@ -1,7 +1,7 @@
 
 ---
 layout: page
-title: "亲，你要查看的网页不存在哦！"
+title: "404"
 date: 2014-10-10 19:17
 comments: false
 sharing: false

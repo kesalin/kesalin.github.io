@@ -3,8 +3,8 @@ layout: post
 title: "Subline Text 2 安装 Markdown 插件"
 date: 2014-10-05 22:35:02 +0800
 comments: true
-categories: [工具使用]
-tags: [Markdown, Subline Text]
+categories: [工具软件]
+tags: [工具, Markdown, Subline Text]
 ---
 ##简介
 本文介绍如何在 Subline Text 2 中安装 Markdown 插件。

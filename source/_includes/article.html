@@ -13,7 +13,7 @@
              data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">评论</a>
         {% endif %}
         {% if site.duoshuo_short_name and page.comments != false and post.comments != false and site.duoshuo_comments == true %}
-          | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#comments">查看评论</a>
+          | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#comments">评论</a>
         {% endif %}
       </p>
     {% endunless %}

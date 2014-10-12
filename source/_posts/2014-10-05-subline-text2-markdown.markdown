@@ -5,7 +5,10 @@ date: 2014-10-05 22:35:02 +0800
 comments: true
 categories: [工具软件]
 tags: [工具, Markdown, Subline Text]
+description: "Markdown" 
+keywords: Markdown, Subline Text 
 ---
+
 ##简介
 本文介绍如何在 Subline Text 2 中安装 Markdown 插件。
 <!--more-->

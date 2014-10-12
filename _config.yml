@@ -104,14 +104,14 @@ default_asides: [custom/asides/category_list.html, asides/recent_posts.html, cus
 # 最新文章
 recent_posts: 5
 
-# 微博共享
-weibo_share: true
+# 博文共享
+jiathis_share: true
 
 # 多说评论
 duoshuo_short_name: kesalin
 duoshuo_comments: true
 
-duoshuo_asides_num: 10      # 侧边栏评论显示条目数
+duoshuo_asides_num: 5      # 侧边栏评论显示条目数
 duoshuo_asides_avatars: 1   # 侧边栏评论是否显示头像
 duoshuo_asides_time: 1      # 侧边栏评论是否显示时间
 duoshuo_asides_title: 1     # 侧边栏评论是否显示标题

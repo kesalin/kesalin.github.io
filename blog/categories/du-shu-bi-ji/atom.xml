@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 读书笔记 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/blog/categories/du-shu-bi-ji/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-12T14:11:55+08:00</updated>
+  <updated>2014-10-12T14:17:15+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<h3>写在前面的话：</h3>
 
 <ol>
-<li><p>本笔记结合《学问提问：批判性思维指南》<a href="http://book.douban.com/subject/1504957/">第七版</a>，<a href="http://book.douban.com/subject/20428922/">第十版</a>，<a href="http://blog.vsharing.com/qsxiao">萧秋水</a>的<a href="http://book.douban.com/review/4474858/">PPT笔记摘要</a>，以及《<a href="http://book.douban.com/subject/7057936/">批判性思维.带你走出思维的误区</a>》整理而成。</p></li>
+<li><p>本笔记结合《学问提问：批判性思维指南》<a href="http://book.douban.com/subject/1504957/">第七版</a>，<a href="http://book.douban.com/subject/20428922/">第十版</a>，<a href="http://blog.vsharing.com/qsxiao">萧秋水</a>的<a href="http://book.douban.com/review/4474858/">PPT形式的笔记摘要</a>，以及《<a href="http://book.douban.com/subject/7057936/">批判性思维.带你走出思维的误区</a>》整理而成，在此对以上作者表示感谢。</p></li>
 <li><p>关于《学问提问：批判性思维指南》的版本选择。
 个人推荐<a href="http://book.douban.com/subject/20428922/">第十版</a>，翻译尚可，内容更完善。</p></li>
 </ol>
@@ -369,7 +369,7 @@
 
 <p><strong>价值观</strong>是人们认为值得为之努力、却没有明确表述的观念。这些观念为行为设定了标准，并通过这些标准来衡量行为的质量。</p>
 
-<p>在一个特定的情境中，<strong>价值观假</strong>设是一种内隐的偏向，它代表着某种价值观胜过另一种价值观，即具有某种<strong>价值观倾向或偏好</strong>。</p>
+<p>在一个特定的情境中，<strong>价值观假设</strong>是一种内隐的偏向，它代表着某种价值观胜过另一种价值观，即具有某种<strong>价值观倾向或偏好</strong>。</p>
 
 <p>典型的价值观冲突</p>
 
@@ -812,7 +812,7 @@
 <ul>
 <li>算术平均数：将所有数据相加，再用所得的和除以数据的个数得到的结果是算术平均数。</li>
 <li><a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E4%BD%8D%E6%95%B8">中数</a>：将所有数据按从大小顺序排列，位于中间的那个数就是中数。</li>
-<li><a href="http://zh.wikipedia.org/wiki/%E4%BC%97%E6%95%B0_(%E6%95%B0%E5%AD%A6">众数</a>)：将所有数值按照一定规则分组，在一组数据中出现次数最多的那个数就是众数。</li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%BC%97%E6%95%B0(%E6%95%B0%E5%AD%A6)">众数</a>：将所有数值按照一定规则分组，在一组数据中出现次数最多的那个数就是众数。</li>
 </ul>
 
 

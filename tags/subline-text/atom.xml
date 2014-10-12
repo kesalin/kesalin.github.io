@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Subline Text | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/subline-text/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-11T19:46:24+08:00</updated>
+  <updated>2014-10-12T09:57:34+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -31,7 +31,7 @@
 <li><p>按 ctrl + ` 调出 console；</p></li>
 <li><p>粘贴以下代码到底部命令行并回车：<br/>
 <code>
-import urllib2,os; pf=&lsquo;Package Control.sublime-package&rsquo;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), &lsquo;wb&rsquo; ).write( urllib2.urlopen( &lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&rsquo; +pf.replace( &lsquo; &rsquo;,&lsquo;%20&rsquo; )).read()); print( &lsquo;Please restart Sublime Text to finish installation&rsquo;)
+import urllib2,os;pf=&lsquo;Package Control.sublime-package&rsquo;;ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),&lsquo;wb&rsquo;).write(urllib2.urlopen(&lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&rsquo;+pf.replace(&lsquo; &rsquo;,&lsquo;%20&rsquo;)).read())
 </code></p></li>
 <li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
 

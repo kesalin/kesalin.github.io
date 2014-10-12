@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[飘飘白云]]></title>
-  <link href="http://kesalin.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: 批判性思维 | 飘飘白云]]></title>
+  <link href="http://kesalin.github.io/tags/pi-pan-xing-si-wei/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
   <updated>2014-10-12T09:57:34+08:00</updated>
   <id>http://kesalin.github.io/</id>
@@ -827,105 +827,6 @@
 <li>好的结论并非完美，如果发现新的事实，你得有勇气改变你的看法。</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[科学理论之可证伪性]]></title>
-    <link href="http://kesalin.github.io/blog/2014/10/08/falsifiability/"/>
-    <updated>2014-10-08T20:49:18+08:00</updated>
-    <id>http://kesalin.github.io/blog/2014/10/08/falsifiability</id>
-    <content type="html"><![CDATA[<h2>简介</h2>
-
-<ul>
-<li><strong><a href="http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7">可证伪性</a></strong>是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨<strong>科学与非科学</strong>的一种理论，他认为:
-
-<blockquote><p>一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。</p></blockquote></li>
-</ul>
-
-
-<h2>定义/What</h2>
-
-<ul>
-<li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。</li>
-</ul>
-
-
-<!--more-->
-
-
-<h2>解释/How</h2>
-
-<ul>
-<li>可证伪性是说要存在被证明为假的这种可能性（即证明为假的方法要存在），但和证明目前是不是可实施并没有关系。</li>
-<li>可证伪性是科学理论的必要属性，但非充分属性。科学理论必须具备可证伪性，且仍未被证伪。</li>
-<li>不具备可证伪性的理论都是非科学的。</li>
-<li>非科学的伦理并非都是伪科学，只有冒称是科学的那些非科学理论才是伪科学。</li>
-</ul>
-
-
-<h2>深究/Why</h2>
-
-<ul>
-<li><p>我们知道归纳与演绎是人类思维方法中的两大法宝。</p>
-
-<blockquote><ul>
-<li>归纳：从许多个别的事物中概括出一般性概念、原则或结论的思维方法。</li>
-<li>演绎：从普遍性的理论知识出发，去认识个别的、特殊的现象的一种逻辑推理方法。</li>
-</ul>
-</blockquote>
-
-<p>  可证伪性是针对归纳法而言的。由于人类认知和探索的世界有限，在归纳出一种理论时，不可能穷举所有符合这一理论的个案来证实这一理论。倘若存在可以检验为假的某种方法在，即使在目前的条件下还不能够实施检验，假以时日，或许会出现这样的反例从而检验其为假，当然也可能这样的反例永远都不会出现，谁知道呢？如果一种理论不存在任何可检验为假的方法，那么这种理论因缺乏检验方法，而无法判断其真假，因此一定不是科学。用老子相反相成思想来讲就是“天下皆知真之为真，斯假也”。</p></li>
-<li><p>示例一：“所有的天鹅都是白的。”，试图穷举一只，两只，三只&hellip; &hellip; 白天鹅来证实这一描述是科学的都不够充分，检验这一描述为科学的必要条件是“没有非白色的天鹅”这种可能性存在（可证伪性），当黑天鹅在澳大利亚被发现时，人们就推翻了这一论述。</p></li>
-<li><p>示例二：“上帝是存在的。”，这一描述因无法观测或证明“上帝不存在”，从而无法被证伪，因此这一描述是非科学的。</p></li>
-</ul>
-
-
-<h2>意义</h2>
-
-<ul>
-<li>牛顿定律在相对论没有发现之前被认为是科学理论，但存在检验其为假的标准，而后被相对论证伪，这时人们通过增加牛顿定律发生的限定条件，来完善牛顿定律。这是可证伪性的意义所在，科学理论永远在不断的证伪检验过程中被完善或推翻。</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Subline Text 2 安装 Markdown 插件]]></title>
-    <link href="http://kesalin.github.io/blog/2014/10/05/subline-text2-markdown/"/>
-    <updated>2014-10-05T22:35:02+08:00</updated>
-    <id>http://kesalin.github.io/blog/2014/10/05/subline-text2-markdown</id>
-    <content type="html"><![CDATA[<h2>简介</h2>
-
-<p>本文介绍如何在 Subline Text 2 中安装 Markdown 插件。</p>
-
-<!--more-->
-
-
-<h2>步骤</h2>
-
-<ol>
-<li><p>按 ctrl + ` 调出 console；</p></li>
-<li><p>粘贴以下代码到底部命令行并回车：<br/>
-<code>
-import urllib2,os;pf=&lsquo;Package Control.sublime-package&rsquo;;ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),&lsquo;wb&rsquo;).write(urllib2.urlopen(&lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&rsquo;+pf.replace(&lsquo; &rsquo;,&lsquo;%20&rsquo;)).read())
-</code></p></li>
-<li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
-
-<blockquote><p>Please restart Sublime Text to finish installation</p></blockquote></li>
-<li><p>然后重启 Subline Text 2，这时在菜单 Perferences -> package settings 中会出现 package control 项；</p></li>
-<li><p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；</p></li>
-<li><p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p></li>
-<li><p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p></li>
-<li><p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；</p></li>
-<li><p>选择菜单 Tools -> Build System -> Markdown，然后选择 Tools -> Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p></li>
-<li><p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。</p></li>
-</ol>
-
-
-<hr />
-
-<p>另推荐一个所见即所得的 Markdown 在线编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p>
 ]]></content>
   </entry>
   

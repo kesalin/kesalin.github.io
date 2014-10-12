@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://kesalin.github.io/blog/2014/10/12/critical-thinking/</loc>
+    
+    <lastmod>2014-10-12T08:35:02+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://kesalin.github.io/blog/2014/10/08/falsifiability/</loc>
     
     <lastmod>2014-10-08T20:49:18+08:00</lastmod>
@@ -20,29 +28,36 @@
   
   
   <url>
+    <loc>http://kesalin.github.io/404.html</loc>
+    <lastmod>2014-10-12T09:57:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>http://kesalin.github.io/blog/archives/</loc>
-    <lastmod>2014-10-11T19:46:24+08:00</lastmod>
+    <lastmod>2014-10-12T09:57:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/</loc>
-    <lastmod>2014-10-11T19:46:24+08:00</lastmod>
+    <lastmod>2014-10-12T09:57:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/about/</loc>
-    <lastmod>2014-10-11T19:46:24+08:00</lastmod>
+    <lastmod>2014-10-12T09:57:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/blog/archives/tags.html</loc>
-    <lastmod>2014-10-11T19:46:24+08:00</lastmod>
+    <lastmod>2014-10-12T09:57:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

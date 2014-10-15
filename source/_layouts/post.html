@@ -21,11 +21,13 @@ single: true
     {% endunless %}
 
     <p class="meta">
-      {% if page.previous.url %}
-        <a class="basic-alignment left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-      {% endif %}
+
       {% if page.next.url %}
-        <a class="basic-alignment right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+        <a class="basic-alignment left" href="{{page.next.url}}" title="下一篇: {{page.next.title}}">&laquo; {{page.next.title}}</a>
+      {% endif %}
+
+      {% if page.previous.url %}
+        <a class="basic-alignment right" href="{{page.previous.url}}" title="上一篇: {{page.previous.title}}">{{page.previous.title}} &raquo;</a>
       {% endif %}
     </p>
   

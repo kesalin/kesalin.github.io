@@ -13,12 +13,12 @@ keywords: C++,阅读,公民,思维,心智,民主,自由
     </article>
   {% endfor %}
   <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page_path}}">&larr; Older</a>
+    {% if paginator.previous_page %}
+    <a class="prev" href="{{paginator.previous_page_path}}">&larr; 新帖子</a>
     {% endif %}
     <a href="/blog/archives">所有文章</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
+    {% if paginator.next_page %}
+      <a class="next" href="{{paginator.next_page_path}}">旧贴子 &rarr;</a>
     {% endif %}
   </div>
 </div>

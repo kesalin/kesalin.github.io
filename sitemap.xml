@@ -26,38 +26,190 @@
     <priority>0.8</priority>
   </url>
   
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/11/25/inside-self/</loc>
+    
+    <lastmod>2007-11-25T07:48:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/09/16/summary/</loc>
+    
+    <lastmod>2007-09-16T04:00:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/07/13/movies/</loc>
+    
+    <lastmod>2007-07-13T07:04:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/07/01/movies/</loc>
+    
+    <lastmod>2007-07-01T01:36:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/06/01/kekexili/</loc>
+    
+    <lastmod>2007-06-01T05:34:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/05/20/movies/</loc>
+    
+    <lastmod>2007-05-20T07:43:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/03/12/swings/</loc>
+    
+    <lastmod>2007-03-12T03:11:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/02/25/les-choristes/</loc>
+    
+    <lastmod>2007-02-25T20:25:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/02/05/little-miss-unshine/</loc>
+    
+    <lastmod>2007-02-05T01:55:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2007/01/07/dialect/</loc>
+    
+    <lastmod>2007-01-07T22:38:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/12/30/summary/</loc>
+    
+    <lastmod>2006-12-30T09:03:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/12/24/china-movie/</loc>
+    
+    <lastmod>2006-12-24T22:14:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/12/09/call-of-wild/</loc>
+    
+    <lastmod>2006-12-09T23:22:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/11/27/asakusa/</loc>
+    
+    <lastmod>2006-11-27T04:11:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/11/25/thanksgiving-day/</loc>
+    
+    <lastmod>2006-11-25T06:55:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/11/18/alive/</loc>
+    
+    <lastmod>2006-11-18T21:52:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/11/05/come-one/</loc>
+    
+    <lastmod>2006-11-05T05:49:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/10/30/view-japan/</loc>
+    
+    <lastmod>2006-10-30T02:19:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2006/10/14/paradise/</loc>
+    
+    <lastmod>2006-10-14T22:17:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
   
   <url>
     <loc>http://kesalin.github.io/404.html</loc>
-    <lastmod>2014-10-12T15:09:11+08:00</lastmod>
+    <lastmod>2014-10-15T21:05:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/blog/archives/</loc>
-    <lastmod>2014-10-12T15:09:11+08:00</lastmod>
+    <lastmod>2014-10-15T21:05:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/</loc>
-    <lastmod>2014-10-12T15:09:11+08:00</lastmod>
+    <lastmod>2014-10-15T21:05:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/about/</loc>
-    <lastmod>2014-10-12T15:09:11+08:00</lastmod>
+    <lastmod>2014-10-15T21:05:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/blog/archives/tags.html</loc>
-    <lastmod>2014-10-12T15:09:11+08:00</lastmod>
+    <lastmod>2014-10-15T21:05:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -123,9 +123,9 @@
   </url>
   
   <url>
-    <loc>http://kesalin.github.io/blog/2011/02/19/how-to-reading/</loc>
+    <loc>http://kesalin.github.io/blog/2010/12/02/how-to-reading/</loc>
     
-    <lastmod>2011-02-19T23:26:31+08:00</lastmod>
+    <lastmod>2010-12-02T23:26:31+08:00</lastmod>
     
     <priority>0.8</priority>
   </url>
@@ -134,6 +134,14 @@
     <loc>http://kesalin.github.io/blog/2010/08/26/feeling/</loc>
     
     <lastmod>2010-08-26T20:17:02+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2009/11/08/autum-night/</loc>
+    
+    <lastmod>2009-11-08T20:33:25+08:00</lastmod>
     
     <priority>0.8</priority>
   </url>
@@ -461,35 +469,35 @@
   
   <url>
     <loc>http://kesalin.github.io/404.html</loc>
-    <lastmod>2014-10-17T00:20:45+08:00</lastmod>
+    <lastmod>2014-10-17T00:30:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/blog/archives/</loc>
-    <lastmod>2014-10-17T00:20:45+08:00</lastmod>
+    <lastmod>2014-10-17T00:30:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/</loc>
-    <lastmod>2014-10-17T00:20:45+08:00</lastmod>
+    <lastmod>2014-10-17T00:30:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/about/</loc>
-    <lastmod>2014-10-17T00:20:45+08:00</lastmod>
+    <lastmod>2014-10-17T00:30:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/blog/archives/tags.html</loc>
-    <lastmod>2014-10-17T00:20:45+08:00</lastmod>
+    <lastmod>2014-10-17T00:30:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

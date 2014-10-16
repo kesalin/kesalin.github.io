@@ -4,8 +4,8 @@ title: "Subline Text 2 安装 Markdown 插件"
 date: 2014-10-05 22:35:02 +0800
 comments: true
 categories: [工具软件]
-tags: [工具, Markdown, Subline Text]
-description: "Markdown" 
+tags: [工具]
+description: "Subline Text 2 安装 Markdown 插件" 
 keywords: Markdown, Subline Text 
 ---
 

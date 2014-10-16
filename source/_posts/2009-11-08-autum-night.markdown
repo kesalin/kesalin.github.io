@@ -3,10 +3,10 @@ layout: post
 title: "秋夜"
 date: 2009-11-08 20:33:25 +0800
 comments: true
-categories: [历史文化]
-tags: [文学]
-description: 能力培养与教育体制
-keywords: 文学
+categories: [碎碎念]
+tags: [碎碎念, 心情]
+description: 秋夜
+keywords: 心情
 ---
 
 这几天，颇有些闹情绪。晚上，推开房门，走在台阶上。

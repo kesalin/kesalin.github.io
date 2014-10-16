@@ -4,7 +4,7 @@ title: "5公里跑"
 date: 2008-10-19 20:37:00 
 comments: true
 categories: [碎碎念]
-tags: [碎碎念, 跑步]
+tags: [碎碎念, 锻炼]
 description: 跑步
 keywords: 跑步
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "心理学书籍读后感"
-date: 2010-06-27 12:24:58 +0800
+date: 2011-02-20 12:24:58 +0800
 comments: true
 categories: [书评影评]
 tags: [书评, 心理学]

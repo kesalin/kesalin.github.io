@@ -1,8 +1,7 @@
-
 ---
 layout: post
 title: "书评：致逝去的这一年"
-date: 2014-04-06 22:16:00
+date: 2014-01-05 19:36:44
 comments: true
 categories: [书评影评]
 tags: [书评, 回忆]

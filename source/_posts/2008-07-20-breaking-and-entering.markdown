@@ -1,29 +1,38 @@
 ---
 layout: post
-title: "ÓàÓ°ÈÆĞÄ"
-date: 2008-07-20 17:36:00 comments: true
-categories: []
-tags: []
-description: 
-keywords: 
+title: "ä½™å½±ç»•å¿ƒ"
+date: 2008-07-20 17:36:00
+comments: true
+categories: [ä¹¦è¯„å½±è¯„]
+tags: [å½±è¯„]
+description: "ç¨»è‰ç‹—"
+keywords: ç¨»è‰ç‹—, è§£æ„ç”Ÿæ´»
 ---
 
-ÓàÓ°ÈÆĞÄ
+![è§£æ„ç”Ÿæ´»](http://img5.douban.com/mpic/s1888039.jpg)
 
-Ï²»¶¿´µçÓ°£¬ÌØ±ğÊÇÄÇÖÖ¸»ÓĞÉú»îÆøÏ¢£¬ÕÜÀíÔÏÎ¶µÄÆ¬×Ó£¬×ÜÊÇÏ²»¶¿´¿´±ğÈËµÄ£¬±ğ´¦µÄ£¬²»Ò»ÑùµÄÉú»î£¬È»ºó¶ÔÕÕ×Ô¼ºµÄ£¬ÍùÍùÒò´ËÈëÏ·£¬Ê±Ğ¦Ê±¿Ş£¬Èç³ÕÈç´ô~~~¡¶µ¾²İ¹·¡·Óë¡¶Breaking and entering¡·¶¼ÊÇ¼¸ÖÜÇ°¿´µÄµçÓ°£¬È´Ò»Ö±»Øµ´ÔÚÄÔº£ÖĞ¡£»òĞíËüÃÇ´¥·¢ÎÒÈ¥Ë¼¿¼Ğ©ÎÊÌâ£¬»òĞíÊÇ·´Ë¼°É¡£
+å–œæ¬¢çœ‹ç”µå½±ï¼Œç‰¹åˆ«æ˜¯é‚£ç§å¯Œæœ‰ç”Ÿæ´»æ°”æ¯ï¼Œå“²ç†éŸµå‘³çš„ç‰‡å­ï¼Œæ€»æ˜¯å–œæ¬¢çœ‹çœ‹åˆ«äººçš„ï¼Œåˆ«å¤„çš„ï¼Œä¸ä¸€æ ·çš„ç”Ÿæ´»ï¼Œç„¶åå¯¹ç…§è‡ªå·±çš„ï¼Œå¾€å¾€å› æ­¤å…¥æˆï¼Œæ—¶ç¬‘æ—¶å“­ï¼Œå¦‚ç—´å¦‚å‘†~~~ 
 
+ã€Š[ç¨»è‰ç‹—](http://movie.douban.com/subject/1293028/)ã€‹ä¸ã€Š[Breaking and entering](http://movie.douban.com/subject/1783774/)ã€‹éƒ½æ˜¯å‡ å‘¨å‰çœ‹çš„ç”µå½±ï¼Œå´ä¸€ç›´å›è¡åœ¨è„‘æµ·ä¸­ã€‚æˆ–è®¸å®ƒä»¬è§¦å‘æˆ‘å»æ€è€ƒäº›é—®é¢˜ï¼Œæˆ–è®¸æ˜¯åæ€å§ã€‚ 
 
+<!--more-->
 
+ã€Š[Breaking and entering](http://movie.douban.com/subject/1783774/)ã€‹è®²çš„æ˜¯ä¸€ä¸ªç”·äººï¼Œä¸¤ä¸ªå¥³äººï¼Œä¸¤ä¸ªå®¶åº­ï¼Œäº”ä¸ªäººçš„æ•…äº‹ã€‚Willå’ŒLivï¼Œæ›¾ç»ç›¸çˆ±çš„ä¸¤ä¸ªäººï¼Œåœ¨ä¸€èµ·åå¹´ï¼Œå› ç€Livå¨‡çºµç€å¥¹çš„é—®é¢˜å¥³å„¿ï¼Œä»–ä»¬æ—¥æ¸ç–è¿œäº†å½¼æ­¤ï¼Œä»¥è‡³åæ¥WillåŒLivè¯´
+	
+	I don't even know how to be honest.Maybe that's why I like metaphors.Because what I want to say is there's a circle--yours and Bea's--and I'm not in it. But that's just to justify it, because there's a part of me so dark, that sees that circle as a cage.
 
+Will: I love you.
 
+Liv: Is that an answer?
 
+Will: It's the truth. I feel as if I'm tapping on a window. You're somewhere behind the glass but you can't hear me. Even when you're angry, like now, it's like someone a long long way away is angry with me.
 
-¡¶Breaking and entering¡·½²µÄÊÇÒ»¸öÄĞÈË£¬Á½¸öÅ®ÈË£¬Á½¸ö¼ÒÍ¥£¬Îå¸öÈËµÄ¹ÊÊÂ¡£WillºÍLiv£¬Ôø¾­Ïà°®µÄÁ½¸öÈË£¬ÔÚÒ»ÆğÊ®Äê£¬Òò×ÅLiv½¿×İ×ÅËıµÄÎÊÌâÅ®¶ù£¬ËûÃÇÈÕ½¥ÊèÔ¶ÁË±Ë´Ë£¬ÒÔÖÁºóÀ´WillÍ¬LivËµ£¬
- I don't even know how to be honest.Maybe that's why I like metaphors.Because what I want to say is there's a circle--yours and Bea's--and I'm not in it. But that's just to justify it, because there's a part of me so dark, that sees that circle as a cage. 
-Will: I love you. 
-Liv: Is that an answer? 
-Will: It's the truth. I feel as if I'm tapping on a window. You're somewhere behind the glass but you can't hear me. Even when you're angry, like now, it's like someone a long long way away is angry with me. 
-Will¶ÔLivËµ£ºI wish we could unsay and unhurt, back to wherever that is,and start again.I remember you bit me. You were angry with me and you bit me. I dont remember why. You really bit me.And I thought we were very close. 
-½Ó×ÅLivÒ§ÁËËûµÄÊÖ£¬WillËµ£ºYeah, but that's just teeth. 
-ÈçĞÄ½ÊÒ»°ãµÄ¸Ğ´¥¡£ 
-²»ÖªµÀÎªÊ²Ã´£¬¿´ÍêÕâ²¿µçÓ°ÈıÖÜÁË£¬È´Ò»Ö±»ØÏëÔÚÄÔº£Àï¡£ÔõÑù²ÅÊÇ°®£¿¼¤Çé£¿ÔğÈÎ£¿ĞÔ£¿ÎŞÓï£¬»òĞí»¹ÊÇÆ¬ÖĞ¶«Å·µÄ¼ËÅ®¶ÔWillËµµÄÄÇ¾ä»°ÓĞµÀÀí£ºAnimals don't talk, because they don't lie.
+Willï¼šI wish we could unsay and unhurt, back to wherever that is,and start again.I remember you bit me. You were angry with me and you bit me. I dont remember why. You really bit me.And I thought we were very close.
+
+æ¥ç€Livå’¬äº†ä»–çš„æ‰‹ï¼ŒWillè¯´ï¼šYeah, but that's just teeth.
+
+å¦‚å¿ƒç»ä¸€èˆ¬çš„æ„Ÿè§¦ã€‚
+
+ä¸çŸ¥é“ä¸ºä»€ä¹ˆï¼Œçœ‹å®Œè¿™éƒ¨ç”µå½±ä¸‰å‘¨äº†ï¼Œå´ä¸€ç›´å›æƒ³åœ¨è„‘æµ·é‡Œã€‚æ€æ ·æ‰æ˜¯çˆ±ï¼Ÿæ¿€æƒ…ï¼Ÿè´£ä»»ï¼Ÿæ€§ï¼Ÿæ— è¯­ï¼Œæˆ–è®¸è¿˜æ˜¯ç‰‡ä¸­ä¸œæ¬§çš„å¦“å¥³å¯¹Willè¯´çš„é‚£å¥è¯æœ‰é“ç†ï¼š
+
+	Animals don't talk, because they don't lie.

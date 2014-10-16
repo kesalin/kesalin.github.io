@@ -43,6 +43,38 @@
   </url>
   
   <url>
+    <loc>http://kesalin.github.io/blog/2014/04/07/century-of-revolution/</loc>
+    
+    <lastmod>2014-04-07T06:16:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2014/01/05/summary/</loc>
+    
+    <lastmod>2014-01-05T00:00:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2013/05/17/influence-boy/</loc>
+    
+    <lastmod>2013-05-17T03:42:38+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2013/04/16/thirty/</loc>
+    
+    <lastmod>2013-04-16T00:00:00+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://kesalin.github.io/blog/2012/06/30/tianchao/</loc>
     
     <lastmod>2012-06-30T22:46:01+08:00</lastmod>
@@ -60,6 +92,14 @@
   
   <url>
     <loc>http://kesalin.github.io/blog/2011/07/18/passion/</loc>
+    
+    <lastmod>2011-07-18T22:21:42+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://kesalin.github.io/blog/2011/07/18/huangbitang/</loc>
     
     <lastmod>2011-07-18T22:21:42+08:00</lastmod>
     
@@ -421,35 +461,35 @@
   
   <url>
     <loc>http://kesalin.github.io/404.html</loc>
-    <lastmod>2014-10-16T23:06:55+08:00</lastmod>
+    <lastmod>2014-10-17T00:12:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/blog/archives/</loc>
-    <lastmod>2014-10-16T23:06:55+08:00</lastmod>
+    <lastmod>2014-10-17T00:12:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/</loc>
-    <lastmod>2014-10-16T23:06:55+08:00</lastmod>
+    <lastmod>2014-10-17T00:12:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/about/</loc>
-    <lastmod>2014-10-16T23:06:55+08:00</lastmod>
+    <lastmod>2014-10-17T00:12:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://kesalin.github.io/blog/archives/tags.html</loc>
-    <lastmod>2014-10-16T23:06:55+08:00</lastmod>
+    <lastmod>2014-10-17T00:12:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

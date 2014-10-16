@@ -3,7 +3,7 @@ layout: post
 title: "伟大的家乡话：双峰话"
 date: 2007-01-07 14:38:00
 comments: true
-categories: [历史文化]
+categories: [社会杂谈]
 tags: [文化, 方言]
 description: 双峰话 
 keywords: 双峰话

@@ -4,7 +4,7 @@ title: "过好一个人的日子"
 date: 2008-06-06 00:30:00
 comments: true
 categories: [碎碎念]
-tags: [碎碎念, 习惯]
+tags: [习惯, 思维]
 description: "过好一个人的日子"
 keywords: 生活
 ---

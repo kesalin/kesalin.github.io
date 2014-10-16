@@ -3,8 +3,8 @@ layout: post
 title: "《高效能人士的7个习惯》"
 date: 2008-07-19 19:13:00
 comments: true
-categories: [书评影评]
-tags: [书评]
+categories: [读书笔记]
+tags: [书评, 笔记]
 description: "高效能人士的7个习惯"
 keywords: 高效能人士的7个习惯
 ---

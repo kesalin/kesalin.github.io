@@ -19,7 +19,12 @@ keywords: 稻草狗, 解构生活
 
 《[Breaking and entering](http://movie.douban.com/subject/1783774/)》讲的是一个男人，两个女人，两个家庭，五个人的故事。Will和Liv，曾经相爱的两个人，在一起十年，因着Liv娇纵着她的问题女儿，他们日渐疏远了彼此，以至后来Will同Liv说
 	
-	I don't even know how to be honest.Maybe that's why I like metaphors.Because what I want to say is there's a circle--yours and Bea's--and I'm not in it. But that's just to justify it, because there's a part of me so dark, that sees that circle as a cage.
+	I don't even know how to be honest.
+	Maybe that's why I like metaphors.
+	Because what I want to say is there's a circle--yours 
+	and Bea's--and I'm not in it. 
+	But that's just to justify it, because there's a part of me so dark, 
+	that sees that circle as a cage.
 
 Will: I love you.
 

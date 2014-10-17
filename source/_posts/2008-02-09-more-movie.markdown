@@ -9,8 +9,6 @@ description: "影瘾"
 keywords: 钢琴教师, 卧虎藏龙, 偶然与巧合
 ---
 
-![卧虎藏龙](http://img3.douban.com/view/movie_poster_cover/spst/public/p1507810991.jpg)
-
 有些颓废的感觉，或许是那些狂野的想法又在躁动，于是拿电影来满足颓废而躁动的心灵。
 
 * 《[钢琴教师](http://movie.douban.com/subject/1306730/)》

@@ -7,7 +7,7 @@ title: 飘飘白云
 subtitle: 所读，所看，所思
 author: 飘飘白云
 simple_search: http://www.bing.com/search
-description:
+description: 飘飘白云的个人博客
 
 category_title_prefix: 分类：
 tag_title_prefix: 标签：
@@ -16,7 +16,7 @@ tag_title_prefix: 标签：
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
 # Additionally, %o will give you the ordinal representation of the day
-date_format: "%Y年%m月%d日"
+date_format: "%F"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml

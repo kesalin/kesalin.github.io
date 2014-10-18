@@ -61,6 +61,7 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 * dictionary: 字典操作，参考[Python中dict详解](http://www.cnblogs.com/yangyongzhi/archive/2012/09/17/2688326.html)
 * datetime: 日期时间，参考[python datetime处理时间](http://www.cnblogs.com/lhj588/archive/2012/04/23/2466653.html)
 
+<br/>
 
 ### 编写博客导出工具
 
@@ -83,13 +84,13 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 
 * 获取页面链接的代码：
 
-
+``` python
 		def getPageUrlList(url):
 		    # 获取所有的页面的 url
 		    request = urllib2.Request(url, None, header)
 		    response = urllib2.urlopen(request)
 		    data = response.read()
-		    
+
 		    #print data
 		    soup = BeautifulSoup(data)
 
@@ -117,11 +118,13 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 
 		    log("total pages: " + str(len(pageUrlList)) + "\n")
 		    return pageUrlList
+``` 
 
 参数 url = "http://blog.csdn.net/" + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。
 
 有了html页面内容，接下来就用BeautifulSoup来解析它。BeautifulSoup极大地减少了我们的工作量。我会详细在这里介绍它的使用，后面再次出现类似的解析就会从略了。soup.find_all(id="papelist") 将会查找html页面中所有id="papelist"的tag，然后返回包含这些tag的list。对应 CSDN 博文页面来说，只有一处地方：
 
+``` html
 	<div id="papelist" class="pagelist">
 		<span> 236条数据  共12页</span>
 		<strong>1</strong> 
@@ -133,6 +136,7 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 		<a href="/kesalin/article/list/2">下一页</a> 
 		<a href="/kesalin/article/list/12">尾页</a>
 	</div>
+``` 
 
 好，我们获得了papelist 的tag对象，通过这个tag对象我们能够找出尾页tag a对象，从这个tag a解析出对应的href属性，获得尾页的编号12，然后自己拼出所有page页面的访问url来，并保存在pageUrlList中返回。page页面的访问url形式示例如下：
 
@@ -140,7 +144,7 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 
 * 根据page来获取文章链接的代码：
 
-
+``` python
 		def getArticleList(url):
 		    # 获取所有的文章的 url/title
 		    pageUrlList = getPageUrlList(url)
@@ -191,6 +195,7 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 
 		    log("total articles: " + str(len(artices)) + "\n")
 		    return artices
+``` 
 
 从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：
 
@@ -202,6 +207,7 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 
 article_toplist示例：(article_list的格式是类似的)
 
+``` html
     <div id="article_toplist" class="list">
         <div class="list_item article_item">
             <div class="article_title">   
@@ -219,6 +225,7 @@ article_toplist示例：(article_list的格式是类似的)
         </div>
         ... ...
     </div>
+``` 
 
 然后遍历所有的保存到articleListDocs里的tag对象，从中解析出link_title的span tag对象保存到linkDocs中；然后从中解析出链接的url和标题，这里去掉了置顶文章标题中的“置顶”两字；最后将url和标题保存到artices列表中返回。artices列表中的每一项内容示例：
 
@@ -227,7 +234,7 @@ article_toplist示例：(article_list的格式是类似的)
 
 * 根据文章链接获取文章html内容并解析转换为Markdown文本
 
-
+``` python
 		def download(url, output):
 		    # 下载文章，并保存为 markdown 格式
 		    log(" >> download: " + url)
@@ -286,9 +293,11 @@ article_toplist示例：(article_list的格式是类似的)
 		        content = htmlContent2String(htmlContent)
 
 		    exportToMarkdown(output, postDate, categories, title, content)
+``` 
 
 同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。
 
+``` python
 		def htmlContent2String(contentStr):
 		    patternImg = re.compile(r'(<img.+?src=")(.+?)(".+ />)')
 		    patternHref = re.compile(r'(<a.+?href=")(.+?)(".+?>)(.+?)(</a>)')
@@ -299,12 +308,13 @@ article_toplist示例：(article_list的格式是类似的)
 		    resultContent = re.sub(patternRemoveHtml, r'', resultContent)
 		    resultContent = decodeHtmlSpecialCharacter(resultContent)
 		    return resultContent
+``` 
 
 目前仅仅是删除所有的html标签，并在函数decodeHtmlSpecialCharacter中转换转义字符。
 
 * 生成Markdown文本文件
 
-
+``` python
 		def exportToMarkdown(exportDir, postdate, categories, title, content):
 		    titleDate = postdate.strftime('%Y-%m-%d')
 		    contentDate = postdate.strftime('%Y-%m-%d %H:%M:%S %z')
@@ -327,5 +337,6 @@ article_toplist示例：(article_list的格式是类似的)
 		    newFile.write(content)
 		    newFile.write('\n')
 		    newFile.close()
+``` 
 
 生成Markdown文本文件就很简单了，在这里我需要生成github page用的Markdown博文形式，所以内容如此，你可以根据你的需要修改为其他形式的文本内容。

@@ -4,7 +4,7 @@
   <title><![CDATA[标签：Python | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/python/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-18T22:24:47+08:00</updated>
+  <updated>2014-10-18T22:34:38+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -79,6 +79,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <li>datetime: 日期时间，参考<a href="http://www.cnblogs.com/lhj588/archive/2012/04/23/2466653.html">python datetime处理时间</a></li>
 </ul>
 
+
+<p><br/></p>
 
 <h3>编写博客导出工具</h3>
 

@@ -41,6 +41,7 @@ keywords: Markdown, Subline Text
 
 10. Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。 
 
-***
-另推荐一个所见即所得的 Markdown 在线编辑工具：[mahua](http://mahua.jser.me/) 。
-
+---
+补充：    
+1. Mac 系统下可以安装Markdown编辑工具 [Macdown](http://macdown.uranusjr.com/) ；
+2. 或直接使用在线Markdown编辑工具：[mahua](http://mahua.jser.me/) 。

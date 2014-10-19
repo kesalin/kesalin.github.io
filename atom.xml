@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://kesalin.github.io/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-19T15:20:23+08:00</updated>
+  <updated>2014-10-19T19:55:47+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -1594,7 +1594,9 @@ articleListDocs = articleListDocs + topArticleDocs + articleDocs
 
 <hr />
 
-<p>另推荐一个所见即所得的 Markdown 在线编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p>
+<p>补充：  <br/>
+1. Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；
+2. 或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p>
 ]]></content>
   </entry>
   

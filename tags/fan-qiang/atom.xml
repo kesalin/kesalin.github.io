@@ -4,7 +4,7 @@
   <title><![CDATA[标签：翻墙 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/fan-qiang/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-20T23:07:23+08:00</updated>
+  <updated>2014-10-20T23:10:06+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[翻墙工具Tor4.0安装]]></title>
-    <link href="http://kesalin.github.io/blog/2014/10/12/install-tor/"/>
-    <updated>2014-10-12T20:55:02+08:00</updated>
-    <id>http://kesalin.github.io/blog/2014/10/12/install-tor</id>
+    <link href="http://kesalin.github.io/blog/2014/10/20/install-tor/"/>
+    <updated>2014-10-20T20:55:02+08:00</updated>
+    <id>http://kesalin.github.io/blog/2014/10/20/install-tor</id>
     <content type="html"><![CDATA[<h3 id="section">安装</h3>
 
 <p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色啊。好在洋葱路由Tor发布4.0版本，使用了新的穿墙术：Meek，可以简单方便地翻墙了。特推荐大家使用。</p>

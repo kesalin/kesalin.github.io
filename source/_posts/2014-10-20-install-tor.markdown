@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "翻墙工具Tor4.0安装"
-date: 2014-10-12 20:55:02 +0800
+date: 2014-10-20 20:55:02 +0800
 comments: true
 categories: [工具软件]
 tags: [翻墙, 工具]
@@ -21,7 +21,7 @@ keywords: 翻墙, Tor, 洋葱路由
 * 有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。
 * 官网：[https://www.torproject.org/](https://www.torproject.org/)
 
-
+<br/>
 下载解压安装，Ubuntu 系统下只需要运行解压目录下的 start-tor-browser 脚本即可；
 
 安装过程中选择 Open Settings（设置）：
@@ -44,7 +44,7 @@ keywords: 翻墙, Tor, 洋葱路由
 
 然后就会启动内置的 firefox 穿墙而出了，速度不快，但足以满足一般的搜索查看文档等以文字为主的页面了。
 
-![穿墙而出][Imgur](http://i.imgur.com/VqRuhJX.png?1)
+![穿墙而出](http://i.imgur.com/VqRuhJX.png?1)
 
 ### 翻墙之后做什么
 

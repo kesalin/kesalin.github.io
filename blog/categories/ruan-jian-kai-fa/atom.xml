@@ -4,7 +4,7 @@
   <title><![CDATA[分类：软件开发 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/blog/categories/ruan-jian-kai-fa/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-20T20:23:06+08:00</updated>
+  <updated>2014-10-20T20:29:49+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -262,8 +262,9 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>然后遍历所有的保存到articleListDocs里的tag对象，从中解析出link_title的span tag对象保存到linkDocs中；然后从中解析出链接的url和标题，这里去掉了置顶文章标题中的“置顶”两字；最后将url和标题保存到artices列表中返回。artices列表中的每一项内容示例：</p>
 
-<p>title:招聘：有兴趣做一个与Android对等的操作系统么？<br />
-   url:http://blog.csdn.net/kesalin/article/details/10474007</p>
+<pre><code>   title:招聘：有兴趣做一个与Android对等的操作系统么？  
+   url:http://blog.csdn.net/kesalin/article/details/10474007
+</code></pre>
 
 <ul>
   <li>根据文章链接获取文章html内容并解析转换为Markdown文本</li>

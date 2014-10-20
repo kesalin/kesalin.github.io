@@ -73,6 +73,91 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/10/12/install-tor/">翻墙工具Tor4.0安装</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-12T20:55:02+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>8:55 pm</span></time>
+        
+        
+          | <a href="/blog/2014/10/12/install-tor/#comments">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3 id="section">安装</h3>
+
+<p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色。好在洋葱路由Tor发布4.0版本了，使用了新的穿墙术：meek ，推荐大家使用：</p>
+
+<ul>
+  <li>Ubuntu 64：<a href="http://pan.baidu.com/s/1kTspWhT">下载链接</a> 提取密码：2p56</li>
+  <li>Windows 64：<a href="http://pan.baidu.com/s/1pJqLPdp">下载链接</a> 提取密码: 5y2r</li>
+  <li>有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。</li>
+  <li>官网：<a href="https://www.torproject.org/">https://www.torproject.org/</a></li>
+</ul>
+
+<p>下载解压安装，Ubuntun 系统下只需要运行解压目录下的 start-tor-browser 脚本即可；</p>
+
+<p>安装过程中选择 Open Settings（设置）：</p>
+
+<p><img src="http://i.imgur.com/OlnbPUL.png?1" alt="选择设置" /></p>
+
+<p>打开网络配置Configure选项，</p>
+
+<p>第一个选项（是否使用代理上网）：如果你（公司）需要使用代理才能访问互联网，则需要配置，否则不需要直接选择No即可。</p>
+
+<p><img src="http://i.imgur.com/84Jg3UE.png?1" alt="是否使用代理上网" /></p>
+
+<p>第二个选项（你的ISP是否对互联网进行了封锁或限制）：拜GFW所赐，这个选项选择YES，</p>
+
+<p><img src="http://i.imgur.com/cJwJf0h.png?1" alt="ISP是否对互联网进行了封锁或限制" /></p>
+
+<p>在接下来的页面中选择：选择亚马逊Amazon或微软azure的云服务，Google的云服务已被墙不能用了。</p>
+
+<p><img src="http://i.imgur.com/rE1zdUX.png?1" alt="选择亚马逊Amazon或微软azure的云服务" /></p>
+
+<p>然后就会启动内置的 firefox 穿墙而出了，速度不快，但足以满足一般的搜索查看文档等以文字为主的页面了。</p>
+
+<h3 id="section-1">翻墙之后做什么</h3>
+
+<p>很多人翻墙之后不知道做什么，处于一种利器在手，却茫然不知所用的无序感。下面就介绍一个网站，专门针对这种症状下药：<a href="http://fanqianghou.com/">翻墙后看什么</a></p>
+
+<p>注：<a href="http://fanqianghou.com/">翻墙后看什么</a>上提供的网站链接并不保证那些网站上内容的真实和客观性，需要看官自己鉴定判别(这也是为什么要学习<a href="http://kesalin.github.io/blog/2014/10/12/critical-thinking/">批判性思维</a>的理由之一)。它们只是突破国内一面倒的信息轰炸与封锁，提供了另一面的信息，会兼听则明嘛。</p>
+
+<h3 id="section-2">补充</h3>
+<p>对于喜欢使用 Google 的朋友，不用翻墙也可以使用这个<a href="https://wen.lu/">链接</a>访问 Google 的搜索服务，可以将链接<a href="https://wen.lu/">https://wen.lu/</a>添加到收藏夹。</p>
+
+<h3 id="meek-">Meek 简介</h3>
+
+<p>非技术控或对翻墙原理不感兴趣的朋友，就不用看下面的内容了。</p>
+
+<p>Tor 4.0 翻墙流程：</p>
+
+<pre><code>（1）国内IP --&gt;（2）国外云服务 --&gt;（3）国外流量混淆服务器 --&gt;（4）目的网站。
+</code></pre>
+
+<p>步骤（1）是在国内是受监控的IP，步骤（3）是在国外的流量混淆服务以达到隐藏真实IP身份的目的，这些服务器已经被GFW挡住了。</p>
+
+<p>通过步骤（2）国外的云服务中转则可以达到国内IP访问国外流量混淆服务器，进而访问目的网站的目的。由于亚马逊以及微软的云服务在国内使用广泛，短期内被墙的可能性比较低，因此这个方法可以用上一阵子了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/10/12/export-blog-using-python-on-windows/">用Python编写博客导出工具</a></h1>
     
     
@@ -92,20 +177,7 @@
   </header>
 
 
-  <div class="entry-content"><ul id="markdown-toc">
-  <li><a href="#section">写在前面的话</a></li>
-  <li><a href="#section-1">下载工具</a></li>
-  <li><a href="#section-2">安装工具</a></li>
-  <li><a href="#section-3">参考文档</a></li>
-  <li><a href="#python">用到的Python语法</a></li>
-  <li><a href="#section-4">编写博客导出工具</a>    <ul>
-      <li><a href="#section-5">分析</a></li>
-      <li><a href="#section-6">实现</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="section">写在前面的话</h3>
+  <div class="entry-content"><h3 id="section">写在前面的话</h3>
 <p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
 
 <p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
@@ -476,43 +548,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/16/thirty/">还没二够，就奔三了</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-04-16T18:31:42+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>6:31 pm</span></time>
-        
-        
-          | <a href="/blog/2013/04/16/thirty/#comments">评论</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>某人说：你还没二够，就奔三了。我也是这么想的，三不三，我还真没感觉。记得小时候，三十是个大事，一般都是要办酒席的，我还记得几个叔叔三十的时候办酒席的情景。在儿时的农村，三十岁的人一般都“立”起来了，家庭，子女都有了，且不论在事业/生活上是否真正立起来l了。成长路上，见证了很多叔叔辈的而立之路，而今，岁月无情的年轮终于碾到我了。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/04/16/thirty/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a href="/blog/archives">所有文章</a>
@@ -527,7 +562,7 @@
   <h1>分类目录</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/shu-ping-ying-ping/'>书评影评 (24)</a></li>
-<li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (2)</a></li>
+<li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (3)</a></li>
 <li class='category'><a href='/blog/categories/xin-zhi-si-wei/'>心智思维 (3)</a></li>
 <li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (23)</a></li>
 <li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (4)</a></li>
@@ -539,6 +574,10 @@
 </section><section>
   <h1>最新文章</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/10/12/install-tor/">翻墙工具Tor4.0安装</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/10/12/export-blog-using-python-on-windows/">用Python编写博客导出工具</a>
@@ -554,10 +593,6 @@
     
       <li class="post">
         <a href="/blog/2014/10/05/subline-text2-markdown/">Subline Text 2 安装 Markdown 插件</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/30/reading-history/">读史又半年</a>
       </li>
     
   </ul>

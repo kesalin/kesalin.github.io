@@ -4,7 +4,7 @@
   <title><![CDATA[标签：Python | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/python/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-20T20:29:49+08:00</updated>
+  <updated>2014-10-20T22:29:17+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -18,20 +18,7 @@
     <link href="http://kesalin.github.io/blog/2014/10/12/export-blog-using-python-on-windows/"/>
     <updated>2014-10-12T08:35:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/12/export-blog-using-python-on-windows</id>
-    <content type="html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#section">写在前面的话</a></li>
-  <li><a href="#section-1">下载工具</a></li>
-  <li><a href="#section-2">安装工具</a></li>
-  <li><a href="#section-3">参考文档</a></li>
-  <li><a href="#python">用到的Python语法</a></li>
-  <li><a href="#section-4">编写博客导出工具</a>    <ul>
-      <li><a href="#section-5">分析</a></li>
-      <li><a href="#section-6">实现</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="section">写在前面的话</h3>
+    <content type="html"><![CDATA[<h3 id="section">写在前面的话</h3>
 <p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
 
 <p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
@@ -114,39 +101,39 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 <p>&#8220;` python 获取所有的页面的 url https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
-		def getPageUrlList(url):
-		    # 获取所有的页面的 url
-		    request = urllib2.Request(url, None, header)
-		    response = urllib2.urlopen(request)
-		    data = response.read()</p>
+def getPageUrlList(url):
+    # 获取所有的页面的 url
+    request = urllib2.Request(url, None, header)
+    response = urllib2.urlopen(request)
+    data = response.read()</p>
 
-<pre><code>	    #print data
-	    soup = BeautifulSoup(data)
+<pre><code>#print data
+soup = BeautifulSoup(data)
 
-	    lastArticleHref = None
-	    pageListDocs = soup.find_all(id="papelist")
-	    for pageList in pageListDocs:
-	        hrefDocs = pageList.find_all("a")
-	        if len(hrefDocs) &gt; 0:
-	            lastArticleHrefDoc = hrefDocs[len(hrefDocs) - 1]
-	            lastArticleHref = lastArticleHrefDoc["href"].encode('UTF-8')
+lastArticleHref = None
+pageListDocs = soup.find_all(id="papelist")
+for pageList in pageListDocs:
+    hrefDocs = pageList.find_all("a")
+    if len(hrefDocs) &gt; 0:
+        lastArticleHrefDoc = hrefDocs[len(hrefDocs) - 1]
+        lastArticleHref = lastArticleHrefDoc["href"].encode('UTF-8')
 
-	    if lastArticleHref == None:
-	        return []
-	    
-	    #print " &gt; last page href:" + lastArticleHref
-	    lastPageIndex = lastArticleHref.rfind("/")
-	    lastPageNum = int(lastArticleHref[lastPageIndex+1:])
-	    urlInfo = "http://blog.csdn.net" + lastArticleHref[0:lastPageIndex]
+if lastArticleHref == None:
+    return []
 
-	    pageUrlList = []
-	    for x in xrange(1, lastPageNum + 1):
-	        pageUrl = urlInfo + "/" + str(x)
-	        pageUrlList.append(pageUrl)
-	        log(" &gt; page " + str(x) + ": " + pageUrl)
+#print " &gt; last page href:" + lastArticleHref
+lastPageIndex = lastArticleHref.rfind("/")
+lastPageNum = int(lastArticleHref[lastPageIndex+1:])
+urlInfo = "http://blog.csdn.net" + lastArticleHref[0:lastPageIndex]
 
-	    log("total pages: " + str(len(pageUrlList)) + "\n")
-	    return pageUrlList ``` 
+pageUrlList = []
+for x in xrange(1, lastPageNum + 1):
+    pageUrl = urlInfo + "/" + str(x)
+    pageUrlList.append(pageUrl)
+    log(" &gt; page " + str(x) + ": " + pageUrl)
+
+log("total pages: " + str(len(pageUrlList)) + "\n")
+return pageUrlList ``` 
 </code></pre>
 
 <p>参数 url = “http://blog.csdn.net/” + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。</p>
@@ -154,17 +141,17 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <p>有了html页面内容，接下来就用BeautifulSoup来解析它。BeautifulSoup极大地减少了我们的工作量。我会详细在这里介绍它的使用，后面再次出现类似的解析就会从略了。soup.find_all(id=”papelist”) 将会查找html页面中所有id=”papelist”的tag，然后返回包含这些tag的list。对应 CSDN 博文页面来说，只有一处地方：</p>
 
 <p><code>html papelist html内容示例
-	&lt;div id="papelist" class="pagelist"&gt;
-		&lt;span&gt; 236条数据  共12页&lt;/span&gt;
-		&lt;strong&gt;1&lt;/strong&gt; 
-		&lt;a href="http://kesalin.github.io/kesalin/article/list/2"&gt;2&lt;/a&gt;
-		&lt;a href="http://kesalin.github.io/kesalin/article/list/3"&gt;3&lt;/a&gt;
-		&lt;a href="http://kesalin.github.io/kesalin/article/list/4"&gt;4&lt;/a&gt; 
-		&lt;a href="http://kesalin.github.io/kesalin/article/list/5"&gt;5&lt;/a&gt; 
-		&lt;a href="http://kesalin.github.io/kesalin/article/list/6"&gt;...&lt;/a&gt; 
-		&lt;a href="http://kesalin.github.io/kesalin/article/list/2"&gt;下一页&lt;/a&gt; 
-		&lt;a href="http://kesalin.github.io/kesalin/article/list/12"&gt;尾页&lt;/a&gt;
-	&lt;/div&gt;
+&lt;div id="papelist" class="pagelist"&gt;
+	&lt;span&gt; 236条数据  共12页&lt;/span&gt;
+	&lt;strong&gt;1&lt;/strong&gt; 
+	&lt;a href="http://kesalin.github.io/kesalin/article/list/2"&gt;2&lt;/a&gt;
+	&lt;a href="http://kesalin.github.io/kesalin/article/list/3"&gt;3&lt;/a&gt;
+	&lt;a href="http://kesalin.github.io/kesalin/article/list/4"&gt;4&lt;/a&gt; 
+	&lt;a href="http://kesalin.github.io/kesalin/article/list/5"&gt;5&lt;/a&gt; 
+	&lt;a href="http://kesalin.github.io/kesalin/article/list/6"&gt;...&lt;/a&gt; 
+	&lt;a href="http://kesalin.github.io/kesalin/article/list/2"&gt;下一页&lt;/a&gt; 
+	&lt;a href="http://kesalin.github.io/kesalin/article/list/12"&gt;尾页&lt;/a&gt;
+&lt;/div&gt;
 </code> </p>
 
 <p>好，我们获得了papelist 的tag对象，通过这个tag对象我们能够找出尾页tag a对象，从这个tag a解析出对应的href属性，获得尾页的编号12，然后自己拼出所有page页面的访问url来，并保存在pageUrlList中返回。page页面的访问url形式示例如下：</p>
@@ -176,56 +163,56 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 <p>&#8220;` python 根据page来获取文章链接 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
-		def getArticleList(url):
-		    # 获取所有的文章的 url/title
-		    pageUrlList = getPageUrlList(url)</p>
+def getArticleList(url):
+    # 获取所有的文章的 url/title
+    pageUrlList = getPageUrlList(url)</p>
 
-<pre><code>	    articleListDocs = []
+<pre><code>articleListDocs = []
 
-	    strPage = " &gt; parsing page {0}"
-	    pageNum = 0
-	    global gRetryCount
-	    for pageUrl in pageUrlList:
-	        retryCount = 0
-	        pageNum = pageNum + 1
-	        pageNumStr = strPage.format(pageNum)
-	        print pageNumStr
+strPage = " &gt; parsing page {0}"
+pageNum = 0
+global gRetryCount
+for pageUrl in pageUrlList:
+    retryCount = 0
+    pageNum = pageNum + 1
+    pageNumStr = strPage.format(pageNum)
+    print pageNumStr
 
-	        while retryCount &lt;= gRetryCount:
-	            try:
-	                retryCount = retryCount + 1
-	                time.sleep(1.0) #访问太快会不响应
-	                request = urllib2.Request(pageUrl, None, header)
-	                response = urllib2.urlopen(request)
-	                data = response.read().decode('UTF-8')
-	                
-	                #print data
-	                soup = BeautifulSoup(data)
-	                
-	                topArticleDocs = soup.find_all(id="article_toplist")
-	                articleDocs = soup.find_all(id="article_list")
-	                articleListDocs = articleListDocs + topArticleDocs + articleDocs
-	                break
-	            except Exception, e:
-	                print "getArticleList exception:%s, url:%s, retry count:%d" % (e, pageUrl, retryCount)
-	                pass
-	    
-	    artices = []
-	    topTile = "[置顶]"
-	    for articleListDoc in articleListDocs:
-	        linkDocs = articleListDoc.find_all("span", "link_title")
-	        for linkDoc in linkDocs:
-	            #print linkDoc.prettify().encode('UTF-8')
-	            link = linkDoc.a
-	            url = link["href"].encode('UTF-8')
-	            title = link.get_text().encode('UTF-8')
-	            title = title.replace(topTile, '').strip()
-	            oneHref = "http://blog.csdn.net" + url
-	            #log("   &gt; title:" + title + ", url:" + oneHref)
-	            artices.append([oneHref, title])
+    while retryCount &lt;= gRetryCount:
+        try:
+            retryCount = retryCount + 1
+            time.sleep(1.0) #访问太快会不响应
+            request = urllib2.Request(pageUrl, None, header)
+            response = urllib2.urlopen(request)
+            data = response.read().decode('UTF-8')
+            
+            #print data
+            soup = BeautifulSoup(data)
+            
+            topArticleDocs = soup.find_all(id="article_toplist")
+            articleDocs = soup.find_all(id="article_list")
+            articleListDocs = articleListDocs + topArticleDocs + articleDocs
+            break
+        except Exception, e:
+            print "getArticleList exception:%s, url:%s, retry count:%d" % (e, pageUrl, retryCount)
+            pass
 
-	    log("total articles: " + str(len(artices)) + "\n")
-	    return artices ``` 
+artices = []
+topTile = "[置顶]"
+for articleListDoc in articleListDocs:
+    linkDocs = articleListDoc.find_all("span", "link_title")
+    for linkDoc in linkDocs:
+        #print linkDoc.prettify().encode('UTF-8')
+        link = linkDoc.a
+        url = link["href"].encode('UTF-8')
+        title = link.get_text().encode('UTF-8')
+        title = title.replace(topTile, '').strip()
+        oneHref = "http://blog.csdn.net" + url
+        #log("   &gt; title:" + title + ", url:" + oneHref)
+        artices.append([oneHref, title])
+
+log("total articles: " + str(len(artices)) + "\n")
+return artices ``` 
 </code></pre>
 
 <p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：</p>
@@ -241,23 +228,23 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <p>article_toplist示例：(article_list的格式是类似的)</p>
 
 <p><code>html article_toplist html内容示例
-    &lt;div id="article_toplist" class="list"&gt;
-        &lt;div class="list_item article_item"&gt;
-            &lt;div class="article_title"&gt;   
-                &lt;span class="ico ico_type_Original"&gt;&lt;/span&gt;
-                &lt;h1&gt;
-                    &lt;span class="link_title"&gt;
-                    &lt;a href="http://kesalin.github.io/kesalin/article/details/10474007"&gt;
-                    &lt;font color="red"&gt;[置顶]&lt;/font&gt;
-                    招聘：有兴趣做一个与Android对等的操作系统么？
-                    &lt;/a&gt;
-                    &lt;/span&gt;
-                &lt;/h1&gt;
-            &lt;/div&gt;
-            ... ...
+&lt;div id="article_toplist" class="list"&gt;
+    &lt;div class="list_item article_item"&gt;
+        &lt;div class="article_title"&gt;   
+            &lt;span class="ico ico_type_Original"&gt;&lt;/span&gt;
+            &lt;h1&gt;
+                &lt;span class="link_title"&gt;
+                &lt;a href="http://kesalin.github.io/kesalin/article/details/10474007"&gt;
+                &lt;font color="red"&gt;[置顶]&lt;/font&gt;
+                招聘：有兴趣做一个与Android对等的操作系统么？
+                &lt;/a&gt;
+                &lt;/span&gt;
+            &lt;/h1&gt;
         &lt;/div&gt;
         ... ...
     &lt;/div&gt;
+    ... ...
+&lt;/div&gt;
 </code> </p>
 
 <p>然后遍历所有的保存到articleListDocs里的tag对象，从中解析出link_title的span tag对象保存到linkDocs中；然后从中解析出链接的url和标题，这里去掉了置顶文章标题中的“置顶”两字；最后将url和标题保存到artices列表中返回。artices列表中的每一项内容示例：</p>
@@ -271,79 +258,79 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 <p>&#8220;` python 根据文章链接获取文章html内容并解析转换为Markdown文本 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
-		def download(url, output):
-		    # 下载文章，并保存为 markdown 格式
-		    log(“ » download: “ + url)</p>
+def download(url, output):
+    # 下载文章，并保存为 markdown 格式
+    log(“ » download: “ + url)</p>
 
-<pre><code>	    data = None
-	    title = ""
-	    categories = ""
-	    content = ""
-	    postDate = datetime.datetime.now()
-	    
-	    global gRetryCount
-	    count = 0
-	    while True:
-	        if count &gt;= gRetryCount:
-	            break
-	        count = count + 1
-	        try:
-	            time.sleep(2.0) #访问太快会不响应
-	            request = urllib2.Request(url, None, header)
-	            response = urllib2.urlopen(request)
-	            data = response.read().decode('UTF-8')
-	            break
-	        except Exception,e:
-	            exstr = traceback.format_exc()
-	            log(" &gt;&gt; failed to download " + url + ", retry: " + str(count) + ", error:" + exstr)
-	            pass
+<pre><code>data = None
+title = ""
+categories = ""
+content = ""
+postDate = datetime.datetime.now()
 
-	    if data == None:
-	        log(" &gt;&gt; failed to download " + url)
-	        return
+global gRetryCount
+count = 0
+while True:
+    if count &gt;= gRetryCount:
+        break
+    count = count + 1
+    try:
+        time.sleep(2.0) #访问太快会不响应
+        request = urllib2.Request(url, None, header)
+        response = urllib2.urlopen(request)
+        data = response.read().decode('UTF-8')
+        break
+    except Exception,e:
+        exstr = traceback.format_exc()
+        log(" &gt;&gt; failed to download " + url + ", retry: " + str(count) + ", error:" + exstr)
+        pass
 
-	    #print data
-	    soup = BeautifulSoup(data)
+if data == None:
+    log(" &gt;&gt; failed to download " + url)
+    return
 
-	    topTile = "[置顶]"
-	    titleDocs = soup.find_all("div", "article_title")
-	    for titleDoc in titleDocs:
-	        titleStr = titleDoc.a.get_text().encode('UTF-8')
-	        title = titleStr.replace(topTile, '').strip()
-	        #log(" &gt;&gt; title: " + title)
+#print data
+soup = BeautifulSoup(data)
 
-	    manageDocs = soup.find_all("div", "article_manage")
-	    for managerDoc in manageDocs:
-	        categoryDoc = managerDoc.find_all("span", "link_categories")
-	        if len(categoryDoc) &gt; 0:
-	            categories = categoryDoc[0].a.get_text().encode('UTF-8').strip()
-	        
-	        postDateDoc = managerDoc.find_all("span", "link_postdate")
-	        if len(postDateDoc) &gt; 0:
-	            postDateStr = postDateDoc[0].string.encode('UTF-8').strip()
-	            postDate = datetime.datetime.strptime(postDateStr, '%Y-%m-%d %H:%M')
+topTile = "[置顶]"
+titleDocs = soup.find_all("div", "article_title")
+for titleDoc in titleDocs:
+    titleStr = titleDoc.a.get_text().encode('UTF-8')
+    title = titleStr.replace(topTile, '').strip()
+    #log(" &gt;&gt; title: " + title)
 
-	    contentDocs = soup.find_all(id="article_content")
-	    for contentDoc in contentDocs:
-	        htmlContent = contentDoc.prettify().encode('UTF-8')
-	        content = htmlContent2String(htmlContent)
+manageDocs = soup.find_all("div", "article_manage")
+for managerDoc in manageDocs:
+    categoryDoc = managerDoc.find_all("span", "link_categories")
+    if len(categoryDoc) &gt; 0:
+        categories = categoryDoc[0].a.get_text().encode('UTF-8').strip()
+    
+    postDateDoc = managerDoc.find_all("span", "link_postdate")
+    if len(postDateDoc) &gt; 0:
+        postDateStr = postDateDoc[0].string.encode('UTF-8').strip()
+        postDate = datetime.datetime.strptime(postDateStr, '%Y-%m-%d %H:%M')
 
-	    exportToMarkdown(output, postDate, categories, title, content) ``` 
+contentDocs = soup.find_all(id="article_content")
+for contentDoc in contentDocs:
+    htmlContent = contentDoc.prettify().encode('UTF-8')
+    content = htmlContent2String(htmlContent)
+
+exportToMarkdown(output, postDate, categories, title, content) ``` 
 </code></pre>
 
 <p>同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。</p>
 
 <p>&#8220;` python 转换html文档内容 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
-		def htmlContent2String(contentStr):
-		    patternImg = re.compile(r’(&lt;img.+?src=”)(.+?)(“.+ /&gt;)’)
-		    patternHref = re.compile(r’(&lt;a.+?href=”)(.+?)(“.+?&gt;)(.+?)(&lt;/a&gt;)’)
-		    patternRemoveHtml = re.compile(r’&lt;/?[^&gt;]+&gt;’)</p>
+def htmlContent2String(contentStr):
+    patternImg = re.compile(r’(&lt;img.+?src=”)(.+?)(“.+ /&gt;)’)
+    patternHref = re.compile(r’(&lt;a.+?href=”)(.+?)(“.+?&gt;)(.+?)(&lt;/a&gt;)’)
+    patternRemoveHtml = re.compile(r’&lt;/?[^&gt;]+&gt;’)</p>
 
-<pre><code>	    resultContent = patternImg.sub(r'![image_mark](\2)', contentStr)
-	    resultContent = patternHref.sub(r'[\4](\2)', resultContent)
-	    resultContent = re.sub(patternRemoveHtml, r'', resultContent)
-	    resultContent = decodeHtmlSpecialCharacter(resultContent)
-	    return resultContent ``` 
+<pre><code>resultContent = patternImg.sub(r'![image_mark](\2)', contentStr)
+resultContent = patternHref.sub(r'[\4](\2)', resultContent)
+resultContent = re.sub(patternRemoveHtml, r'', resultContent)
+resultContent = decodeHtmlSpecialCharacter(resultContent)
+return resultContent ``` 
 </code></pre>
 
 <p>目前仅仅是删除所有的html标签，并在函数decodeHtmlSpecialCharacter中转换转义字符。</p>
@@ -353,28 +340,28 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 <p>&#8220;` python 生成Markdown文本文件 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
-		def exportToMarkdown(exportDir, postdate, categories, title, content):
-		    titleDate = postdate.strftime(‘%Y-%m-%d’)
-		    contentDate = postdate.strftime(‘%Y-%m-%d %H:%M:%S %z’)
-		    filename = titleDate + ‘-‘ + title
-		    filename = repalceInvalidCharInFilename(filename)
-		    filepath = exportDir + ‘/’ + filename + ‘.markdown’
-		    log(“ » save as “ + filename)</p>
+def exportToMarkdown(exportDir, postdate, categories, title, content):
+    titleDate = postdate.strftime(‘%Y-%m-%d’)
+    contentDate = postdate.strftime(‘%Y-%m-%d %H:%M:%S %z’)
+    filename = titleDate + ‘-‘ + title
+    filename = repalceInvalidCharInFilename(filename)
+    filepath = exportDir + ‘/’ + filename + ‘.markdown’
+    log(“ » save as “ + filename)</p>
 
-<pre><code>	    newFile = open(unicode(filepath, "utf8"), 'w')
-	    newFile.write('---' + '\n')
-	    newFile.write('layout: post' + '\n')
-	    newFile.write('title: \"' + title + '\"\n')
-	    newFile.write('date: ' + contentDate + '\n')
-	    newFile.write('comments: true' + '\n')
-	    newFile.write('categories: [' + categories + ']' + '\n')
-	    newFile.write('tags: [' + categories + ']' + '\n')
-	    newFile.write('description: \"' + title + '\"\n')
-	    newFile.write('keywords: ' + categories + '\n') 
-	    newFile.write('---' + '\n\n')
-	    newFile.write(content)
-	    newFile.write('\n')
-	    newFile.close() ``` 
+<pre><code>newFile = open(unicode(filepath, "utf8"), 'w')
+newFile.write('---' + '\n')
+newFile.write('layout: post' + '\n')
+newFile.write('title: \"' + title + '\"\n')
+newFile.write('date: ' + contentDate + '\n')
+newFile.write('comments: true' + '\n')
+newFile.write('categories: [' + categories + ']' + '\n')
+newFile.write('tags: [' + categories + ']' + '\n')
+newFile.write('description: \"' + title + '\"\n')
+newFile.write('keywords: ' + categories + '\n') 
+newFile.write('---' + '\n\n')
+newFile.write(content)
+newFile.write('\n')
+newFile.close() ``` 
 </code></pre>
 
 <p>生成Markdown文本文件就很简单了，在这里我需要生成github page用的Markdown博文形式，所以内容如此，你可以根据你的需要修改为其他形式的文本内容。</p>

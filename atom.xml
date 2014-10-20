@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://kesalin.github.io/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-20T20:29:49+08:00</updated>
+  <updated>2014-10-20T22:29:17+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -14,24 +14,73 @@
 
   
   <entry>
+    <title type="html"><![CDATA[翻墙工具Tor4.0安装]]></title>
+    <link href="http://kesalin.github.io/blog/2014/10/12/install-tor/"/>
+    <updated>2014-10-12T20:55:02+08:00</updated>
+    <id>http://kesalin.github.io/blog/2014/10/12/install-tor</id>
+    <content type="html"><![CDATA[<h3 id="section">安装</h3>
+
+<p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色。好在洋葱路由Tor发布4.0版本了，使用了新的穿墙术：meek ，推荐大家使用：</p>
+
+<ul>
+  <li>Ubuntu 64：<a href="http://pan.baidu.com/s/1kTspWhT">下载链接</a> 提取密码：2p56</li>
+  <li>Windows 64：<a href="http://pan.baidu.com/s/1pJqLPdp">下载链接</a> 提取密码: 5y2r</li>
+  <li>有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。</li>
+  <li>官网：<a href="https://www.torproject.org/">https://www.torproject.org/</a></li>
+</ul>
+
+<p>下载解压安装，Ubuntun 系统下只需要运行解压目录下的 start-tor-browser 脚本即可；</p>
+
+<p>安装过程中选择 Open Settings（设置）：</p>
+
+<p><img src="http://i.imgur.com/OlnbPUL.png?1" alt="选择设置" /></p>
+
+<p>打开网络配置Configure选项，</p>
+
+<p>第一个选项（是否使用代理上网）：如果你（公司）需要使用代理才能访问互联网，则需要配置，否则不需要直接选择No即可。</p>
+
+<p><img src="http://i.imgur.com/84Jg3UE.png?1" alt="是否使用代理上网" /></p>
+
+<p>第二个选项（你的ISP是否对互联网进行了封锁或限制）：拜GFW所赐，这个选项选择YES，</p>
+
+<p><img src="http://i.imgur.com/cJwJf0h.png?1" alt="ISP是否对互联网进行了封锁或限制" /></p>
+
+<p>在接下来的页面中选择：选择亚马逊Amazon或微软azure的云服务，Google的云服务已被墙不能用了。</p>
+
+<p><img src="http://i.imgur.com/rE1zdUX.png?1" alt="选择亚马逊Amazon或微软azure的云服务" /></p>
+
+<p>然后就会启动内置的 firefox 穿墙而出了，速度不快，但足以满足一般的搜索查看文档等以文字为主的页面了。</p>
+
+<h3 id="section-1">翻墙之后做什么</h3>
+
+<p>很多人翻墙之后不知道做什么，处于一种利器在手，却茫然不知所用的无序感。下面就介绍一个网站，专门针对这种症状下药：<a href="http://fanqianghou.com/">翻墙后看什么</a></p>
+
+<p>注：<a href="http://fanqianghou.com/">翻墙后看什么</a>上提供的网站链接并不保证那些网站上内容的真实和客观性，需要看官自己鉴定判别(这也是为什么要学习<a href="http://kesalin.github.io/blog/2014/10/12/critical-thinking/">批判性思维</a>的理由之一)。它们只是突破国内一面倒的信息轰炸与封锁，提供了另一面的信息，会兼听则明嘛。</p>
+
+<h3 id="section-2">补充</h3>
+<p>对于喜欢使用 Google 的朋友，不用翻墙也可以使用这个<a href="https://wen.lu/">链接</a>访问 Google 的搜索服务，可以将链接<a href="https://wen.lu/">https://wen.lu/</a>添加到收藏夹。</p>
+
+<h3 id="meek-">Meek 简介</h3>
+
+<p>非技术控或对翻墙原理不感兴趣的朋友，就不用看下面的内容了。</p>
+
+<p>Tor 4.0 翻墙流程：</p>
+
+<pre><code>（1）国内IP --&gt;（2）国外云服务 --&gt;（3）国外流量混淆服务器 --&gt;（4）目的网站。
+</code></pre>
+
+<p>步骤（1）是在国内是受监控的IP，步骤（3）是在国外的流量混淆服务以达到隐藏真实IP身份的目的，这些服务器已经被GFW挡住了。</p>
+
+<p>通过步骤（2）国外的云服务中转则可以达到国内IP访问国外流量混淆服务器，进而访问目的网站的目的。由于亚马逊以及微软的云服务在国内使用广泛，短期内被墙的可能性比较低，因此这个方法可以用上一阵子了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[用Python编写博客导出工具]]></title>
     <link href="http://kesalin.github.io/blog/2014/10/12/export-blog-using-python-on-windows/"/>
     <updated>2014-10-12T08:35:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/12/export-blog-using-python-on-windows</id>
-    <content type="html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#section">写在前面的话</a></li>
-  <li><a href="#section-1">下载工具</a></li>
-  <li><a href="#section-2">安装工具</a></li>
-  <li><a href="#section-3">参考文档</a></li>
-  <li><a href="#python">用到的Python语法</a></li>
-  <li><a href="#section-4">编写博客导出工具</a>    <ul>
-      <li><a href="#section-5">分析</a></li>
-      <li><a href="#section-6">实现</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="section">写在前面的话</h3>
+    <content type="html"><![CDATA[<h3 id="section">写在前面的话</h3>
 <p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
 
 <p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
@@ -146,39 +195,39 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class="line-number">31</span>
 <span class="line-number">32</span>
 <span class="line-number">33</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line">	<span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class="line">	    <span class="c"># 获取所有的页面的 url</span>
-</span><span class="line">	    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class="line">    <span class="c"># 获取所有的页面的 url</span>
+</span><span class="line">    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class="line">    <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class="line">    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </span><span class="line">
-</span><span class="line">	    <span class="c">#print data</span>
-</span><span class="line">	    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class="line">    <span class="c">#print data</span>
+</span><span class="line">    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
-</span><span class="line">	    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
-</span><span class="line">	    <span class="k">for</span> <span class="n">pageList</span> <span class="ow">in</span> <span class="n">pageListDocs</span><span class="p">:</span>
-</span><span class="line">	        <span class="n">hrefDocs</span> <span class="o">=</span> <span class="n">pageList</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">)</span>
-</span><span class="line">	        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class="line">	            <span class="n">lastArticleHrefDoc</span> <span class="o">=</span> <span class="n">hrefDocs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
-</span><span class="line">	            <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="n">lastArticleHrefDoc</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class="line">    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">pageList</span> <span class="ow">in</span> <span class="n">pageListDocs</span><span class="p">:</span>
+</span><span class="line">        <span class="n">hrefDocs</span> <span class="o">=</span> <span class="n">pageList</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">)</span>
+</span><span class="line">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class="line">            <span class="n">lastArticleHrefDoc</span> <span class="o">=</span> <span class="n">hrefDocs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+</span><span class="line">            <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="n">lastArticleHrefDoc</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class="line">	        <span class="k">return</span> <span class="p">[]</span>
-</span><span class="line">	
-</span><span class="line">	    <span class="c">#print &quot; &gt; last page href:&quot; + lastArticleHref</span>
-</span><span class="line">	    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
-</span><span class="line">	    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
+</span><span class="line">    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class="line">        <span class="k">return</span> <span class="p">[]</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class="line">	    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">lastPageNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span><span class="line">	        <span class="n">pageUrl</span> <span class="o">=</span> <span class="n">urlInfo</span> <span class="o">+</span> <span class="s">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span><span class="line">	        <span class="n">pageUrlList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
-</span><span class="line">	        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt; page &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">pageUrl</span><span class="p">)</span>
+</span><span class="line">    <span class="c">#print &quot; &gt; last page href:&quot; + lastArticleHref</span>
+</span><span class="line">    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+</span><span class="line">    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total pages: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pageUrlList</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-</span><span class="line">	    <span class="k">return</span> <span class="n">pageUrlList</span>
+</span><span class="line">    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">lastPageNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span class="line">        <span class="n">pageUrl</span> <span class="o">=</span> <span class="n">urlInfo</span> <span class="o">+</span> <span class="s">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span class="line">        <span class="n">pageUrlList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
+</span><span class="line">        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt; page &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">pageUrl</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total pages: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pageUrlList</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class="line">    <span class="k">return</span> <span class="n">pageUrlList</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>参数 url = “http://blog.csdn.net/” + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。</p>
@@ -267,56 +316,56 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class="line-number">48</span>
 <span class="line-number">49</span>
 <span class="line-number">50</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line">	<span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class="line">	    <span class="c"># 获取所有的文章的 url/title</span>
-</span><span class="line">	    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-</span><span class="line">	
-</span><span class="line">	    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class="line">    <span class="c"># 获取所有的文章的 url/title</span>
+</span><span class="line">    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
-</span><span class="line">	    <span class="n">pageNum</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line">	    <span class="k">global</span> <span class="n">gRetryCount</span>
-</span><span class="line">	    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
-</span><span class="line">	        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line">	        <span class="n">pageNum</span> <span class="o">=</span> <span class="n">pageNum</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class="line">	        <span class="n">pageNumStr</span> <span class="o">=</span> <span class="n">strPage</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageNum</span><span class="p">)</span>
-</span><span class="line">	        <span class="k">print</span> <span class="n">pageNumStr</span>
+</span><span class="line">    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
 </span><span class="line">
-</span><span class="line">	        <span class="k">while</span> <span class="n">retryCount</span> <span class="o">&lt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
-</span><span class="line">	            <span class="k">try</span><span class="p">:</span>
-</span><span class="line">	                <span class="n">retryCount</span> <span class="o">=</span> <span class="n">retryCount</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class="line">	                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
-</span><span class="line">	                <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class="line">	                <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class="line">	                <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">	
-</span><span class="line">	                <span class="c">#print data</span>
-</span><span class="line">	                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span><span class="line">	
-</span><span class="line">	                <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
-</span><span class="line">	                <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
-</span><span class="line">	                <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
-</span><span class="line">	                <span class="k">break</span>
-</span><span class="line">	            <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-</span><span class="line">	                <span class="k">print</span> <span class="s">&quot;getArticleList exception:</span><span class="si">%s</span><span class="s">, url:</span><span class="si">%s</span><span class="s">, retry count:</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">pageUrl</span><span class="p">,</span> <span class="n">retryCount</span><span class="p">)</span>
-</span><span class="line">	                <span class="k">pass</span>
-</span><span class="line">	
-</span><span class="line">	    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class="line">	    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
-</span><span class="line">	    <span class="k">for</span> <span class="n">articleListDoc</span> <span class="ow">in</span> <span class="n">articleListDocs</span><span class="p">:</span>
-</span><span class="line">	        <span class="n">linkDocs</span> <span class="o">=</span> <span class="n">articleListDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_title&quot;</span><span class="p">)</span>
-</span><span class="line">	        <span class="k">for</span> <span class="n">linkDoc</span> <span class="ow">in</span> <span class="n">linkDocs</span><span class="p">:</span>
-</span><span class="line">	            <span class="c">#print linkDoc.prettify().encode(&#39;UTF-8&#39;)</span>
-</span><span class="line">	            <span class="n">link</span> <span class="o">=</span> <span class="n">linkDoc</span><span class="o">.</span><span class="n">a</span>
-</span><span class="line">	            <span class="n">url</span> <span class="o">=</span> <span class="n">link</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">	            <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">	            <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">	            <span class="n">oneHref</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">url</span>
-</span><span class="line">	            <span class="c">#log(&quot;   &gt; title:&quot; + title + &quot;, url:&quot; + oneHref)</span>
-</span><span class="line">	            <span class="n">artices</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">oneHref</span><span class="p">,</span> <span class="n">title</span><span class="p">])</span>
+</span><span class="line">    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
+</span><span class="line">    <span class="n">pageNum</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class="line">    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
+</span><span class="line">        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class="line">        <span class="n">pageNum</span> <span class="o">=</span> <span class="n">pageNum</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line">        <span class="n">pageNumStr</span> <span class="o">=</span> <span class="n">strPage</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageNum</span><span class="p">)</span>
+</span><span class="line">        <span class="k">print</span> <span class="n">pageNumStr</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total articles: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">artices</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-</span><span class="line">	    <span class="k">return</span> <span class="n">artices</span>
+</span><span class="line">        <span class="k">while</span> <span class="n">retryCount</span> <span class="o">&lt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class="line">            <span class="k">try</span><span class="p">:</span>
+</span><span class="line">                <span class="n">retryCount</span> <span class="o">=</span> <span class="n">retryCount</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line">                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class="line">                <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class="line">                <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class="line">                <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line">                <span class="c">#print data</span>
+</span><span class="line">                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line">                <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class="line">                <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class="line">                <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span><span class="line">                <span class="k">break</span>
+</span><span class="line">            <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+</span><span class="line">                <span class="k">print</span> <span class="s">&quot;getArticleList exception:</span><span class="si">%s</span><span class="s">, url:</span><span class="si">%s</span><span class="s">, retry count:</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">pageUrl</span><span class="p">,</span> <span class="n">retryCount</span><span class="p">)</span>
+</span><span class="line">                <span class="k">pass</span>
+</span><span class="line">
+</span><span class="line">    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class="line">    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">articleListDoc</span> <span class="ow">in</span> <span class="n">articleListDocs</span><span class="p">:</span>
+</span><span class="line">        <span class="n">linkDocs</span> <span class="o">=</span> <span class="n">articleListDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_title&quot;</span><span class="p">)</span>
+</span><span class="line">        <span class="k">for</span> <span class="n">linkDoc</span> <span class="ow">in</span> <span class="n">linkDocs</span><span class="p">:</span>
+</span><span class="line">            <span class="c">#print linkDoc.prettify().encode(&#39;UTF-8&#39;)</span>
+</span><span class="line">            <span class="n">link</span> <span class="o">=</span> <span class="n">linkDoc</span><span class="o">.</span><span class="n">a</span>
+</span><span class="line">            <span class="n">url</span> <span class="o">=</span> <span class="n">link</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class="line">            <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class="line">            <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class="line">            <span class="n">oneHref</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">url</span>
+</span><span class="line">            <span class="c">#log(&quot;   &gt; title:&quot; + title + &quot;, url:&quot; + oneHref)</span>
+</span><span class="line">            <span class="n">artices</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">oneHref</span><span class="p">,</span> <span class="n">title</span><span class="p">])</span>
+</span><span class="line">
+</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total articles: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">artices</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class="line">    <span class="k">return</span> <span class="n">artices</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：</p>
@@ -437,64 +486,64 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class="line-number">56</span>
 <span class="line-number">57</span>
 <span class="line-number">58</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line">	<span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
-</span><span class="line">	    <span class="c"># 下载文章，并保存为 markdown 格式</span>
-</span><span class="line">	    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+</span><span class="line">    <span class="c"># 下载文章，并保存为 markdown 格式</span>
+</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
-</span><span class="line">	    <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class="line">	    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class="line">	    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class="line">	    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-</span><span class="line">	
-</span><span class="line">	    <span class="k">global</span> <span class="n">gRetryCount</span>
-</span><span class="line">	    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line">	    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-</span><span class="line">	        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
-</span><span class="line">	            <span class="k">break</span>
-</span><span class="line">	        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class="line">	        <span class="k">try</span><span class="p">:</span>
-</span><span class="line">	            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
-</span><span class="line">	            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class="line">	            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class="line">	            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">	            <span class="k">break</span>
-</span><span class="line">	        <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
-</span><span class="line">	            <span class="n">exstr</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
-</span><span class="line">	            <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, retry: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;, error:&quot;</span> <span class="o">+</span> <span class="n">exstr</span><span class="p">)</span>
-</span><span class="line">	            <span class="k">pass</span>
+</span><span class="line">    <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class="line">    <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class="line">    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class="line">    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class="line">    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
 </span><span class="line">
-</span><span class="line">	    <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class="line">	        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
-</span><span class="line">	        <span class="k">return</span>
+</span><span class="line">    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class="line">    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class="line">    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class="line">        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class="line">            <span class="k">break</span>
+</span><span class="line">        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line">        <span class="k">try</span><span class="p">:</span>
+</span><span class="line">            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class="line">            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class="line">            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class="line">            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class="line">            <span class="k">break</span>
+</span><span class="line">        <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
+</span><span class="line">            <span class="n">exstr</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
+</span><span class="line">            <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, retry: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;, error:&quot;</span> <span class="o">+</span> <span class="n">exstr</span><span class="p">)</span>
+</span><span class="line">            <span class="k">pass</span>
 </span><span class="line">
-</span><span class="line">	    <span class="c">#print data</span>
-</span><span class="line">	    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class="line">    <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class="line">        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</span><span class="line">        <span class="k">return</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
-</span><span class="line">	    <span class="n">titleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_title&quot;</span><span class="p">)</span>
-</span><span class="line">	    <span class="k">for</span> <span class="n">titleDoc</span> <span class="ow">in</span> <span class="n">titleDocs</span><span class="p">:</span>
-</span><span class="line">	        <span class="n">titleStr</span> <span class="o">=</span> <span class="n">titleDoc</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">	        <span class="n">title</span> <span class="o">=</span> <span class="n">titleStr</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">	        <span class="c">#log(&quot; &gt;&gt; title: &quot; + title)</span>
+</span><span class="line">    <span class="c">#print data</span>
+</span><span class="line">    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
-</span><span class="line">	    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
-</span><span class="line">	        <span class="n">categoryDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_categories&quot;</span><span class="p">)</span>
-</span><span class="line">	        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categoryDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class="line">	            <span class="n">categories</span> <span class="o">=</span> <span class="n">categoryDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">	
-</span><span class="line">	        <span class="n">postDateDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_postdate&quot;</span><span class="p">)</span>
-</span><span class="line">	        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">postDateDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class="line">	            <span class="n">postDateStr</span> <span class="o">=</span> <span class="n">postDateDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">	            <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">postDateStr</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class="line">    <span class="n">titleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_title&quot;</span><span class="p">)</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">titleDoc</span> <span class="ow">in</span> <span class="n">titleDocs</span><span class="p">:</span>
+</span><span class="line">        <span class="n">titleStr</span> <span class="o">=</span> <span class="n">titleDoc</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class="line">        <span class="n">title</span> <span class="o">=</span> <span class="n">titleStr</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class="line">        <span class="c">#log(&quot; &gt;&gt; title: &quot; + title)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">contentDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_content&quot;</span><span class="p">)</span>
-</span><span class="line">	    <span class="k">for</span> <span class="n">contentDoc</span> <span class="ow">in</span> <span class="n">contentDocs</span><span class="p">:</span>
-</span><span class="line">	        <span class="n">htmlContent</span> <span class="o">=</span> <span class="n">contentDoc</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">	        <span class="n">content</span> <span class="o">=</span> <span class="n">htmlContent2String</span><span class="p">(</span><span class="n">htmlContent</span><span class="p">)</span>
+</span><span class="line">    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
+</span><span class="line">        <span class="n">categoryDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_categories&quot;</span><span class="p">)</span>
+</span><span class="line">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categoryDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class="line">            <span class="n">categories</span> <span class="o">=</span> <span class="n">categoryDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">exportToMarkdown</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">postDate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+</span><span class="line">        <span class="n">postDateDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_postdate&quot;</span><span class="p">)</span>
+</span><span class="line">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">postDateDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class="line">            <span class="n">postDateStr</span> <span class="o">=</span> <span class="n">postDateDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class="line">            <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">postDateStr</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M&#39;</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line">    <span class="n">contentDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_content&quot;</span><span class="p">)</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">contentDoc</span> <span class="ow">in</span> <span class="n">contentDocs</span><span class="p">:</span>
+</span><span class="line">        <span class="n">htmlContent</span> <span class="o">=</span> <span class="n">contentDoc</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class="line">        <span class="n">content</span> <span class="o">=</span> <span class="n">htmlContent2String</span><span class="p">(</span><span class="n">htmlContent</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line">    <span class="n">exportToMarkdown</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">postDate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。</p>
@@ -509,16 +558,16 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class="line-number">8</span>
 <span class="line-number">9</span>
 <span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line">	<span class="k">def</span> <span class="nf">htmlContent2String</span><span class="p">(</span><span class="n">contentStr</span><span class="p">):</span>
-</span><span class="line">	    <span class="n">patternImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;img.+?src=&quot;)(.+?)(&quot;.+ /&gt;)&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">patternHref</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;a.+?href=&quot;)(.+?)(&quot;.+?&gt;)(.+?)(&lt;/a&gt;)&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">patternRemoveHtml</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;&lt;/?[^&gt;]+&gt;&#39;</span><span class="p">)</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">htmlContent2String</span><span class="p">(</span><span class="n">contentStr</span><span class="p">):</span>
+</span><span class="line">    <span class="n">patternImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;img.+?src=&quot;)(.+?)(&quot;.+ /&gt;)&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">patternHref</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;a.+?href=&quot;)(.+?)(&quot;.+?&gt;)(.+?)(&lt;/a&gt;)&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">patternRemoveHtml</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;&lt;/?[^&gt;]+&gt;&#39;</span><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternImg</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;![image_mark](\2)&#39;</span><span class="p">,</span> <span class="n">contentStr</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternHref</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;[\4](\2)&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">patternRemoveHtml</span><span class="p">,</span> <span class="s">r&#39;&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">decodeHtmlSpecialCharacter</span><span class="p">(</span><span class="n">resultContent</span><span class="p">)</span>
-</span><span class="line">	    <span class="k">return</span> <span class="n">resultContent</span>
+</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternImg</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;![image_mark](\2)&#39;</span><span class="p">,</span> <span class="n">contentStr</span><span class="p">)</span>
+</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternHref</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;[\4](\2)&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">patternRemoveHtml</span><span class="p">,</span> <span class="s">r&#39;&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">decodeHtmlSpecialCharacter</span><span class="p">(</span><span class="n">resultContent</span><span class="p">)</span>
+</span><span class="line">    <span class="k">return</span> <span class="n">resultContent</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>目前仅仅是删除所有的html标签，并在函数decodeHtmlSpecialCharacter中转换转义字符。</p>
@@ -549,28 +598,28 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class="line-number">20</span>
 <span class="line-number">21</span>
 <span class="line-number">22</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line">	<span class="k">def</span> <span class="nf">exportToMarkdown</span><span class="p">(</span><span class="n">exportDir</span><span class="p">,</span> <span class="n">postdate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
-</span><span class="line">	    <span class="n">titleDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">contentDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M:%S %z&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">filename</span> <span class="o">=</span> <span class="n">titleDate</span> <span class="o">+</span> <span class="s">&#39;-&#39;</span> <span class="o">+</span> <span class="n">title</span>
-</span><span class="line">	    <span class="n">filename</span> <span class="o">=</span> <span class="n">repalceInvalidCharInFilename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">filepath</span> <span class="o">=</span> <span class="n">exportDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s">&#39;.markdown&#39;</span>
-</span><span class="line">	    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; save as &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">exportToMarkdown</span><span class="p">(</span><span class="n">exportDir</span><span class="p">,</span> <span class="n">postdate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+</span><span class="line">    <span class="n">titleDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">contentDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M:%S %z&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">filename</span> <span class="o">=</span> <span class="n">titleDate</span> <span class="o">+</span> <span class="s">&#39;-&#39;</span> <span class="o">+</span> <span class="n">title</span>
+</span><span class="line">    <span class="n">filename</span> <span class="o">=</span> <span class="n">repalceInvalidCharInFilename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</span><span class="line">    <span class="n">filepath</span> <span class="o">=</span> <span class="n">exportDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s">&#39;.markdown&#39;</span>
+</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; save as &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
 </span><span class="line">
-</span><span class="line">	    <span class="n">newFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&quot;utf8&quot;</span><span class="p">),</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;layout: post&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;title: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;date: &#39;</span> <span class="o">+</span> <span class="n">contentDate</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;comments: true&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;categories: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;tags: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;description: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;keywords: &#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">	    <span class="n">newFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span class="line">    <span class="n">newFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&quot;utf8&quot;</span><span class="p">),</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;layout: post&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;title: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;date: &#39;</span> <span class="o">+</span> <span class="n">contentDate</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;comments: true&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;categories: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;tags: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;description: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;keywords: &#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>生成Markdown文本文件就很简单了，在这里我需要生成github page用的Markdown博文形式，所以内容如此，你可以根据你的需要修改为其他形式的文本内容。</p>
@@ -2319,43 +2368,6 @@ Slow is fast.
 <p>外面正下着小雨，连绵而又迷蒙，像君山二妃的泪珠。这便让我想起一位秋士的诗句：秋风秋雨愁煞人。天上的星星大概都躲进雨云中避寒去了吧，可是冬天还没有来呀。天空一片朦胧，丝毫没有秋高气爽的迹象。窗旁李子树上的叶子大都已在秋风的扫荡中凋零了，残留的几片在光秃秃的枝头上发抖。</p>
 
 <p>猛然间，望见远处的几家灯火，在这迷蒙的雨夜中，感觉特别温暖，望着这微弱而昏黄的灯火，我顿感安慰与鼓舞。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[能力培养与教育体制]]></title>
-    <link href="http://kesalin.github.io/blog/2009/05/04/education/"/>
-    <updated>2009-05-04T21:13:25+08:00</updated>
-    <id>http://kesalin.github.io/blog/2009/05/04/education</id>
-    <content type="html"><![CDATA[<p>不经意间已10多天没冒冒泡了，不太像我一贯的做法，或许是心静得下来了，坦实了点，专注了些，也算是好事情吧。 其实上周有想过要写篇关于学习与教育的文章，只是却早早地夭折在构思之中，还是简单地就这个感慨几句吧，思绪来的时候不留点痕迹，就真如风吹过一样无影无踪了。我们的学校教育一直是填鸭式的灌输，我们只是被动地接收现成的概念和定律，缺少洞悉有关这些概念与定律非常重要的三点：  </p>
-
-<pre><code>产生的原因（Why）：是碰到哪些问题或想解释哪些现象从而引出来的。分析问题的能力；  
-推导的过程（How）：这些概念与定律是怎样一步一步被推导与归纳出来的。解决问题的能力；  
-适用的场合（When）：什么情况下可以运用这些概念与定律来解决哪些问题。运用知识的能力。
-</code></pre>
-
-<p>于是在我们往往知其然却不知其所以然。</p>
-
-<!--more-->
-
-<p>在我们现有的教育体制灌输下我们一时记下了大量的概念和定律，却与分析问题，解决问题失之交臂，顶多在运用知识的能力上有所锻炼。我们的教育体制期待把这些能力的培养推迟到大学里，可以那时候已经晚了，因为思维已经定型，在惯性的推动下我们已经习惯于坐拥现成的答案。</p>
-
-<p>然而欧美乃至日本教育体制却不同，他们从小学便开始让学生开始解决一些“没有答案的问题”，让学生自己分析问题，解决答案，让学生形成自己的观点（哪怕是错误的也没关系，可以纠正，但那种分析与解决问题能力却依然培养出来了）。在这个过程中他们培养与锻炼了全方位的能力。可以这么说，他们在中小学阶段，着重培养基本的能力，而在大学阶段，则全方位地学习知识；我们则相反，中小学阶段负责灌输知识，而大学则试图弥补缺失的能力。我们的教育很有点本末倒置，授人鱼而不是渔，所以我们的中小学生很牛B啊，奥数什么的奖牌不少，可是真正引领科技潮流的却还是欧美。  </p>
-
-<p>关于上大学，有这么一个笑话：</p>
-
-<pre><code>毕业时，大学从我身上爬起来，一边提裤子一边冷笑，对我说：
-“青春留下，你走！”
-我时这才明白：原来不是我上了大学，而是大学上了我！
-</code></pre>
-
-<p>虽然这是有些嘲讽的味道，但是在中国的大学里如果没有培养出自己的思维体系，分析以及解决问题的能力，那也差不多是被大学上了。很遗憾我也被大学上了，虽然我也曾自学免修过专业必修课，也曾自习手机编程谋取了第一份工作，但我还是不得不承认：大部分的新思维以及分析问题，解决问题能力的逐步构建与培养是毕业1~2年之后的事情。这时候我只能感慨：要认识自己，所需要的是勇气和智慧。随着年龄的增长，最大的益处就是能够开始有勇气反省自己，有时用一点自嘲，让自己变得轻松一点。因为原来的自己是在是太无知与空白了。 </p>
-
-<p>对于俺等上班族来说，其实算得上是半条腿踏进棺材的人了，因为前路好像差不多都已经摆定了，直通白头退休（如果退休还有效的话）。想想够恐怖的吧，几十年就一直活在那么一个小小的生活格子里。什么理想啊，梦想啊，激情啊，就在日子这慢刀子下一点点地被削平了，磨灭了。 </p>
-
-<p>在工作的这么些年里，我不止一次有过重返校园去读个研什么的想法，刚开始我还很认真地思考着，权衡着。可现在我已经不会想那码事情了，绝对不会因为想要充电而去读研。重返校园或读研对工作了的人来说，至少对我而言，最大的诱惑只不过是有大把空闲时间罢了，然时间这东西一如女人的奶，挤挤总会有的，所以这么一想，读研就没什么可以诱惑我的了。</p>
-
-<p>如果时间挤出来了，那么接下来要面对的最要紧的问题就是心态，那么多生活琐事，应酬，朋友圈，家族圈，感情，娱乐之余你有那个心静下来，坦实地学点啥，慢慢地啃书不？这是个难题，没有方向，没有兴趣，是很难静下来的，整天浮浮躁躁，看起来每天都很忙，可却一年下来却没忙出个什么名堂来，还时不时来几天周期性迷茫症。俺虚度了两年这样的光阴，有幸从业于这个知识高速更新的软件业，有幸有那么多大牛在阳光下树立了光辉敬业形象，并无私地分享他们的成长历程，让我等小草找到了前进的方向。Thanks</p>
 ]]></content>
   </entry>
   

@@ -20,9 +20,9 @@ keywords: Markdown, Subline Text
 
 2. 粘贴以下代码到底部命令行并回车： 
 
-    <code>
-        import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
-    </code>  
+``` python
+    import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+```
 
 3. 稍作等待，若在 output 窗口输出如下信息，表示安装成功：  
 > Please restart Sublime Text to finish installation   

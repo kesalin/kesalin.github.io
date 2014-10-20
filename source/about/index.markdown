@@ -13,11 +13,11 @@ footer: true
 * 英文网名：kesalin  
 * 真实姓名：罗朝辉(Luo Zhaohui)  
 * 毕 业 于：  江南大学  
-* 居住信息：籍贯湖南双峰，现居上海张江高科
-* 兴趣爱好：软件工程师+文艺青年，崇尚自我持续学习，理性思考，热爱编程，好跨界阅读不求甚解。
+* 居住信息：籍贯湖南双峰，现居上海张江
+* 兴趣爱好：软件工程师+文艺青年，崇尚自我持续学习，理性思考，喜欢折腾，好跨界阅读不求甚解。
 * 政治取向：推崇民主，反对愚民，为普及公民意识和反洗脑而努力。
-* 技术特长： C++, iOS，熟悉 C#，Android，对游戏开发, Android framework，OpenGL ES 也有所研究。 
-* 职业岗位：目前在[上海科泰华捷](http://www.kortide.com)从事嵌入式操作系统 [Elastos](http://elastos.org/) 的研发工作，该项目为开源项目，对操作系统，Android framework 实现有兴趣的朋友，欢迎加入 [Elastos](http://elastos.org/)。    
+* 技术特长： C++, iOS， 熟悉 C#， Android，对游戏开发, Android framework， OpenGL ES 也有所研究。 
+* 职业岗位：目前在[上海科泰华捷](http://www.kortide.com)从事嵌入式操作系统 [Elastos](http://elastos.org/) 研发工作。所从事项目为开源项目，对操作系统，Android framework 实现有兴趣的朋友，欢迎加入 [Elastos](http://elastos.org/)。    
    
 <br />     
 ### 技术专栏：

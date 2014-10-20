@@ -23,3 +23,18 @@
     color: #0057b6; 
     text-decoration: underline; 
 }
+
+#markdown-toc:before {
+  content: "本文目录";
+  font-weight: bold;
+}
+ul#markdown-toc {
+  display: none;
+  list-style: none;
+  float: left;
+  @include shadow-box;
+  background-color: white;
+}
+.blog-index #markdown-toc {
+  display: none;
+}

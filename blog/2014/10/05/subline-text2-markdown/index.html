@@ -23,10 +23,12 @@
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="飘飘白云" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script -->
+  <script src="//libs.baidu.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="/javascripts/open-in-blank.js"></script>
 
   
 
@@ -46,7 +48,7 @@
   
 </ul>
   
-<form action="http://www.bing.com/search" method="get">
+<form action="https://wen.lu/search" method="get">
   <fieldset role="search">
     <input type="hidden" name="q" value="site:kesalin.github.io" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
@@ -87,40 +89,62 @@
   </header>
 
 
-<div class="entry-content"><h2>简介</h2>
-
+<div class="entry-content"><h2 id="section">简介</h2>
 <p>本文介绍如何在 Subline Text 2 中安装 Markdown 插件。</p>
 
 <!--more-->
 
-
-<h2>步骤</h2>
+<h2 id="section-1">步骤</h2>
 
 <ol>
-<li><p>按 ctrl + ` 调出 console；</p></li>
-<li><p>粘贴以下代码到底部命令行并回车：</p>
+  <li>
+    <p>按 ctrl + ` 调出 console；  </p>
+  </li>
+  <li>
+    <p>粘贴以下代码到底部命令行并回车： </p>
 
-<p> <code>
-     import urllib2,os;pf=&lsquo;Package Control.sublime-package&rsquo;;ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),&lsquo;wb&rsquo;).write(urllib2.urlopen(&lsquo;<a href="http://sublime.wbond.net/">http://sublime.wbond.net/</a>&rsquo;+pf.replace(&lsquo; &rsquo;,&lsquo;%20&rsquo;)).read())
- </code></p></li>
-<li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
-
-<blockquote><p>Please restart Sublime Text to finish installation</p></blockquote></li>
-<li><p>然后重启 Subline Text 2，这时在菜单 Perferences -> package settings 中会出现 package control 项；</p></li>
-<li><p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；</p></li>
-<li><p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p></li>
-<li><p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p></li>
-<li><p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；</p></li>
-<li><p>选择菜单 Tools -> Build System -> Markdown，然后选择 Tools -> Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p></li>
-<li><p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。</p></li>
+    <p><code>
+     import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+ </code>  </p>
+  </li>
+  <li>
+    <p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：<br />
+&gt; Please restart Sublime Text to finish installation   </p>
+  </li>
+  <li>
+    <p>然后重启 Subline Text 2，这时在菜单 Perferences -&gt; package settings 中会出现 package control 项；  </p>
+  </li>
+  <li>
+    <p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；  </p>
+  </li>
+  <li>
+    <p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p>
+  </li>
+  <li>
+    <p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p>
+  </li>
+  <li>
+    <p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；  </p>
+  </li>
+  <li>
+    <p>选择菜单 Tools -&gt; Build System -&gt; Markdown，然后选择 Tools -&gt; Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p>
+  </li>
+  <li>
+    <p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。 </p>
+  </li>
 </ol>
 
-
 <hr />
+<p>补充：</p>
 
-<p>补充：  <br/>
-1. Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；
-2. 或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p>
+<ol>
+  <li>
+    <p>Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；  </p>
+  </li>
+  <li>
+    <p>或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p>
+  </li>
+</ol>
 </div>
 
 
@@ -166,7 +190,7 @@
 		作者： <A href="http://kesalin.github.io/">飘飘白云/罗朝辉</A> <BR> 
 		出处： <A href="http://kesalin.github.io/">http://kesalin.github.io/</A> 
 		<BR>本文基于<a target="_blank" title="Creative Commons Attribution 2.5 China Mainland License" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">署名-非商业性使用-相同方式共享 2.5 中国大陆</a>许可协议发布
-		<BR>欢迎转载，但不得用于商业目的，转载时必须保留本文完整，并保留署名<a href="http://kesalin.github.io/">飘飘白云/罗朝辉</a>与<a href="http://kesalin.github.io/">出处</a>)。 
+		<BR>欢迎转载，但不得用于商业目的，转载时必须保留本文完整，并保留署名<a href="http://kesalin.github.io/">飘飘白云/罗朝辉</a>与<a href="http://kesalin.github.io/">出处</a>。 
 	</DIV>
 </DIV> 
 
@@ -267,7 +291,7 @@ UY END &#8211;>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/10/12/export-blog-using-python-on-windows/">CSDN博客导出工具</a>
+        <a href="/blog/2014/10/12/export-blog-using-python-on-windows/">用Python编写博客导出工具</a>
       </li>
     
       <li class="post">
@@ -319,7 +343,6 @@ UY END &#8211;>
 
 </footer>
   
-
 
 
 

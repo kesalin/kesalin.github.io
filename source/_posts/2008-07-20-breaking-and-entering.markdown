@@ -5,7 +5,7 @@ date: 2008-07-20 17:36:00
 comments: true
 categories: [书评影评]
 tags: [影评]
-description: "稻草狗"
+description: 余影绕心
 keywords: 稻草狗, 解构生活
 ---
 

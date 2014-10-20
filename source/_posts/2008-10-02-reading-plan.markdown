@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "读书计划"
+title: "阅读计划"
 date: 2008-10-02 22:10:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念]
-description: "读书计划"
-keywords: 读书计划
+description: 阅读计划
+keywords: 阅读计划
 ---
 
 大约半年前突然想起要立个一年读十本书的计划来着，当时其实是想在这后半年多啃几本吧。可这半年差不多要过去了，年底也已然很近了,这个后半个想法似乎似乎无法很好地兑现了，虽然全年的目标是达到了，可还是有些无法释怀的感觉。

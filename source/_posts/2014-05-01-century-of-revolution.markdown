@@ -5,7 +5,7 @@ date: 2014-05-01 20:33:46
 comments: true
 categories: [书评影评]
 tags: [影评, 历史]
-description: "中国，一个世纪的革命"
+description: 中国，一个世纪的革命
 keywords: 历史, 中国革命
 ---
 

@@ -5,7 +5,7 @@ date: 2006-10-29 18:19:00
 comments: true
 categories: [碎碎念]
 tags: [日本]
-description: 日本
+description: 杂乱的日本映象
 keywords: 日本
 ---
 

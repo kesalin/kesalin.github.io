@@ -5,7 +5,7 @@ date: 2008-11-11 23:52:25 +0800
 comments: true
 categories: [碎碎念]
 tags: [碎碎念]
-description: "碎碎念"
+description: 照顾好自己
 keywords: 心情
 ---
 

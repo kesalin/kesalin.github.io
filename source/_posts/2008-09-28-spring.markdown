@@ -5,7 +5,7 @@ date: 2008-09-28 15:01:00
 comments: true
 categories: [书评影评]
 tags: [影评]
-description: "《立春》憾！"
+description: 《立春》憾！
 keywords: 立春
 ---
 

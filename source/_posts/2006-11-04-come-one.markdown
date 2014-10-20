@@ -5,7 +5,7 @@ date: 2006-11-04 21:49:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念]
-description: 勇气
+description: 道路很多，要有勇气去尝试
 keywords: 勇气
 ---
 

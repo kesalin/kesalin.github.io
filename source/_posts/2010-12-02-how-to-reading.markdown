@@ -5,7 +5,7 @@ date: 2010-12-02 23:26:31 +0800
 comments: true
 categories: [书评影评]
 tags: [书评, 方法论]
-description: "你知道如何读书么？"
+description: 你知道如何读书么？
 keywords: 读书, 阅读方法
 ---
 

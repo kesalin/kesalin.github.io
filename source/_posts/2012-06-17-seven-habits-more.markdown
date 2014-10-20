@@ -5,7 +5,7 @@ date: 2012-06-17 11:54:02 +0800
 comments: true
 categories: [书评影评]
 tags: [书评]
-description: "高效能人士的七个习惯"
+description: 高效能人士的七个习惯
 keywords: 高效能人士的七个习惯
 ---
 

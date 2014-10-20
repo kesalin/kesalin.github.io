@@ -5,7 +5,7 @@ date: 2013-05-16 19:42:38
 comments: true
 categories: [书评影评]
 tags: [书评, 思维]
-description: "那个推销的小伙子《影响力》你一定读过！"
+description: 那个推销的小伙子《影响力》你一定读过！
 keywords: 影响力, 推销
 ---
 

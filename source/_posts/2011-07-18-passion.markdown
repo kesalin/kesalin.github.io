@@ -5,7 +5,7 @@ date: 2011-07-18 22:21:42 +0800
 comments: true
 categories: [碎碎念]
 tags: [碎碎念]
-description: "找回使命感，重燃激情"
+description: 找回使命感，重燃激情
 keywords: 激情, 使命感
 ---
 

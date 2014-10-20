@@ -5,7 +5,7 @@ date: 2008-10-09 23:33:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念, 心情]
-description: "心情"
+description: 没理由不奋斗
 keywords: 心情, 奋斗
 ---
 

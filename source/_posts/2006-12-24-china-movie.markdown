@@ -5,7 +5,7 @@ date: 2006-12-24 14:14:00
 comments: true
 categories: [书评影评]
 tags: [影评]
-description: 国产大片
+description: 国产大片的悲哀
 keywords: 国产大片
 ---
 

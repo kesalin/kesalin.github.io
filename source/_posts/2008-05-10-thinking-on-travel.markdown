@@ -5,7 +5,7 @@ date: 2008-05-10 09:16:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念, 思维]
-description: "旅途中的思考"
+description: 旅途中的思考
 keywords: 思维
 ---
 

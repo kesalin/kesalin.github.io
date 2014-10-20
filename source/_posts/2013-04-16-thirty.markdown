@@ -5,7 +5,7 @@ date: 2013-04-16 18:31:42 +0800
 comments: true
 categories: [碎碎念]
 tags: [碎碎念, 心情]
-description: "还没二够，就奔三了"
+description: 还没二够，就奔三了
 keywords: 奔三
 ---
 

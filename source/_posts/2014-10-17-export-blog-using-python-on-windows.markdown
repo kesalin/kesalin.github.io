@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "CSDN博客导出工具"
+title: "用Python编写博客导出工具"
 date: 2014-10-12 08:35:02 +0800
 comments: true
 categories: [工具软件, 软件开发]
 tags: [Python, 工具]
-description: "CSDN博客导出工具" 
+description: 用Python编写博客导出工具
 keywords: 博客导出工具, Python 
 ---
 
@@ -84,7 +84,7 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 
 * 获取页面链接的代码：
 
-``` python
+``` python 获取所有的页面的 url https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
 		def getPageUrlList(url):
 		    # 获取所有的页面的 url
 		    request = urllib2.Request(url, None, header)

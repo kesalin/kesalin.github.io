@@ -5,7 +5,7 @@ date: 2012-06-30 22:46:01 +0800
 comments: true
 categories: [社会杂谈]
 tags: [杂谈]
-description: "大宋末年"
+description: 大宋末年
 keywords: 天朝
 ---
 

@@ -5,7 +5,7 @@ date: 2006-12-30 01:03:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念]
-description: 年终总结
+description: 2006：写在年末
 keywords: 年终总结
 ---
 

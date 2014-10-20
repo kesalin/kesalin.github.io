@@ -5,7 +5,7 @@ date: 2014-10-12 08:35:02 +0800
 comments: true
 categories: [读书笔记]
 tags: [思维, 笔记, 批判性思维]
-description: "批判性思维" 
+description: 学会提问：批判性思维指南
 keywords: 批判性思维 
 ---
 

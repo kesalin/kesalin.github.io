@@ -5,7 +5,7 @@ date: 2007-07-12 23:04:00
 comments: true
 categories: [书评影评]
 tags: [影评]
-description: 电影推荐
+description: 值得一看的电影
 keywords: 电影推荐
 ---
 

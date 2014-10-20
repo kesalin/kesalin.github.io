@@ -5,7 +5,7 @@ date: 2014-04-06 22:16:00
 comments: true
 categories: [心智思维]
 tags: [书评, 思维]
-description: "关于成就的那些事"
+description: 关于成就的那些事
 keywords: 成就, 一万小时理论
 ---
 

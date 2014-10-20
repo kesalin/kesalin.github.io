@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《活着》"
+title: "活着"
 date: 2006-11-18 13:52:00
 comments: true
 categories: [书评影评]

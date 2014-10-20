@@ -5,7 +5,7 @@ date: 2014-10-05 22:35:02 +0800
 comments: true
 categories: [工具软件]
 tags: [工具]
-description: "Subline Text 2 安装 Markdown 插件" 
+description: Subline Text 2 安装 Markdown 插件
 keywords: Markdown, Subline Text 
 ---
 
@@ -42,6 +42,8 @@ keywords: Markdown, Subline Text
 10. Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。 
 
 ---
-补充：    
-1. Mac 系统下可以安装Markdown编辑工具 [Macdown](http://macdown.uranusjr.com/) ；
+补充：
+
+1. Mac 系统下可以安装Markdown编辑工具 [Macdown](http://macdown.uranusjr.com/) ；  
+
 2. 或直接使用在线Markdown编辑工具：[mahua](http://mahua.jser.me/) 。

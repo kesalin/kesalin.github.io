@@ -5,8 +5,8 @@ date: 2008-08-01 23:47:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念, 心情]
-description: 
-keywords: 
+description: 孤寂是一种性格
+keywords: 心情, 孤寂
 ---
 
 女人问过我，你寂寞么？  

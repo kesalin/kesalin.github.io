@@ -5,7 +5,7 @@ date: 2006-10-14 14:17:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念]
-description: 梦想
+description: 我向往的地方
 keywords: 梦想
 ---
 

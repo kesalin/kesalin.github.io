@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《我叫刘跃进》"
+title: "我叫刘跃进"
 date: 2008-02-03 15:28:00
 comments: true
 categories: [书评影评]

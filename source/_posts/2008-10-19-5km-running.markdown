@@ -5,7 +5,7 @@ date: 2008-10-19 20:37:00
 comments: true
 categories: [碎碎念]
 tags: [碎碎念, 锻炼]
-description: 跑步
+description: 5公里跑
 keywords: 跑步
 ---
 

@@ -5,7 +5,7 @@ date: 2014-01-05 19:36:44
 comments: true
 categories: [书评影评]
 tags: [书评, 回忆]
-description: "书评：致逝去的这一年"
+description: 书评：致逝去的这一年
 keywords: 书评, 年度总结
 ---
 

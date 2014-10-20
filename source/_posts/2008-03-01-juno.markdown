@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "触心的《Juno》"
+title: "触心的《朱诺》"
 date: 2008-03-01 22:39:00
 comments: true
 categories: [书评影评]

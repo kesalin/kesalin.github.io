@@ -5,7 +5,7 @@ date: 2014-10-08 20:49:18 +0800
 comments: true
 categories: [心智思维]
 tags: [思维]
-description: "可证伪性" 
+description: 科学理论之可证伪性
 keywords: 可证伪性 
 ---
 

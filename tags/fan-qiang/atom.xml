@@ -4,7 +4,7 @@
   <title><![CDATA[标签：翻墙 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/fan-qiang/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-20T22:29:17+08:00</updated>
+  <updated>2014-10-20T22:33:42+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -20,11 +20,14 @@
     <id>http://kesalin.github.io/blog/2014/10/12/install-tor</id>
     <content type="html"><![CDATA[<h3 id="section">安装</h3>
 
-<p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色。好在洋葱路由Tor发布4.0版本了，使用了新的穿墙术：meek ，推荐大家使用：</p>
+<p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色啊。好在洋葱路由Tor发布4.0版本，使用了新的穿墙术：Meek，可以简单方便地翻墙了。特推荐大家使用。</p>
+
+<!--more-->
 
 <ul>
   <li>Ubuntu 64：<a href="http://pan.baidu.com/s/1kTspWhT">下载链接</a> 提取密码：2p56</li>
   <li>Windows 64：<a href="http://pan.baidu.com/s/1pJqLPdp">下载链接</a> 提取密码: 5y2r</li>
+  <li>Mac OX：<a href="http://pan.baidu.com/s/1mg1bwHM">下载链接</a> 提取密码: 9fxx</li>
   <li>有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。</li>
   <li>官网：<a href="https://www.torproject.org/">https://www.torproject.org/</a></li>
 </ul>
@@ -69,9 +72,9 @@
 <pre><code>（1）国内IP --&gt;（2）国外云服务 --&gt;（3）国外流量混淆服务器 --&gt;（4）目的网站。
 </code></pre>
 
-<p>步骤（1）是在国内是受监控的IP，步骤（3）是在国外的流量混淆服务以达到隐藏真实IP身份的目的，这些服务器已经被GFW挡住了。</p>
+<p>步骤（1）是在国内是受监控的IP，步骤（3）是在国外的流量混淆服务以达到隐藏真实IP身份的目的，这些服务器已经被GFW挡住了。通过步骤（2）国外的云服务中转则可以达到国内IP访问国外流量混淆服务器，进而访问目的网站的目的。</p>
 
-<p>通过步骤（2）国外的云服务中转则可以达到国内IP访问国外流量混淆服务器，进而访问目的网站的目的。由于亚马逊以及微软的云服务在国内使用广泛，短期内被墙的可能性比较低，因此这个方法可以用上一阵子了。</p>
+<p>由于亚马逊以及微软的云服务在国内使用广泛，短期内被墙的可能性比较低，因此这个方法可以用上一阵子了。</p>
 ]]></content>
   </entry>
   

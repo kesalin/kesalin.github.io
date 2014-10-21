@@ -14,11 +14,12 @@ keywords: 翻墙, Tor, 洋葱路由
 最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色啊。好在洋葱路由Tor发布4.0版本，使用了新的穿墙术：Meek，可以简单方便地翻墙了。特推荐大家使用。
 
 <!--more-->
+Tor下载（请大家多做备份，广播种。）：
 
-* Ubuntu 64：[下载链接](http://pan.baidu.com/s/1kTspWhT) 提取密码：2p56
-* Windows 64：[下载链接](http://pan.baidu.com/s/1pJqLPdp) 提取密码: 5y2r
+* Windows（8, 7, Vista, and XP）：[下载链接](http://pan.baidu.com/s/1pJqLPdp) 提取密码: 5y2r
+* Linux, Unix, BSD, Ubuntu (64-Bit)：[下载链接](http://pan.baidu.com/s/1kTspWhT) 提取密码：2p56
+* Linux, Unix, BSD, Ubuntu (32-Bit)：[下载链接](http://pan.baidu.com/s/1pJjuu8r) 提取密码：tcmo
 * Mac OX：[下载链接](http://pan.baidu.com/s/1mg1bwHM) 提取密码: 9fxx
-* 有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。
 * 官网：[https://www.torproject.org/](https://www.torproject.org/)
 
 <br/>

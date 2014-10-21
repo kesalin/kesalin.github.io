@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://kesalin.github.io/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-21T08:02:26+08:00</updated>
+  <updated>2014-10-21T08:04:05+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -18,21 +18,23 @@
     <link href="http://kesalin.github.io/blog/2014/10/20/install-tor/"/>
     <updated>2014-10-20T20:55:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/20/install-tor</id>
-    <content type="html"><![CDATA[<h3 id="section">安装</h3>
+    <content type="html"><![CDATA[<h3>安装</h3>
 
 <p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色啊。好在洋葱路由Tor发布4.0版本，使用了新的穿墙术：Meek，可以简单方便地翻墙了。特推荐大家使用。</p>
 
 <!--more-->
 
+
 <ul>
-  <li>Ubuntu 64：<a href="http://pan.baidu.com/s/1kTspWhT">下载链接</a> 提取密码：2p56</li>
-  <li>Windows 64：<a href="http://pan.baidu.com/s/1pJqLPdp">下载链接</a> 提取密码: 5y2r</li>
-  <li>Mac OX：<a href="http://pan.baidu.com/s/1mg1bwHM">下载链接</a> 提取密码: 9fxx</li>
-  <li>有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。</li>
-  <li>官网：<a href="https://www.torproject.org/">https://www.torproject.org/</a></li>
+<li>Ubuntu 64：<a href="http://pan.baidu.com/s/1kTspWhT">下载链接</a> 提取密码：2p56</li>
+<li>Windows 64：<a href="http://pan.baidu.com/s/1pJqLPdp">下载链接</a> 提取密码: 5y2r</li>
+<li>Mac OX：<a href="http://pan.baidu.com/s/1mg1bwHM">下载链接</a> 提取密码: 9fxx</li>
+<li>有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。</li>
+<li>官网：<a href="https://www.torproject.org/">https://www.torproject.org/</a></li>
 </ul>
 
-<p><br />
+
+<p><br/>
 下载解压安装，Ubuntu 系统下只需要运行解压目录下的 start-tor-browser 脚本即可；</p>
 
 <p>安装过程中选择 Open Settings（设置）：</p>
@@ -57,16 +59,17 @@
 
 <p><img src="http://i.imgur.com/VqRuhJX.png?1" alt="穿墙而出" /></p>
 
-<h3 id="section-1">翻墙之后做什么</h3>
+<h3>翻墙之后做什么</h3>
 
 <p>很多人翻墙之后不知道做什么，处于一种利器在手，却茫然不知所用的无序感。下面就介绍一个网站，专门针对这种症状下药：<a href="http://fanqianghou.com/">翻墙后看什么</a></p>
 
 <p>注：<a href="http://fanqianghou.com/">翻墙后看什么</a>上提供的网站链接并不保证那些网站上内容的真实和客观性，需要看官自己鉴定判别(这也是为什么要学习<a href="http://kesalin.github.io/blog/2014/10/12/critical-thinking/">批判性思维</a>的理由之一)。它们只是突破国内一面倒的信息轰炸与封锁，提供了另一面的信息，会兼听则明嘛。</p>
 
-<h3 id="section-2">补充</h3>
+<h3>补充</h3>
+
 <p>对于喜欢使用 Google 的朋友，不用翻墙也可以使用这个<a href="https://wen.lu/">链接</a>访问 Google 的搜索服务，可以将链接<a href="https://wen.lu/">https://wen.lu/</a>添加到收藏夹。</p>
 
-<h3 id="meek-">Meek 简介</h3>
+<h3>Meek 简介</h3>
 
 <p>非技术控或对翻墙原理不感兴趣的朋友，就不用看下面的内容了。</p>
 
@@ -86,7 +89,8 @@
     <link href="http://kesalin.github.io/blog/2014/10/12/export-blog-using-python-on-windows/"/>
     <updated>2014-10-12T08:35:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/12/export-blog-using-python-on-windows</id>
-    <content type="html"><![CDATA[<h3 id="section">写在前面的话</h3>
+    <content type="html"><![CDATA[<h3>写在前面的话</h3>
+
 <p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
 
 <p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
@@ -95,57 +99,64 @@
 
 <!--more-->
 
+
 <p>考虑到大部分非程序员使用Windows系统，下面将介绍在Windows下如何编写这个工具。</p>
 
-<h3 id="section-1">下载工具</h3>
+<h3>下载工具</h3>
+
 <p>在 Windows 下安装Python开发环境（Linux/Mac下用pip安装相应包即可，程序员自己解决咯）：</p>
 
-<p><strong>Python 2.7.3</strong><br />
-请安装这个版本，更高版本的Python与一些库不兼容。<br />
-<a href="https://www.python.org/download/releases/2.7.3/">下载页面</a><br />
+<p><strong>Python 2.7.3</strong><br/>
+请安装这个版本，更高版本的Python与一些库不兼容。<br/>
+<a href="https://www.python.org/download/releases/2.7.3/">下载页面</a><br/>
 下载完毕双击可执行文件进行安装，默认安装在C:\Python2.7。</p>
 
-<p><strong>six</strong><br />
+<p><strong>six</strong><br/>
 <a href="https://pypi.python.org/pypi/six">下载页面</a>
 下载完毕，解压到Python安装目录下，如C:\Python2.7\six-1.8.0目录下。</p>
 
-<p><strong>BeautifulSoup 4.3.2</strong><br />
+<p><strong>BeautifulSoup 4.3.2</strong><br/>
 <a href="http://www.crummy.com/software/BeautifulSoup/bs4/download/">下载页面</a>，
 下载完毕，解压到Python安装目录下，如C:\Python2.7\BeautifulSoup目录下。</p>
 
-<p><strong>html5lib</strong><br />
+<p><strong>html5lib</strong><br/>
 <a href="https://pypi.python.org/pypi/html5lib">下载页面</a>
 下载完毕，解压到Python安装目录下，如C:\Python2.7\html5lib-0.999目录下。</p>
 
-<h3 id="section-2">安装工具</h3>
-<p>Windows下启动命令行，依次进入如下目录，执行setup.py install进行安装：  </p>
+<h3>安装工具</h3>
+
+<p>Windows下启动命令行，依次进入如下目录，执行setup.py install进行安装：</p>
 
 <pre><code>C:\Python2.7\six-1.8.0&gt;setup.py install  
 C:\Python2.7\html5lib-0.999&gt;setup.py install  
 C:\Python2.7\BeautifulSoup&gt;setup.py install  
 </code></pre>
 
-<h3 id="section-3">参考文档</h3>
-<p><a href="https://docs.python.org/2/">Python 2.X文档</a><br />
-<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html">BeautifulSoup文档</a><br />
-<a href="http://www.regexlab.com/zh/regref.htm">正则表达式文档</a><br />
+<h3>参考文档</h3>
+
+<p><a href="https://docs.python.org/2/">Python 2.X文档</a><br/>
+<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html">BeautifulSoup文档</a><br/>
+<a href="http://www.regexlab.com/zh/regref.htm">正则表达式文档</a><br/>
 <a href="http://tool.oschina.net/regex">正则表达式在线测试</a></p>
 
-<h3 id="python">用到的Python语法</h3>
+<h3>用到的Python语法</h3>
+
 <p>这个工具只用到了一些基本的Python语法，如果你没有Python基础，稍微了解一下如下博文是很有好处的。</p>
 
 <ul>
-  <li>string: 字符串操作，参考<a href="http://www.cnblogs.com/sevenyuan/archive/2010/12/10/1902145.html">python: string的操作函数</a></li>
-  <li>list: 列表操作，参考<a href="http://www.cnblogs.com/zhengyuxin/articles/1938300.html">Python list 操作</a></li>
-  <li>dictionary: 字典操作，参考<a href="http://www.cnblogs.com/yangyongzhi/archive/2012/09/17/2688326.html">Python中dict详解</a></li>
-  <li>datetime: 日期时间，参考<a href="http://www.cnblogs.com/lhj588/archive/2012/04/23/2466653.html">python datetime处理时间</a></li>
+<li>string: 字符串操作，参考<a href="http://www.cnblogs.com/sevenyuan/archive/2010/12/10/1902145.html">python: string的操作函数</a></li>
+<li>list: 列表操作，参考<a href="http://www.cnblogs.com/zhengyuxin/articles/1938300.html">Python list 操作</a></li>
+<li>dictionary: 字典操作，参考<a href="http://www.cnblogs.com/yangyongzhi/archive/2012/09/17/2688326.html">Python中dict详解</a></li>
+<li>datetime: 日期时间，参考<a href="http://www.cnblogs.com/lhj588/archive/2012/04/23/2466653.html">python datetime处理时间</a></li>
 </ul>
 
-<p><br /></p>
 
-<h3 id="section-4">编写博客导出工具</h3>
+<p><br/></p>
 
-<h4 id="section-5">分析</h4>
+<h3>编写博客导出工具</h3>
+
+<h4>分析</h4>
+
 <p>首先来分析这样一个工具的需求：</p>
 
 <pre><code>导出所有CSDN博客文章为Markdown文本。
@@ -159,270 +170,289 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>针对第一步：如何获取博客文章呢？</p>
 
-<p>打开任何一个CSDN博客，我们都可以看到下方的页面导航显示“XXX条数据 共XXX页 1 2 3 … 尾页”，我们从这个地方入手考虑。每个页面上都会显示属于该页的文章标题及文章链接，如果我们依次访问这些页面链接，就能从每个页面链接中找出属于该页面的文章标题及文章链接。这样所有的文章标题以及文章链接就都获取到了，有了这些文章链接，我们就能获取对应文章的html内容，然后通过解析这些html页面来生成相应Markdown文本了。</p>
+<p>打开任何一个CSDN博客，我们都可以看到下方的页面导航显示“XXX条数据 共XXX页 1 2 3 &hellip; 尾页”，我们从这个地方入手考虑。每个页面上都会显示属于该页的文章标题及文章链接，如果我们依次访问这些页面链接，就能从每个页面链接中找出属于该页面的文章标题及文章链接。这样所有的文章标题以及文章链接就都获取到了，有了这些文章链接，我们就能获取对应文章的html内容，然后通过解析这些html页面来生成相应Markdown文本了。</p>
 
-<h4 id="section-6">实现</h4>
+<h4>实现</h4>
+
 <p>从上面的分析可以看出，首先我们需要根据首页获取所有的页面链接，然后遍历每一个页面链接来获取文章链接。</p>
 
 <ul>
-  <li>获取页面链接的代码：</li>
+<li>获取页面链接的代码：</li>
 </ul>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>获取所有的页面的 url</span><a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class="line">    <span class="c"># 获取所有的页面的 url</span>
-</span><span class="line">    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class="line">    <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class="line">    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</span><span class="line">
-</span><span class="line">    <span class="c">#print data</span>
-</span><span class="line">    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
-</span><span class="line">    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
-</span><span class="line">    <span class="k">for</span> <span class="n">pageList</span> <span class="ow">in</span> <span class="n">pageListDocs</span><span class="p">:</span>
-</span><span class="line">        <span class="n">hrefDocs</span> <span class="o">=</span> <span class="n">pageList</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">)</span>
-</span><span class="line">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class="line">            <span class="n">lastArticleHrefDoc</span> <span class="o">=</span> <span class="n">hrefDocs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
-</span><span class="line">            <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="n">lastArticleHrefDoc</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class="line">        <span class="k">return</span> <span class="p">[]</span>
-</span><span class="line">
-</span><span class="line">    <span class="c">#print &quot; &gt; last page href:&quot; + lastArticleHref</span>
-</span><span class="line">    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
-</span><span class="line">    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class="line">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">lastPageNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span><span class="line">        <span class="n">pageUrl</span> <span class="o">=</span> <span class="n">urlInfo</span> <span class="o">+</span> <span class="s">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span><span class="line">        <span class="n">pageUrlList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
-</span><span class="line">        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt; page &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">pageUrl</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total pages: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pageUrlList</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-</span><span class="line">    <span class="k">return</span> <span class="n">pageUrlList</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>参数 url = “http://blog.csdn.net/” + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。</p>
+<figure class='code'><figcaption><span>获取所有的页面的 url</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 获取所有的页面的 url</span>
+</span><span class='line'>    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print data</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class='line'>    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">pageList</span> <span class="ow">in</span> <span class="n">pageListDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">hrefDocs</span> <span class="o">=</span> <span class="n">pageList</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">lastArticleHrefDoc</span> <span class="o">=</span> <span class="n">hrefDocs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+</span><span class='line'>            <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="n">lastArticleHrefDoc</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="p">[]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print &quot; &gt; last page href:&quot; + lastArticleHref</span>
+</span><span class='line'>    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+</span><span class='line'>    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">lastPageNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">pageUrl</span> <span class="o">=</span> <span class="n">urlInfo</span> <span class="o">+</span> <span class="s">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">pageUrlList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt; page &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">pageUrl</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total pages: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pageUrlList</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">pageUrlList</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>有了html页面内容，接下来就用BeautifulSoup来解析它。BeautifulSoup极大地减少了我们的工作量。我会详细在这里介绍它的使用，后面再次出现类似的解析就会从略了。soup.find_all(id=”papelist”) 将会查找html页面中所有id=”papelist”的tag，然后返回包含这些tag的list。对应 CSDN 博文页面来说，只有一处地方：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>papelist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;papelist&quot;</span> <span class="na">class=</span><span class="s">&quot;pagelist&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">	<span class="nt">&lt;span&gt;</span> 236条数据  共12页<span class="nt">&lt;/span&gt;</span>
-</span><span class="line">	<span class="nt">&lt;strong&gt;</span>1<span class="nt">&lt;/strong&gt;</span>
-</span><span class="line">	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
-</span><span class="line">	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/3&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
-</span><span class="line">	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/4&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
-</span><span class="line">	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/5&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
-</span><span class="line">	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
-</span><span class="line">	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>下一页<span class="nt">&lt;/a&gt;</span>
-</span><span class="line">	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/12&quot;</span><span class="nt">&gt;</span>尾页<span class="nt">&lt;/a&gt;</span>
-</span><span class="line"><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p></p>
+
+<p>参数 url = &ldquo;<a href="http://blog.csdn.net/">http://blog.csdn.net/</a>&rdquo; + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。</p>
+
+<p>有了html页面内容，接下来就用BeautifulSoup来解析它。BeautifulSoup极大地减少了我们的工作量。我会详细在这里介绍它的使用，后面再次出现类似的解析就会从略了。soup.find_all(id=&ldquo;papelist&rdquo;) 将会查找html页面中所有id=&ldquo;papelist&#8221;的tag，然后返回包含这些tag的list。对应 CSDN 博文页面来说，只有一处地方：</p>
+
+<figure class='code'><figcaption><span>papelist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;papelist&quot;</span> <span class="na">class=</span><span class="s">&quot;pagelist&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span&gt;</span> 236条数据  共12页<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;strong&gt;</span>1<span class="nt">&lt;/strong&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/3&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/4&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/5&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>下一页<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/12&quot;</span><span class="nt">&gt;</span>尾页<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>好，我们获得了papelist 的tag对象，通过这个tag对象我们能够找出尾页tag a对象，从这个tag a解析出对应的href属性，获得尾页的编号12，然后自己拼出所有page页面的访问url来，并保存在pageUrlList中返回。page页面的访问url形式示例如下：</p>
 
- 	&gt; page 1: http://blog.csdn.net/kesalin/article/list/1
+<pre><code>&gt; page 1: http://blog.csdn.net/kesalin/article/list/1
+</code></pre>
 
 <ul>
-  <li>根据page来获取文章链接的代码：</li>
+<li>根据page来获取文章链接的代码：</li>
 </ul>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>根据page来获取文章链接</span><a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-<span class="line-number">38</span>
-<span class="line-number">39</span>
-<span class="line-number">40</span>
-<span class="line-number">41</span>
-<span class="line-number">42</span>
-<span class="line-number">43</span>
-<span class="line-number">44</span>
-<span class="line-number">45</span>
-<span class="line-number">46</span>
-<span class="line-number">47</span>
-<span class="line-number">48</span>
-<span class="line-number">49</span>
-<span class="line-number">50</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class="line">    <span class="c"># 获取所有的文章的 url/title</span>
-</span><span class="line">    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
-</span><span class="line">    <span class="n">pageNum</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line">    <span class="k">global</span> <span class="n">gRetryCount</span>
-</span><span class="line">    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
-</span><span class="line">        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line">        <span class="n">pageNum</span> <span class="o">=</span> <span class="n">pageNum</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class="line">        <span class="n">pageNumStr</span> <span class="o">=</span> <span class="n">strPage</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageNum</span><span class="p">)</span>
-</span><span class="line">        <span class="k">print</span> <span class="n">pageNumStr</span>
-</span><span class="line">
-</span><span class="line">        <span class="k">while</span> <span class="n">retryCount</span> <span class="o">&lt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
-</span><span class="line">            <span class="k">try</span><span class="p">:</span>
-</span><span class="line">                <span class="n">retryCount</span> <span class="o">=</span> <span class="n">retryCount</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class="line">                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
-</span><span class="line">                <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class="line">                <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class="line">                <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">                <span class="c">#print data</span>
-</span><span class="line">                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">                <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
-</span><span class="line">                <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
-</span><span class="line">                <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
-</span><span class="line">                <span class="k">break</span>
-</span><span class="line">            <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-</span><span class="line">                <span class="k">print</span> <span class="s">&quot;getArticleList exception:</span><span class="si">%s</span><span class="s">, url:</span><span class="si">%s</span><span class="s">, retry count:</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">pageUrl</span><span class="p">,</span> <span class="n">retryCount</span><span class="p">)</span>
-</span><span class="line">                <span class="k">pass</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class="line">    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
-</span><span class="line">    <span class="k">for</span> <span class="n">articleListDoc</span> <span class="ow">in</span> <span class="n">articleListDocs</span><span class="p">:</span>
-</span><span class="line">        <span class="n">linkDocs</span> <span class="o">=</span> <span class="n">articleListDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_title&quot;</span><span class="p">)</span>
-</span><span class="line">        <span class="k">for</span> <span class="n">linkDoc</span> <span class="ow">in</span> <span class="n">linkDocs</span><span class="p">:</span>
-</span><span class="line">            <span class="c">#print linkDoc.prettify().encode(&#39;UTF-8&#39;)</span>
-</span><span class="line">            <span class="n">link</span> <span class="o">=</span> <span class="n">linkDoc</span><span class="o">.</span><span class="n">a</span>
-</span><span class="line">            <span class="n">url</span> <span class="o">=</span> <span class="n">link</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">            <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">            <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">            <span class="n">oneHref</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">url</span>
-</span><span class="line">            <span class="c">#log(&quot;   &gt; title:&quot; + title + &quot;, url:&quot; + oneHref)</span>
-</span><span class="line">            <span class="n">artices</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">oneHref</span><span class="p">,</span> <span class="n">title</span><span class="p">])</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total articles: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">artices</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-</span><span class="line">    <span class="k">return</span> <span class="n">artices</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<figure class='code'><figcaption><span>根据page来获取文章链接</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 获取所有的文章的 url/title</span>
+</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
+</span><span class='line'>    <span class="n">pageNum</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>        <span class="n">pageNum</span> <span class="o">=</span> <span class="n">pageNum</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="n">pageNumStr</span> <span class="o">=</span> <span class="n">strPage</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageNum</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">print</span> <span class="n">pageNumStr</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">while</span> <span class="n">retryCount</span> <span class="o">&lt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">try</span><span class="p">:</span>
+</span><span class='line'>                <span class="n">retryCount</span> <span class="o">=</span> <span class="n">retryCount</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class='line'>                <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>                <span class="c">#print data</span>
+</span><span class='line'>                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>                <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span><span class='line'>                <span class="k">break</span>
+</span><span class='line'>            <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+</span><span class='line'>                <span class="k">print</span> <span class="s">&quot;getArticleList exception:</span><span class="si">%s</span><span class="s">, url:</span><span class="si">%s</span><span class="s">, retry count:</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">pageUrl</span><span class="p">,</span> <span class="n">retryCount</span><span class="p">)</span>
+</span><span class='line'>                <span class="k">pass</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">articleListDoc</span> <span class="ow">in</span> <span class="n">articleListDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">linkDocs</span> <span class="o">=</span> <span class="n">articleListDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_title&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">for</span> <span class="n">linkDoc</span> <span class="ow">in</span> <span class="n">linkDocs</span><span class="p">:</span>
+</span><span class='line'>            <span class="c">#print linkDoc.prettify().encode(&#39;UTF-8&#39;)</span>
+</span><span class='line'>            <span class="n">link</span> <span class="o">=</span> <span class="n">linkDoc</span><span class="o">.</span><span class="n">a</span>
+</span><span class='line'>            <span class="n">url</span> <span class="o">=</span> <span class="n">link</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">oneHref</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">url</span>
+</span><span class='line'>            <span class="c">#log(&quot;   &gt; title:&quot; + title + &quot;, url:&quot; + oneHref)</span>
+</span><span class='line'>            <span class="n">artices</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">oneHref</span><span class="p">,</span> <span class="n">title</span><span class="p">])</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total articles: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">artices</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">artices</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
-</span><span class="line"><span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
-</span><span class="line"><span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>从page的html内容中查找置顶的文章（article_toplist）以及普通的文章（article_list）的tag对象，然后将这些tag保存到articleListDocs中。</p>
 
 <p>article_toplist示例：(article_list的格式是类似的)</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>article_toplist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;article_toplist&quot;</span> <span class="na">class=</span><span class="s">&quot;list&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item article_item&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;article_title&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ico ico_type_Original&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-</span><span class="line">            <span class="nt">&lt;h1&gt;</span>
-</span><span class="line">                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;link_title&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/details/10474007&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">                <span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>[置顶]<span class="nt">&lt;/font&gt;</span>
-</span><span class="line">                招聘：有兴趣做一个与Android对等的操作系统么？
-</span><span class="line">                <span class="nt">&lt;/a&gt;</span>
-</span><span class="line">                <span class="nt">&lt;/span&gt;</span>
-</span><span class="line">            <span class="nt">&lt;/h1&gt;</span>
-</span><span class="line">        <span class="nt">&lt;/div&gt;</span>
-</span><span class="line">        ... ...
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line">    ... ...
-</span><span class="line"><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<figure class='code'><figcaption><span>article_toplist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;article_toplist&quot;</span> <span class="na">class=</span><span class="s">&quot;list&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item article_item&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;article_title&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ico ico_type_Original&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;h1&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;link_title&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/details/10474007&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>[置顶]<span class="nt">&lt;/font&gt;</span>
+</span><span class='line'>                招聘：有兴趣做一个与Android对等的操作系统么？
+</span><span class='line'>                <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>        ... ...
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>    ... ...
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>然后遍历所有的保存到articleListDocs里的tag对象，从中解析出link_title的span tag对象保存到linkDocs中；然后从中解析出链接的url和标题，这里去掉了置顶文章标题中的“置顶”两字；最后将url和标题保存到artices列表中返回。artices列表中的每一项内容示例：</p>
 
@@ -431,202 +461,213 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </code></pre>
 
 <ul>
-  <li>根据文章链接获取文章html内容并解析转换为Markdown文本</li>
+<li>根据文章链接获取文章html内容并解析转换为Markdown文本</li>
 </ul>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>根据文章链接获取文章html内容并解析转换为Markdown文本</span><a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-<span class="line-number">38</span>
-<span class="line-number">39</span>
-<span class="line-number">40</span>
-<span class="line-number">41</span>
-<span class="line-number">42</span>
-<span class="line-number">43</span>
-<span class="line-number">44</span>
-<span class="line-number">45</span>
-<span class="line-number">46</span>
-<span class="line-number">47</span>
-<span class="line-number">48</span>
-<span class="line-number">49</span>
-<span class="line-number">50</span>
-<span class="line-number">51</span>
-<span class="line-number">52</span>
-<span class="line-number">53</span>
-<span class="line-number">54</span>
-<span class="line-number">55</span>
-<span class="line-number">56</span>
-<span class="line-number">57</span>
-<span class="line-number">58</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
-</span><span class="line">    <span class="c"># 下载文章，并保存为 markdown 格式</span>
-</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
-</span><span class="line">    <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class="line">    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class="line">    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class="line">    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-</span><span class="line">
-</span><span class="line">    <span class="k">global</span> <span class="n">gRetryCount</span>
-</span><span class="line">    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class="line">    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-</span><span class="line">        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
-</span><span class="line">            <span class="k">break</span>
-</span><span class="line">        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class="line">        <span class="k">try</span><span class="p">:</span>
-</span><span class="line">            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
-</span><span class="line">            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class="line">            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class="line">            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">            <span class="k">break</span>
-</span><span class="line">        <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
-</span><span class="line">            <span class="n">exstr</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
-</span><span class="line">            <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, retry: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;, error:&quot;</span> <span class="o">+</span> <span class="n">exstr</span><span class="p">)</span>
-</span><span class="line">            <span class="k">pass</span>
-</span><span class="line">
-</span><span class="line">    <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class="line">        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
-</span><span class="line">        <span class="k">return</span>
-</span><span class="line">
-</span><span class="line">    <span class="c">#print data</span>
-</span><span class="line">    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
-</span><span class="line">    <span class="n">titleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_title&quot;</span><span class="p">)</span>
-</span><span class="line">    <span class="k">for</span> <span class="n">titleDoc</span> <span class="ow">in</span> <span class="n">titleDocs</span><span class="p">:</span>
-</span><span class="line">        <span class="n">titleStr</span> <span class="o">=</span> <span class="n">titleDoc</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">        <span class="n">title</span> <span class="o">=</span> <span class="n">titleStr</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">        <span class="c">#log(&quot; &gt;&gt; title: &quot; + title)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
-</span><span class="line">    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
-</span><span class="line">        <span class="n">categoryDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_categories&quot;</span><span class="p">)</span>
-</span><span class="line">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categoryDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class="line">            <span class="n">categories</span> <span class="o">=</span> <span class="n">categoryDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">
-</span><span class="line">        <span class="n">postDateDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_postdate&quot;</span><span class="p">)</span>
-</span><span class="line">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">postDateDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class="line">            <span class="n">postDateStr</span> <span class="o">=</span> <span class="n">postDateDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class="line">            <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">postDateStr</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M&#39;</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">contentDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_content&quot;</span><span class="p">)</span>
-</span><span class="line">    <span class="k">for</span> <span class="n">contentDoc</span> <span class="ow">in</span> <span class="n">contentDocs</span><span class="p">:</span>
-</span><span class="line">        <span class="n">htmlContent</span> <span class="o">=</span> <span class="n">contentDoc</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class="line">        <span class="n">content</span> <span class="o">=</span> <span class="n">htmlContent2String</span><span class="p">(</span><span class="n">htmlContent</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">exportToMarkdown</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">postDate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<figure class='code'><figcaption><span>根据文章链接获取文章html内容并解析转换为Markdown文本</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 下载文章，并保存为 markdown 格式</span>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class='line'>    <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class='line'>    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">break</span>
+</span><span class='line'>        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="k">try</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class='line'>            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="k">break</span>
+</span><span class='line'>        <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">exstr</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, retry: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;, error:&quot;</span> <span class="o">+</span> <span class="n">exstr</span><span class="p">)</span>
+</span><span class='line'>            <span class="k">pass</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">return</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print data</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class='line'>    <span class="n">titleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_title&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">titleDoc</span> <span class="ow">in</span> <span class="n">titleDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">titleStr</span> <span class="o">=</span> <span class="n">titleDoc</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">title</span> <span class="o">=</span> <span class="n">titleStr</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>        <span class="c">#log(&quot; &gt;&gt; title: &quot; + title)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">categoryDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_categories&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categoryDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">categories</span> <span class="o">=</span> <span class="n">categoryDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">postDateDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_postdate&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">postDateDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">postDateStr</span> <span class="o">=</span> <span class="n">postDateDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">postDateStr</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">contentDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_content&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">contentDoc</span> <span class="ow">in</span> <span class="n">contentDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">htmlContent</span> <span class="o">=</span> <span class="n">contentDoc</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">content</span> <span class="o">=</span> <span class="n">htmlContent2String</span><span class="p">(</span><span class="n">htmlContent</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">exportToMarkdown</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">postDate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>转换html文档内容</span><a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">htmlContent2String</span><span class="p">(</span><span class="n">contentStr</span><span class="p">):</span>
-</span><span class="line">    <span class="n">patternImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;img.+?src=&quot;)(.+?)(&quot;.+ /&gt;)&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">patternHref</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;a.+?href=&quot;)(.+?)(&quot;.+?&gt;)(.+?)(&lt;/a&gt;)&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">patternRemoveHtml</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;&lt;/?[^&gt;]+&gt;&#39;</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternImg</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;![image_mark](\2)&#39;</span><span class="p">,</span> <span class="n">contentStr</span><span class="p">)</span>
-</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternHref</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;[\4](\2)&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
-</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">patternRemoveHtml</span><span class="p">,</span> <span class="s">r&#39;&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
-</span><span class="line">    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">decodeHtmlSpecialCharacter</span><span class="p">(</span><span class="n">resultContent</span><span class="p">)</span>
-</span><span class="line">    <span class="k">return</span> <span class="n">resultContent</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<figure class='code'><figcaption><span>转换html文档内容</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">htmlContent2String</span><span class="p">(</span><span class="n">contentStr</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">patternImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;img.+?src=&quot;)(.+?)(&quot;.+ /&gt;)&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">patternHref</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;a.+?href=&quot;)(.+?)(&quot;.+?&gt;)(.+?)(&lt;/a&gt;)&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">patternRemoveHtml</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;&lt;/?[^&gt;]+&gt;&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternImg</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;![image_mark](\2)&#39;</span><span class="p">,</span> <span class="n">contentStr</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternHref</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;[\4](\2)&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">patternRemoveHtml</span><span class="p">,</span> <span class="s">r&#39;&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">decodeHtmlSpecialCharacter</span><span class="p">(</span><span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">resultContent</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>目前仅仅是删除所有的html标签，并在函数decodeHtmlSpecialCharacter中转换转义字符。</p>
 
 <ul>
-  <li>生成Markdown文本文件</li>
+<li>生成Markdown文本文件</li>
 </ul>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>生成Markdown文本文件</span><a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="k">def</span> <span class="nf">exportToMarkdown</span><span class="p">(</span><span class="n">exportDir</span><span class="p">,</span> <span class="n">postdate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
-</span><span class="line">    <span class="n">titleDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">contentDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M:%S %z&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">filename</span> <span class="o">=</span> <span class="n">titleDate</span> <span class="o">+</span> <span class="s">&#39;-&#39;</span> <span class="o">+</span> <span class="n">title</span>
-</span><span class="line">    <span class="n">filename</span> <span class="o">=</span> <span class="n">repalceInvalidCharInFilename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-</span><span class="line">    <span class="n">filepath</span> <span class="o">=</span> <span class="n">exportDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s">&#39;.markdown&#39;</span>
-</span><span class="line">    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; save as &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line">    <span class="n">newFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&quot;utf8&quot;</span><span class="p">),</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;layout: post&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;title: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;date: &#39;</span> <span class="o">+</span> <span class="n">contentDate</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;comments: true&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;categories: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;tags: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;description: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;keywords: &#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class="line">    <span class="n">newFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<figure class='code'><figcaption><span>生成Markdown文本文件</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">exportToMarkdown</span><span class="p">(</span><span class="n">exportDir</span><span class="p">,</span> <span class="n">postdate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">titleDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">contentDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M:%S %z&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">titleDate</span> <span class="o">+</span> <span class="s">&#39;-&#39;</span> <span class="o">+</span> <span class="n">title</span>
+</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">repalceInvalidCharInFilename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">filepath</span> <span class="o">=</span> <span class="n">exportDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s">&#39;.markdown&#39;</span>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; save as &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">newFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&quot;utf8&quot;</span><span class="p">),</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;layout: post&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;title: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;date: &#39;</span> <span class="o">+</span> <span class="n">contentDate</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;comments: true&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;categories: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;tags: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;description: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;keywords: &#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>生成Markdown文本文件就很简单了，在这里我需要生成github page用的Markdown博文形式，所以内容如此，你可以根据你的需要修改为其他形式的文本内容。</p>
 ]]></content>
@@ -637,22 +678,21 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     <link href="http://kesalin.github.io/blog/2014/10/12/critical-thinking/"/>
     <updated>2014-10-12T08:35:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/12/critical-thinking</id>
-    <content type="html"><![CDATA[<h3 id="section">写在前面的话：</h3>
+    <content type="html"><![CDATA[<h3>写在前面的话：</h3>
+
 <ol>
-  <li>
-    <p>本笔记结合《学问提问：批判性思维指南》<a href="http://book.douban.com/subject/1504957/">第七版</a>，<a href="http://book.douban.com/subject/20428922/">第十版</a>，<a href="http://blog.vsharing.com/qsxiao">萧秋水</a>的<a href="http://book.douban.com/review/4474858/">PPT形式的笔记摘要</a>，以及《<a href="http://book.douban.com/subject/7057936/">批判性思维.带你走出思维的误区</a>》整理而成，在此对以上作者表示感谢。</p>
-  </li>
-  <li>
-    <p>关于《学问提问：批判性思维指南》的版本选择。<br />
-个人推荐<a href="http://book.douban.com/subject/20428922/">第十版</a>，翻译尚可，内容更完善。</p>
-  </li>
+<li><p>本笔记结合《学问提问：批判性思维指南》<a href="http://book.douban.com/subject/1504957/">第七版</a>，<a href="http://book.douban.com/subject/20428922/">第十版</a>，<a href="http://blog.vsharing.com/qsxiao">萧秋水</a>的<a href="http://book.douban.com/review/4474858/">PPT形式的笔记摘要</a>，以及《<a href="http://book.douban.com/subject/7057936/">批判性思维.带你走出思维的误区</a>》整理而成，在此对以上作者表示感谢。</p></li>
+<li><p>关于《学问提问：批判性思维指南》的版本选择。<br/>
+个人推荐<a href="http://book.douban.com/subject/20428922/">第十版</a>，翻译尚可，内容更完善。</p></li>
 </ol>
+
 
 <hr />
 
-<h2 id="section-1">为什么要具备批判性思维？</h2>
+<h2>为什么要具备批判性思维？</h2>
 
-<h3 id="section-2">获取真相</h3>
+<h3>获取真相</h3>
+
 <p>在一个被泛滥信息包围的时代，我们需要从各种真真假假的信息中获取真相：</p>
 
 <pre><code>* 电视上说
@@ -664,7 +704,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * ......
 </code></pre>
 
-<h3 id="section-3">培养会独立思考的公民</h3>
+<h3>培养会独立思考的公民</h3>
+
 <p>中国要真正进入现代文明，必须培养合格的公民。</p>
 
 <pre><code>* 群众：依赖权威和力量解决问题
@@ -680,6 +721,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <!--more-->
 
+
 <p>只有公众都能批判性地思考问题，民主制度实行起来才会更加顺利。</p>
 
 <pre><code>* 我们不能头脑空空由人摆布。
@@ -688,7 +730,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 我们需要靠自己去问为什么。
 </code></pre>
 
-<h2 id="section-4">什么是批判性思维</h2>
+<h2>什么是批判性思维</h2>
+
 <p>批判性思维就是审慎地运用逻辑推理去评估一个论述的质量。</p>
 
 <p>主要涵盖如下方面：</p>
@@ -700,7 +743,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>批判性思维的运用：对自己所耳闻目睹的一切系统地进行评判。</p>
 
-<h3 id="section-5">两种思维方式</h3>
+<h3>两种思维方式</h3>
 
 <pre><code>* 海绵式思维：
     * 对所接触到的信息深信不疑，而不进行评判与取舍，一古脑被动地接收；
@@ -715,7 +758,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
         * 针对某一特定主题我有没有在别人合理说法的基础上形成自己的结论？
 </code></pre>
 
-<h3 id="section-6">两种批判性思维</h3>
+<h3>两种批判性思维</h3>
+
 <p>我们作的每一个判断都有自己的个人印记：经历、价值观和文化的习惯。通常我们对这些已有的观点怀有感情，如果我们不对外部怪异甚至危险的观点保持开放心态，就无法吸取或采纳外部观点从而改善我们的思想和价值观。</p>
 
 <pre><code>* 弱势批判性思维
@@ -731,7 +775,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     * 心理状态：思想开放。
 </code></pre>
 
-<h2 id="section-7">价值观</h2>
+<h2>价值观</h2>
+
 <p>价值观的重要性：</p>
 
 <pre><code>* 价值观决定人与之间的互动；
@@ -746,7 +791,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 以理服人（对事不对人）
 </code></pre>
 
-<h2 id="section-8">批判性思维提问大纲</h2>
+<h2>批判性思维提问大纲</h2>
+
 <p>批判性思维关键问题一览表：</p>
 
 <pre><code>1. 论题和结论是什么？
@@ -761,26 +807,31 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 10. 能得出哪些合理的结论？
 </code></pre>
 
-<h2 id="section-9">基本要素</h2>
+<h2>基本要素</h2>
 
-<h3 id="section-10">断言/陈述</h3>
-<p>断言是表达意见或信念的陈述，或真或假。<br />
+<h3>断言/陈述</h3>
+
+<p>断言是表达意见或信念的陈述，或真或假。<br/>
 批判性思维的关键就是检查或评估断言及其各断言之间的关系。</p>
 
 <p>示例：北京是中国最大的城市。</p>
 
-<h3 id="section-11">论题</h3>
-<p>论题是因探究问题而提出的断言。<br />
+<h3>论题</h3>
+
+<p>论题是因探究问题而提出的断言。<br/>
 批判性思维主要关注那些被论据支持或反驳的论题。</p>
 
-<h3 id="section-12">前提</h3>
+<h3>前提</h3>
+
 <p>前提是为另一个断言提供理由的断言。</p>
 
-<h3 id="section-13">结论</h3>
-<p>被前提支持的断言就是论证的结论。 </p>
+<h3>结论</h3>
 
-<h3 id="section-14">论证/推理</h3>
-<p>论证是由断言按一定结构形成的两部分（前提和结论），前提为结论的真提供理由。<br />
+<p>被前提支持的断言就是论证的结论。</p>
+
+<h3>论证/推理</h3>
+
+<p>论证是由断言按一定结构形成的两部分（前提和结论），前提为结论的真提供理由。<br/>
 形式：因为A，所以B。B代表结论，A代表支持结论的前提。</p>
 
 <p>论证用于支持或证明某个断言为真。论证步骤如下：</p>
@@ -790,20 +841,23 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 3. 最后辨别前提与结论之间的逻辑关系。
 </code></pre>
 
-<h3 id="section-15">评估</h3>
+<h3>评估</h3>
+
 <p>论证/推理的过程是逻辑的，就可能存在逻辑上的错误。无论是结论存在失误还是理由存在失误，都会影响对论证的评估。</p>
 
-<p>评估方法：判断前提的真假及其推理过程是否合理。<br />
+<p>评估方法：判断前提的真假及其推理过程是否合理。<br/>
 评估标准：</p>
 
 <pre><code>* 支持结论的前提必须是真；
 * 前提与结论必须相关：即前提为真能够证明或支持结论为真。
 </code></pre>
 
-<h2 id="section-16">1. 论题和结论是什么？</h2>
+<h2>1. 论题和结论是什么？</h2>
+
 <p>在对某个推理进行评价之前，我们首先要分析他的推理是什么，这第一步就是找出论题和结论。</p>
 
-<h3 id="section-17">论题</h3>
+<h3>论题</h3>
+
 <p>会话或讨论中出现的有争议的问题。</p>
 
 <p>有两类论题：</p>
@@ -817,8 +871,9 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     * 应该是什么？答案是说明性的，且见解会多元。
 </code></pre>
 
-<h3 id="section-18">结论</h3>
-<p>结论就是信息传递者希望你接受的信息。<br />
+<h3>结论</h3>
+
+<p>结论就是信息传递者希望你接受的信息。<br/>
 好的论证的基本结构是：因为A，所以B。B代表结论，A代表支持结论的理由。</p>
 
 <p>在找出结论之前我们无法做出批判性评价！</p>
@@ -834,7 +889,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     * 示例：房价当然会跌，不跌怎么行！（两句都是观点，没有提供理由。）
 </code></pre>
 
-<h2 id="section-19">2. 理由是什么？</h2>
+<h2>2. 理由是什么？</h2>
+
 <p>理由包括信念、论据、比喻、类推以及其他用来支持或证明这些结论的陈述，是对我们为什么要相信某一个特定结论的解释。</p>
 
 <p>在确定理由之前我们无法对一个结论的质量进行评价。</p>
@@ -848,9 +904,10 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
         * 此人在装B!
 </code></pre>
 
-<h2 id="section-20">3. 哪些词句有歧义？</h2>
+<h2>3. 哪些词句有歧义？</h2>
 
-<h3 id="section-21">找出歧义词语</h3>
+<h3>找出歧义词语</h3>
+
 <p>在决定赞同或反对某个观点之前，首先要确定关键词或关键句的准确含义，否则就由可能曲解或误解作者的观点。因此首先要找出有<strong>歧义</strong>的关键词句，明确它们在其上下文中的含义。</p>
 
 <p>示例：</p>
@@ -881,7 +938,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 扮演反串角色来判断其他人对关键词一的不同定义。
 </code></pre>
 
-<h3 id="section-22">时刻做好心理准备</h3>
+<h3>时刻做好心理准备</h3>
+
 <p>时刻留意歧义的影响，要养成三个习惯：</p>
 
 <pre><code>* 避免假设和作者观点相同，养成“你这么说是什么意思？”的提问习惯；
@@ -927,9 +985,10 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>嘲笑/讽刺</p>
 
-<p>夸张    </p>
+<p>夸张</p>
 
-<h3 id="section-23">谁在利用歧义</h3>
+<h3>谁在利用歧义</h3>
+
 <p>广告商：利用歧义让你误会。</p>
 
 <pre><code>* 人头马一开，好事自然来
@@ -945,7 +1004,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 有关部门
 </code></pre>
 
-<h2 id="section-24">4. 价值观假设与描述性假设是什么？</h2>
+<h2>4. 价值观假设与描述性假设是什么？</h2>
+
 <p>要理解一个论证，就要知道信息传递者没有明确表述的信念，这些信念支持外显的推理。</p>
 
 <p>在所有论证中，都存在一些信息传递者所认同的信念，而这类信念却并没有明确表述出来，需要批判性思维者自己去找出来。这些隐形的信念是信息传递者承认的<strong>假设</strong>，在推理结构中，他们是重要的环节，是将全部论证整合在一起的黏合剂。</p>
@@ -975,7 +1035,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     * 结论：政府应该采取一切手段，包括行政手段强力打压高房价。
 </code></pre>
 
-<h3 id="section-25">价值观假设</h3>
+<h3>价值观假设</h3>
+
 <p><strong>价值观</strong>是人们认为值得为之努力、却没有明确表述的观念。这些观念为行为设定了标准，并通过这些标准来衡量行为的质量。</p>
 
 <p>在一个特定的情境中，<strong>价值观假设</strong>是一种内隐的偏向，它代表着某种价值观胜过另一种价值观，即具有某种<strong>价值观倾向或偏好</strong>。</p>
@@ -991,7 +1052,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </code></pre>
 
 <p>示例：
-个人是否应该给与乞丐以物质上的帮助？<br />
+个人是否应该给与乞丐以物质上的帮助？<br/>
 以下价值观冲突可能影响一个人帮助乞丐的意愿：</p>
 
 <pre><code>* 个人责任 VS 公共责任
@@ -1022,7 +1083,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 也许下次讨论我不支持你的价值观，但我支持你的观点 … …
 </code></pre>
 
-<h3 id="section-26">描述性假设</h3>
+<h3>描述性假设</h3>
+
 <p>描述性假设是关于这个世界<strong>是什么</strong>样子，或者将来是什么样子的为阐明的观念。它是理由与结论之间的联结，如果这一联结有缺陷，那么，理由就不一定能推导出那个结论。</p>
 
 <p>识别描述性假设容许你判定理由是否导致了结论。</p>
@@ -1058,7 +1120,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>定义假设：确定某个包含多种含义的词在一个具体情境中使用的时什么含义。如上例中“学到很多东西”被定义为“从报告中获取了一些资料”，而不是“发展思维技能”。</p>
 
-<h2 id="section-27">5. 推理中有没有谬误？</h2>
+<h2>5. 推理中有没有谬误？</h2>
+
 <p>现在的焦点放在<strong>评价上</strong>。即根据提供的理由，评判结论的可接受性。这个评判过程首先是要检查推理是否合理，即是否采用了有问题的假设或者运用“骗术”蒙混过关。推理谬误就是推理过程中的欺骗手段。</p>
 
 <p>三个常见的谬误：</p>
@@ -1077,7 +1140,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 留意修辞手法，剔除感情用语。
 </code></pre>
 
-<h3 id="section-28">人身攻击</h3>
+<h3>人身攻击</h3>
+
 <p>定义：不阐述原因而直接攻击或侮辱其人。</p>
 
 <p>示例：</p>
@@ -1087,7 +1151,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 此人是拿钱的五毛，你怎么能支持他的观点呢？
 </code></pre>
 
-<h3 id="section-29">滑坡推理</h3>
+<h3>滑坡推理</h3>
+
 <p>定义：假设如果某事发生，则会引发相关的一连串事情。</p>
 
 <p>示例：</p>
@@ -1096,7 +1161,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 如何政府允许游行示威，那么国家就会乱。
 </code></pre>
 
-<h3 id="section-30">妄求完美</h3>
+<h3>妄求完美</h3>
+
 <p>如果某方法不能彻底解决某问题，就不采用此方法。</p>
 
 <p>示例：</p>
@@ -1105,7 +1171,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 我们不应该允许给妓女发放避孕套，因为这是鼓励卖淫。
 </code></pre>
 
-<h3 id="section-31">移花接木</h3>
+<h3>移花接木</h3>
+
 <p>一个关键词在一个论据中被使用了两个或两个以上的含义。</p>
 
 <p>示例：</p>
@@ -1113,7 +1180,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <pre><code>* 我们支持车船税，因为民意调查（被调查的对象未必是我们）一致赞成征收车船税。
 </code></pre>
 
-<h3 id="section-32">诉诸公众</h3>
+<h3>诉诸公众</h3>
+
 <p>试图通过偏爱多数人一致赞成的观点使某个观点合理化，错误地认为多数人支持的就是合理的。</p>
 
 <p>示例：</p>
@@ -1122,7 +1190,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 小三该纳入刑罚，因为对已婚妇女的调查她们都支持立法处罚。
 </code></pre>
 
-<h3 id="section-33">诉诸权威</h3>
+<h3>诉诸权威</h3>
+
 <p>通过引入在某个问题上可疑的权威来支持结论，通常是A领域权威对B领域观点。</p>
 
 <p>示例：</p>
@@ -1131,7 +1200,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 专家表示白酒都含有塑化剂，适当饮用无害。
 </code></pre>
 
-<h3 id="section-34">诉诸情感</h3>
+<h3>诉诸情感</h3>
+
 <p>利用调动感情的词汇，激发情感共鸣替代理性判断。</p>
 
 <p>示例：</p>
@@ -1140,7 +1210,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 砸光小日本的车，让小日本经济彻底垮掉！
 </code></pre>
 
-<h3 id="section-35">砍稻草人</h3>
+<h3>砍稻草人</h3>
+
 <p>歪曲对方的观点，使之易于攻击，因而攻击的是一种事实上并不存在的观点。</p>
 
 <p>示例：</p>
@@ -1149,7 +1220,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 上帝并不能如科学一样解释世界，所以你不应该信仰上帝。
 </code></pre>
 
-<h3 id="section-36">虚假的两难困境</h3>
+<h3>虚假的两难困境</h3>
+
 <p>制造虚假的两难困境，非此即彼，其实还有更多选择。</p>
 
 <p>示例：</p>
@@ -1158,7 +1230,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 在通货膨胀的今天，理财的两种最佳选择一是股票，二是房产。
 </code></pre>
 
-<h3 id="section-37">乱扣帽子/乱贴标签</h3>
+<h3>乱扣帽子/乱贴标签</h3>
+
 <p>抛出恶意或负面的词汇引导你对事物的评判。</p>
 
 <p>示例：</p>
@@ -1167,7 +1240,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 她为什么喜欢和政府过不去，到处上访？她有神经病。
 </code></pre>
 
-<h3 id="section-38">一厢情愿</h3>
+<h3>一厢情愿</h3>
+
 <p>因为我希望这样，所以就是这样。</p>
 
 <p>示例：</p>
@@ -1176,7 +1250,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 不可能是今天考试，我还没有开始复习呢！
 </code></pre>
 
-<h3 id="section-39">光环效应</h3>
+<h3>光环效应</h3>
+
 <p>使用模糊、情绪化美德词汇让我们不经仔细思考就接受观点。</p>
 
 <p>示例：</p>
@@ -1187,7 +1262,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 为这位女士投一票就是为公正、爱、和平等投票。
 </code></pre>
 
-<h3 id="section-40">循环论证</h3>
+<h3>循环论证</h3>
+
 <p>把结论换个说法当成理由，即在论证中变结论为理由。</p>
 
 <p>示例：</p>
@@ -1196,7 +1272,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 我爱牛人们精辟观点，因为网络牛人观点犀利，不正值得信赖吗？
 </code></pre>
 
-<h3 id="section-41">转移话题</h3>
+<h3>转移话题</h3>
+
 <p>提出一个不相干话题转移是读者的注意力离开原来的论题。</p>
 
 <p>示例：</p>
@@ -1206,7 +1283,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 母亲：我不是告诉你要按时回家吃饭吗？儿子：你看你总是在责怪我！
 </code></pre>
 
-<h3 id="section-42">错置举证</h3>
+<h3>错置举证</h3>
+
 <p>本应该由信息提供者来举证提供理由，却通过诡辩让接收者来举证提供理由。</p>
 
 <p>示例：</p>
@@ -1216,22 +1294,24 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 推销员：你不试，怎么知道不管用呢？
 </code></pre>
 
-<h2 id="section-43">6. 证据可信么？</h2>
+<h2>6. 证据可信么？</h2>
+
 <p>如何判断可信度？</p>
 
 <pre><code>* 证据是什么？在哪里？
 * 你如何知道它是真实的？你能证明它么？
 </code></pre>
 
-<h3 id="section-44">可信度</h3>
+<h3>可信度</h3>
 
-<p>支持一个信念的证据越多，该信念越接近真实。 <br />
-对很多观点来说，没有足够的证据完全支持或驳倒它们，我们必须判断证据的优劣。<br />
+<p>支持一个信念的证据越多，该信念越接近真实。 <br/>
+对很多观点来说，没有足够的证据完全支持或驳倒它们，我们必须判断证据的优劣。<br/>
 断言都需要证据，结论的可信度取决于证据的可信度。</p>
 
-<h3 id="section-45">常用证据可靠性</h3>
+<h3>常用证据可靠性</h3>
 
-<h3 id="section-46">直觉</h3>
+<h3>直觉</h3>
+
 <p>当人说“常识告诉我们”或“我只知道这是真的”，他就在用直觉作为证据。</p>
 
 <pre><code>* 问题：过度自信。
@@ -1240,7 +1320,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 示例：常识告诉我们，一个作者应该记得自己写过作品的内容。
 </code></pre>
 
-<h3 id="section-47">个人经历</h3>
+<h3>个人经历</h3>
+
 <p>根据少数人经历就得出关于整体的结论。虽然结论有可能是对的，但推理过程绝对是无厘头的。</p>
 
 <pre><code>* 问题：鲜活形象的个案。
@@ -1249,7 +1330,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 示例：如果你没有读过原著，你不可能在写作中引用他们的经典语句。
 </code></pre>
 
-<h3 id="section-48">典型案例</h3>
+<h3>典型案例</h3>
+
 <p>通过对一个或几个特殊个体或事件进行详细描述来支持结论，以观察或访谈为基础。</p>
 
 <pre><code>* 问题：以偏概全。
@@ -1258,7 +1340,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 示例：最近微博举报多起贪官落网，充分说明微博是建立群众监督的利器。
 </code></pre>
 
-<h3 id="section-49">当事人证词</h3>
+<h3>当事人证词</h3>
+
 <p>商业信息、影视广告、书籍封底经常使用他人经验证词企图说服我们。</p>
 
 <pre><code>* 问题：伪证以及情绪感染。
@@ -1267,7 +1350,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 示例：我郑重向你推荐这种减肥药，因为我朋友使用一周后瘦了6斤。
 </code></pre>
 
-<h3 id="section-50">专家意见</h3>
+<h3>专家意见</h3>
+
 <p>权威专家对特定的问题，比多数人了解更多的信息源。</p>
 
 <pre><code>* 问题：盲从或过度膨胀。
@@ -1275,7 +1359,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 示例：任志强：房价肯定还会涨！
 </code></pre>
 
-<h3 id="section-51">个人观察</h3>
+<h3>个人观察</h3>
+
 <p>一种有价值的证据，是许多科学研究的基础。</p>
 
 <pre><code>* 问题：自我服务偏见或观察误差，眼见未必实。
@@ -1284,7 +1369,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 其实犯人只是拿着一根木棍。
 </code></pre>
 
-<h3 id="section-52">科学研究</h3>
+<h3>科学研究</h3>
+
 <p>在可控环境下进行的观察资料为依据，并经过同行评审，能重复验证结果，结论描述用语精确。</p>
 
 <pre><code>* 问题：容易结论自相矛盾。
@@ -1294,7 +1380,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 示例：大量的科学实验表明转基因食品对人体无害。
 </code></pre>
 
-<h3 id="section-53">类比</h3>
+<h3>类比</h3>
+
 <p>用熟悉的事物来解释不熟悉的，假如某一方面相似，则其他方面也有可能相似。</p>
 
 <pre><code>* 问题：不当类比
@@ -1310,7 +1397,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <pre><code>* 假如你的手烂了，你会切除它，所以我们也不得不消灭搞聚众淫乱这样道德败坏的人。
 </code></pre>
 
-<h2 id="section-54">7. 有没有替代性原因？</h2>
+<h2>7. 有没有替代性原因？</h2>
 
 <p><strong>替代性原因</strong>是一个看似合理、与信息提供者的解释不同，但能说明一个已知的结果如何发生的解释。</p>
 
@@ -1328,7 +1415,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>两件事有很强的相关性并不能等于可以证明他们有因果关系。</p>
 
-<h3 id="section-55">简单归因</h3>
+<h3>简单归因</h3>
+
 <p>问题：根据一些不够充分的因素来解释某事件，过分强调某一个或某几个因素对事件的作用。</p>
 
 <p>对策：</p>
@@ -1345,7 +1433,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 投资风险偏好多种因素影响，一个因素变动并不能导致结论成立。
 </code></pre>
 
-<h3 id="section-56">混淆原因和结果</h3>
+<h3>混淆原因和结果</h3>
+
 <p>问题：将原因和结果混淆在一起或没有认识到两件事可能是互相影响的。</p>
 
 <p>示例：</p>
@@ -1354,7 +1443,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 分析：答案也许是免疫系统容易受到伤害的女人，容易导致肝火旺盛而易怒。
 </code></pre>
 
-<h3 id="section-57">对共同原因的疏忽</h3>
+<h3>对共同原因的疏忽</h3>
+
 <p>问题：没认识到两件事可能因为另一个共同因素的影响而相互联系。</p>
 
 <p>示例：</p>
@@ -1364,7 +1454,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 也许是其它原因（比如高强度加班）导致某些女人容易生气同时免疫系统受到伤害。 
 </code></pre>
 
-<h3 id="section-58">事后归因谬误</h3>
+<h3>事后归因谬误</h3>
+
 <p>问题：仅仅因为B在时间上发生在A之后，就认为B是由A引起的。</p>
 
 <p>示例：</p>
@@ -1373,10 +1464,11 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 分析：丁蟹效应是典型的事后归因，在人分析自己的错误过程中常常会犯这种错误。
 </code></pre>
 
-<h2 id="section-59">8. 数据有没有欺骗性？</h2>
+<h2>8. 数据有没有欺骗性？</h2>
+
 <p><strong>统计数据</strong>是一种以数字形式表现出来的证据。这样的证据可以给人留下深刻的印象，因为数字使证据看起来非常科学、精确，让人感觉到代表着“事实”。然而统计数据可以并且经常欺骗大家。</p>
 
-<h3 id="section-60">出处不可靠，有偏见的数据</h3>
+<h3>出处不可靠，有偏见的数据</h3>
 
 <p>示例：</p>
 
@@ -1385,13 +1477,14 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 今年物价肯定涨了3倍以上！
 </code></pre>
 
-<h3 id="section-61">令人困惑的平均数</h3>
+<h3>令人困惑的平均数</h3>
 
 <ul>
-  <li>算术平均数：将所有数据相加，再用所得的和除以数据的个数得到的结果是算术平均数。</li>
-  <li><a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E4%BD%8D%E6%95%B8">中数</a>：将所有数据按从大小顺序排列，位于中间的那个数就是中数。</li>
-  <li><a href="http://zh.wikipedia.org/wiki/%E4%BC%97%E6%95%B0\_\(%E6%95%B0%E5%AD%A6\)">众数</a>：将所有数值按照一定规则分组，在一组数据中出现次数最多的那个数就是众数。</li>
+<li>算术平均数：将所有数据相加，再用所得的和除以数据的个数得到的结果是算术平均数。</li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E4%BD%8D%E6%95%B8">中数</a>：将所有数据按从大小顺序排列，位于中间的那个数就是中数。</li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%BC%97%E6%95%B0_(%E6%95%B0%E5%AD%A6)">众数</a>：将所有数值按照一定规则分组，在一组数据中出现次数最多的那个数就是众数。</li>
 </ul>
+
 
 <p>不仅分辨出是哪一种平均数很重要，考虑数据的范围（最大值与最小值之间的跨距）、数据出现的频率（即数据的分布）也同样重要。</p>
 
@@ -1402,7 +1495,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 （如果用中数或众数平均数统计，也许是下降）
 </code></pre>
 
-<h3 id="section-62">用不相关的数据证明结论</h3>
+<h3>用不相关的数据证明结论</h3>
+
 <p>用正确的数据证明错误的结论。</p>
 
 <p>对策：</p>
@@ -1419,7 +1513,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 * 通货膨胀主要原因是因为国际油价这类资源类产品涨价带来输入性通货膨胀。
 </code></pre>
 
-<h3 id="section-63">借助遗漏信息撒谎</h3>
+<h3>借助遗漏信息撒谎</h3>
+
 <p>选择性遗漏一些信息来达到欺骗的目的。比如忽略比较的对象，或使用忽略了信息的百分比与绝对数值，或使用相对数据来夸大可能的风险或收益。</p>
 
 <p>示例：</p>
@@ -1429,7 +1524,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 而入住人口增加了10倍）
 </code></pre>
 
-<h2 id="section-64">9. 有没有遗漏关键信息？</h2>
+<h2>9. 有没有遗漏关键信息？</h2>
+
 <p>论证中的信息是信息提供者精心选择并组织在一起的，选择和组织这些信息的人希望在某种程度上影响你的思维，往往会选择对结论有利的信息而忽略不利的信息。批判性思维者需要问问自己：哪些关键信息被遗漏了？</p>
 
 <p>遗漏信息必然存在：</p>
@@ -1462,7 +1558,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>我们要格外注意被遗漏了的消极观点。</p>
 
-<h2 id="section-65">10. 能得出哪些合理的结论？</h2>
+<h2>10. 能得出哪些合理的结论？</h2>
+
 <p>由于每个人的背景和目标不同，因而会持有不同的假设，导致我们面对同样的理由却得出不同的结论。</p>
 
 <p>注意如下事实：</p>
@@ -1484,48 +1581,56 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     <link href="http://kesalin.github.io/blog/2014/10/08/falsifiability/"/>
     <updated>2014-10-08T20:49:18+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/08/falsifiability</id>
-    <content type="html"><![CDATA[<h2 id="section">简介</h2>
+    <content type="html"><![CDATA[<h2>简介</h2>
 
 <ul>
-  <li><strong><a href="http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7">可证伪性</a></strong>是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨<strong>科学与非科学</strong>的一种理论，他认为:
- &gt; 一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。  </li>
+<li><strong><a href="http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7">可证伪性</a></strong>是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨<strong>科学与非科学</strong>的一种理论，他认为:
+
+<blockquote><p>一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。</p></blockquote></li>
 </ul>
 
-<h2 id="what">定义/What</h2>
+
+<h2>定义/What</h2>
+
 <ul>
-  <li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。</li>
+<li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。</li>
 </ul>
+
 
 <!--more-->
 
-<h2 id="how">解释/How</h2>
+
+<h2>解释/How</h2>
+
 <ul>
-  <li>可证伪性是说要存在被证明为假的这种可能性（即证明为假的方法要存在），但和证明目前是不是可实施并没有关系。</li>
-  <li>可证伪性是科学理论的必要属性，但非充分属性。科学理论必须具备可证伪性，且仍未被证伪。</li>
-  <li>不具备可证伪性的理论都是非科学的。</li>
-  <li>非科学的伦理并非都是伪科学，只有冒称是科学的那些非科学理论才是伪科学。</li>
+<li>可证伪性是说要存在被证明为假的这种可能性（即证明为假的方法要存在），但和证明目前是不是可实施并没有关系。</li>
+<li>可证伪性是科学理论的必要属性，但非充分属性。科学理论必须具备可证伪性，且仍未被证伪。</li>
+<li>不具备可证伪性的理论都是非科学的。</li>
+<li>非科学的伦理并非都是伪科学，只有冒称是科学的那些非科学理论才是伪科学。</li>
 </ul>
 
-<h2 id="why">深究/Why</h2>
-<ul>
-  <li>
-    <p>我们知道归纳与演绎是人类思维方法中的两大法宝。
-  &gt; * 归纳：从许多个别的事物中概括出一般性概念、原则或结论的思维方法。<br />
-  &gt; * 演绎：从普遍性的理论知识出发，去认识个别的、特殊的现象的一种逻辑推理方法。  </p>
 
-    <p>可证伪性是针对归纳法而言的。由于人类认知和探索的世界有限，在归纳出一种理论时，不可能穷举所有符合这一理论的个案来证实这一理论。倘若存在可以检验为假的某种方法在，即使在目前的条件下还不能够实施检验，假以时日，或许会出现这样的反例从而检验其为假，当然也可能这样的反例永远都不会出现，谁知道呢？如果一种理论不存在任何可检验为假的方法，那么这种理论因缺乏检验方法，而无法判断其真假，因此一定不是科学。用老子相反相成思想来讲就是“天下皆知真之为真，斯假也”。</p>
-  </li>
-  <li>
-    <p>示例一：“所有的天鹅都是白的。”，试图穷举一只，两只，三只… … 白天鹅来证实这一描述是科学的都不够充分，检验这一描述为科学的必要条件是“没有非白色的天鹅”这种可能性存在（可证伪性），当黑天鹅在澳大利亚被发现时，人们就推翻了这一论述。</p>
-  </li>
-  <li>
-    <p>示例二：“上帝是存在的。”，这一描述因无法观测或证明“上帝不存在”，从而无法被证伪，因此这一描述是非科学的。</p>
-  </li>
+<h2>深究/Why</h2>
+
+<ul>
+<li><p>我们知道归纳与演绎是人类思维方法中的两大法宝。</p>
+
+<blockquote><ul>
+<li>归纳：从许多个别的事物中概括出一般性概念、原则或结论的思维方法。</li>
+<li>演绎：从普遍性的理论知识出发，去认识个别的、特殊的现象的一种逻辑推理方法。</li>
+</ul>
+</blockquote>
+
+<p>  可证伪性是针对归纳法而言的。由于人类认知和探索的世界有限，在归纳出一种理论时，不可能穷举所有符合这一理论的个案来证实这一理论。倘若存在可以检验为假的某种方法在，即使在目前的条件下还不能够实施检验，假以时日，或许会出现这样的反例从而检验其为假，当然也可能这样的反例永远都不会出现，谁知道呢？如果一种理论不存在任何可检验为假的方法，那么这种理论因缺乏检验方法，而无法判断其真假，因此一定不是科学。用老子相反相成思想来讲就是“天下皆知真之为真，斯假也”。</p></li>
+<li><p>示例一：“所有的天鹅都是白的。”，试图穷举一只，两只，三只&hellip; &hellip; 白天鹅来证实这一描述是科学的都不够充分，检验这一描述为科学的必要条件是“没有非白色的天鹅”这种可能性存在（可证伪性），当黑天鹅在澳大利亚被发现时，人们就推翻了这一论述。</p></li>
+<li><p>示例二：“上帝是存在的。”，这一描述因无法观测或证明“上帝不存在”，从而无法被证伪，因此这一描述是非科学的。</p></li>
 </ul>
 
-<h2 id="section-1">意义</h2>
+
+<h2>意义</h2>
+
 <ul>
-  <li>牛顿定律在相对论没有发现之前被认为是科学理论，但存在检验其为假的标准，而后被相对论证伪，这时人们通过增加牛顿定律发生的限定条件，来完善牛顿定律。这是可证伪性的意义所在，科学理论永远在不断的证伪检验过程中被完善或推翻。用胡适先生的话来说就是“大胆假设，小心求证”。</li>
+<li>牛顿定律在相对论没有发现之前被认为是科学理论，但存在检验其为假的标准，而后被相对论证伪，这时人们通过增加牛顿定律发生的限定条件，来完善牛顿定律。这是可证伪性的意义所在，科学理论永远在不断的证伪检验过程中被完善或推翻。用胡适先生的话来说就是“大胆假设，小心求证”。</li>
 </ul>
 
 ]]></content>
@@ -1536,65 +1641,49 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     <link href="http://kesalin.github.io/blog/2014/10/05/subline-text2-markdown/"/>
     <updated>2014-10-05T22:35:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/05/subline-text2-markdown</id>
-    <content type="html"><![CDATA[<h2 id="section">简介</h2>
+    <content type="html"><![CDATA[<h2>简介</h2>
+
 <p>本文介绍如何在 Subline Text 2 中安装 Markdown 插件。</p>
 
 <!--more-->
 
-<h2 id="section-1">步骤</h2>
+
+<h2>步骤</h2>
 
 <ol>
-  <li>
-    <p>按 ctrl + ` 调出 console；  </p>
-  </li>
-  <li>
-    <p>粘贴以下代码到底部命令行并回车： </p>
-  </li>
+<li><p>按 ctrl + ` 调出 console；</p></li>
+<li><p>粘贴以下代码到底部命令行并回车：</p></li>
 </ol>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span><span class="p">;</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span><span class="p">;</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <ol>
-  <li>
-    <p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：<br />
-&gt; Please restart Sublime Text to finish installation   </p>
-  </li>
-  <li>
-    <p>然后重启 Subline Text 2，这时在菜单 Perferences -&gt; package settings 中会出现 package control 项；  </p>
-  </li>
-  <li>
-    <p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；  </p>
-  </li>
-  <li>
-    <p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p>
-  </li>
-  <li>
-    <p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p>
-  </li>
-  <li>
-    <p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；  </p>
-  </li>
-  <li>
-    <p>选择菜单 Tools -&gt; Build System -&gt; Markdown，然后选择 Tools -&gt; Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p>
-  </li>
-  <li>
-    <p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。 </p>
-  </li>
+<li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
+
+<blockquote><p>Please restart Sublime Text to finish installation</p></blockquote></li>
+<li><p>然后重启 Subline Text 2，这时在菜单 Perferences -> package settings 中会出现 package control 项；</p></li>
+<li><p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；</p></li>
+<li><p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p></li>
+<li><p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p></li>
+<li><p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；</p></li>
+<li><p>选择菜单 Tools -> Build System -> Markdown，然后选择 Tools -> Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p></li>
+<li><p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。</p></li>
 </ol>
+
 
 <hr />
+
 <p>补充：</p>
 
 <ol>
-  <li>
-    <p>Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；  </p>
-  </li>
-  <li>
-    <p>或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p>
-  </li>
+<li><p>Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；</p></li>
+<li><p>或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p></li>
 </ol>
+
 ]]></content>
   </entry>
   
@@ -1605,9 +1694,10 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     <id>http://kesalin.github.io/blog/2014/06/30/reading-history</id>
     <content type="html"><![CDATA[<p>过了三十越发觉得时间之宝贵，三十之前觉得时间管理于我等无所作为的草民是不相干的，而今真有点只争朝夕的紧迫与仓促感。最近帮我老哥弄了个微信的公众平台，他发现我基本不上微信，觉得像我这样搞IT的不用微信很不可思议，包括不少朋友也有此同感。微信这玩意，非我不懂也，我只是没那么多时间和精力去刷那些个99%或是转发或是广告的垃圾信息。我的阵地在微博，豆瓣，QQ空间，微博提供技术/社会动态资讯；豆瓣提供读与看的资讯；QQ空间提供好友资讯，有此三者足以，而且每天浏览这些社交工具上的时间碎片加起来不会超过半小时。</p>
 
-<p>回顾2014上半年，看了不少有趣的影视剧（&gt;33部），也读了不少好玩的书，在此总结之，广而荐之。总的来说这半年关注的重点在历史，金融与社会学。</p>
+<p>回顾2014上半年，看了不少有趣的影视剧（>33部），也读了不少好玩的书，在此总结之，广而荐之。总的来说这半年关注的重点在历史，金融与社会学。</p>
 
 <!--more-->
+
 
 <p><strong>如何读史</strong></p>
 
@@ -1620,59 +1710,34 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <p><strong>和历史相关的书籍与影视</strong></p>
 
 <ul>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》：五星推荐。感觉这本书甩了《三国演义》好几条街，《三国演义》是经过长期演化（多为说书人口述）多人创作的产物，诸多卫道士不断修改此书以满足或宣扬符合当时社会需要的道德（尤重忠义）标准，最终由罗贯中汇总。其中人物与事迹被历代卫道士伪造，以致鲁迅说“刘备之德近乎伪，诸葛之智近乎妖”，与《三国志》相去甚远。《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》是冯梦龙参考《春秋》，《战国策》等诸多史书编写而成的历史小说，虽然它终归是小说，而不是史书，但《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》的靠谱程度比三国要高得多，其时间跨度大（五百年：公元前722年至公元前221年，以公元前403年三分晋国为春秋战国之分界），社会演化历程长久（从天子势微，到诸侯称霸，到大夫家臣登场，到门客名士唱戏；从春秋讲究骑士风度的礼仪之战，演化到战国动辄几十万人的无信义凶残之战），人物多且关系复杂。让你看过无数朝起朝落，三十年河东三十年河西的故事，在浮浮沉沉之中体会为人处世之道，高瞻远瞩之识。但为啥《东周》远不如《三国》流行呢，我觉得有三个主要的因素：第一，年代久远更为久远，就如现今清宫戏远比明宫，唐宫，汉宫戏要多；第二，人物多且关系复杂，阅读难度大；第三，书中有众多篡权弑君的示例，是君王之大忌，必不为历代朝廷所喜。</p>
-  </li>
-  <li>
-    <p>东周列国传电视剧：现在真是最好的时代，有书看，还有相应的影视可看，影视剧集：东周列国传，分<a href="http://movie.douban.com/subject/2341884/">春秋</a>和<a href="http://movie.douban.com/subject/2972189/">战国</a>两部， 各有36集，<a href="http://movie.douban.com/subject/2341884/">春秋篇</a>五星推荐，<a href="http://movie.douban.com/subject/2972189/">战国篇</a>四星推荐。为啥春秋更为好看呢，一则春秋的时间跨度更长一些故事更多一些，二则春秋是受礼义约束的战争，往往致胜因素在战场之外，更有艺术性。这部剧集是以《[东周列国志](http://book.douban.com/subject/2002025/》为蓝本的，在改编的过程了作了不少细节上的修改以求更有看头，尤其是增加了很多情感美色的戏份，与书籍不相符合。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1055347/">中国史纲</a>》：四星推荐，民国史学家张荫麟留下的唯一著作，恨作者英年早逝，仅仅写到汉代，宋代尚只有一些草稿章节。王家范评此书：“文笔流畅优美，运思遣事之情深意远，举重若轻，在通史著作中当时称绝，后也罕见。”</p>
-  </li>
-  <li>
-    <p>徐中约写的港版《<a href="http://book.douban.com/subject/2376486/">中国近代史</a>》，五星推荐。读过不少近代史，这本是最为出众的，国内出版的是阉割的，所以要看繁体版。客观就不说了，大凡非大陆出的历史名著大都做得到客观，这本尤为可贵的是作者具备全球视野，能把发生在中国的事情与发生在其他国家的事情联系统一起来，在世界史的大局中讲述中国近代史。比如说毛同志吸取了斯大林同志在肉体上消灭异己的教训，采取精神上消灭的措施；又如毛同志为避免重蹈斯大林被继任者赫鲁晓夫全盘否定的覆辙，清算了少奇同志。此外，49年之后，大陆，台湾，香港三地的历史齐头并进讲解，而大陆的近代史书一般只讲大陆部分。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/10825612/">近代中国社会的新陈代谢</a>》，四星推荐。作者可是咱双峰老乡，敬佩敬佩。大约成书于1989年，大陆学者出的一本不错的近代史书。重点讲1840~1930间的中国历史，一如书名所示，“新陈代谢”的演进过程讲得很不错，把一串事件的前因后果都串起来了，引用资料详实，足可见当时社会的各种争辩：从夷夏，古今，中西，长技/政体/文化，改良/革命，立宪/共和等等之争辩之演化。唯一的遗憾是毕竟写于80年代，不免有一些的意识形态词语在其中，且受马克思唯物主义历史观影响，不过总体瑕不掩瑜。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1060025/">中国近代史</a>》，五星推荐。这本书是民国外交官员蒋廷黻所写，自然善于从外交角度来阐述。短小精悍是其最大的特点，叹为观止！短短五六万字就将清末至民国历史发展的脉络展现出来，一气呵成。对人物的历史评判新颖客观独到。“鸦片战争的军事失败还不是民族致命伤。失败以后还不明了失败的理由力图改革，那才是民族的致命伤。”，振聋发聩。这是引起我对近代史感兴趣的入门书籍。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/5288371/">蒋经国传</a>》，四星推荐。此书可以从不同的视角佐证其他书籍中的近代中国史，而更值得重视的是经国先生如何将台湾从一个军事戒严的独裁政府平稳过渡到一个本地人做主的民主政府。经国在治理上海时期曾提出“只打老虎，不拍苍蝇”的口号，是不是很熟悉？衷心感谢经国先生领导台湾人民缔造了一个华人民主社会，楷模！经国有能力，有魄力，有度量来顺应潮流，启用台湾本土人，开放报禁，党禁，实现民主政治。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/3239549/">夹边沟记事</a>》：四星推荐，国内学者所著，难得，被翻译为英文（有很有噱头的封面与标题）。讲述59～61年期间“右派”在西北酒泉附近夹边沟/明水农场改造的非人经历，百分之七八十的人饿死了，活脱脱的饥饿实验室。当然在D的领导下他们都有正常死亡的病历的，若非作者的记录，这惨烈的历史将鲜为人知。作者文笔不错，寓深沉于木讷，寓悲愤于质朴，和大戈壁盐碱地上那些无声的惨烈浑然一体。</p>
-  </li>
-  <li>
-    <p>关于近代史的最佳影视剧集：以前也推荐过，那就是《<a href="http://movie.douban.com/subject/1441794/">走向共和</a>》，60集，依然五星推荐。此外还有美国人Sue Williams制作的三集纪录片《<a href="http://movie.douban.com/subject/2042115/">中国，一个世纪的革命</a>》（China - A Century of Revolution），每集两小时，共六小时。该片从1911年一直叙述到1997年，横跨一个世纪的中国历史。较（与国内史书／教科书相较）为真实客观地还原了中国近百年的历史，该片中有许多在中国主流媒体上不可能看到的极为珍贵且罕见的历史镜头，如孙中山讲话、宋美龄在美筹款、访谈蒋经国、80年代末的某次运动、访谈崔健等等。这一点相当赞！。</p>
-  </li>
+<li><p>《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》：五星推荐。感觉这本书甩了《三国演义》好几条街，《三国演义》是经过长期演化（多为说书人口述）多人创作的产物，诸多卫道士不断修改此书以满足或宣扬符合当时社会需要的道德（尤重忠义）标准，最终由罗贯中汇总。其中人物与事迹被历代卫道士伪造，以致鲁迅说“刘备之德近乎伪，诸葛之智近乎妖”，与《三国志》相去甚远。《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》是冯梦龙参考《春秋》，《战国策》等诸多史书编写而成的历史小说，虽然它终归是小说，而不是史书，但《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》的靠谱程度比三国要高得多，其时间跨度大（五百年：公元前722年至公元前221年，以公元前403年三分晋国为春秋战国之分界），社会演化历程长久（从天子势微，到诸侯称霸，到大夫家臣登场，到门客名士唱戏；从春秋讲究骑士风度的礼仪之战，演化到战国动辄几十万人的无信义凶残之战），人物多且关系复杂。让你看过无数朝起朝落，三十年河东三十年河西的故事，在浮浮沉沉之中体会为人处世之道，高瞻远瞩之识。但为啥《东周》远不如《三国》流行呢，我觉得有三个主要的因素：第一，年代久远更为久远，就如现今清宫戏远比明宫，唐宫，汉宫戏要多；第二，人物多且关系复杂，阅读难度大；第三，书中有众多篡权弑君的示例，是君王之大忌，必不为历代朝廷所喜。</p></li>
+<li><p>东周列国传电视剧：现在真是最好的时代，有书看，还有相应的影视可看，影视剧集：东周列国传，分<a href="http://movie.douban.com/subject/2341884/">春秋</a>和<a href="http://movie.douban.com/subject/2972189/">战国</a>两部， 各有36集，<a href="http://movie.douban.com/subject/2341884/">春秋篇</a>五星推荐，<a href="http://movie.douban.com/subject/2972189/">战国篇</a>四星推荐。为啥春秋更为好看呢，一则春秋的时间跨度更长一些故事更多一些，二则春秋是受礼义约束的战争，往往致胜因素在战场之外，更有艺术性。这部剧集是以《[东周列国志](<a href="http://book.douban.com/subject/2002025/%E3%80%8B%E4%B8%BA%E8%93%9D%E6%9C%AC%E7%9A%84%EF%BC%8C%E5%9C%A8%E6%94%B9%E7%BC%96%E7%9A%84%E8%BF%87%E7%A8%8B%E4%BA%86%E4%BD%9C%E4%BA%86%E4%B8%8D%E5%B0%91%E7%BB%86%E8%8A%82%E4%B8%8A%E7%9A%84%E4%BF%AE%E6%94%B9%E4%BB%A5%E6%B1%82%E6%9B%B4%E6%9C%89%E7%9C%8B%E5%A4%B4%EF%BC%8C%E5%B0%A4%E5%85%B6%E6%98%AF%E5%A2%9E%E5%8A%A0%E4%BA%86%E5%BE%88%E5%A4%9A%E6%83%85%E6%84%9F%E7%BE%8E%E8%89%B2%E7%9A%84%E6%88%8F%E4%BB%BD%EF%BC%8C%E4%B8%8E%E4%B9%A6%E7%B1%8D%E4%B8%8D%E7%9B%B8%E7%AC%A6%E5%90%88%E3%80%82">http://book.douban.com/subject/2002025/%E3%80%8B%E4%B8%BA%E8%93%9D%E6%9C%AC%E7%9A%84%EF%BC%8C%E5%9C%A8%E6%94%B9%E7%BC%96%E7%9A%84%E8%BF%87%E7%A8%8B%E4%BA%86%E4%BD%9C%E4%BA%86%E4%B8%8D%E5%B0%91%E7%BB%86%E8%8A%82%E4%B8%8A%E7%9A%84%E4%BF%AE%E6%94%B9%E4%BB%A5%E6%B1%82%E6%9B%B4%E6%9C%89%E7%9C%8B%E5%A4%B4%EF%BC%8C%E5%B0%A4%E5%85%B6%E6%98%AF%E5%A2%9E%E5%8A%A0%E4%BA%86%E5%BE%88%E5%A4%9A%E6%83%85%E6%84%9F%E7%BE%8E%E8%89%B2%E7%9A%84%E6%88%8F%E4%BB%BD%EF%BC%8C%E4%B8%8E%E4%B9%A6%E7%B1%8D%E4%B8%8D%E7%9B%B8%E7%AC%A6%E5%90%88%E3%80%82</a></p></li>
+<li><p>《<a href="http://book.douban.com/subject/1055347/">中国史纲</a>》：四星推荐，民国史学家张荫麟留下的唯一著作，恨作者英年早逝，仅仅写到汉代，宋代尚只有一些草稿章节。王家范评此书：“文笔流畅优美，运思遣事之情深意远，举重若轻，在通史著作中当时称绝，后也罕见。”</p></li>
+<li><p>徐中约写的港版《<a href="http://book.douban.com/subject/2376486/">中国近代史</a>》，五星推荐。读过不少近代史，这本是最为出众的，国内出版的是阉割的，所以要看繁体版。客观就不说了，大凡非大陆出的历史名著大都做得到客观，这本尤为可贵的是作者具备全球视野，能把发生在中国的事情与发生在其他国家的事情联系统一起来，在世界史的大局中讲述中国近代史。比如说毛同志吸取了斯大林同志在肉体上消灭异己的教训，采取精神上消灭的措施；又如毛同志为避免重蹈斯大林被继任者赫鲁晓夫全盘否定的覆辙，清算了少奇同志。此外，49年之后，大陆，台湾，香港三地的历史齐头并进讲解，而大陆的近代史书一般只讲大陆部分。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/10825612/">近代中国社会的新陈代谢</a>》，四星推荐。作者可是咱双峰老乡，敬佩敬佩。大约成书于1989年，大陆学者出的一本不错的近代史书。重点讲1840~1930间的中国历史，一如书名所示，“新陈代谢”的演进过程讲得很不错，把一串事件的前因后果都串起来了，引用资料详实，足可见当时社会的各种争辩：从夷夏，古今，中西，长技/政体/文化，改良/革命，立宪/共和等等之争辩之演化。唯一的遗憾是毕竟写于80年代，不免有一些的意识形态词语在其中，且受马克思唯物主义历史观影响，不过总体瑕不掩瑜。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1060025/">中国近代史</a>》，五星推荐。这本书是民国外交官员蒋廷黻所写，自然善于从外交角度来阐述。短小精悍是其最大的特点，叹为观止！短短五六万字就将清末至民国历史发展的脉络展现出来，一气呵成。对人物的历史评判新颖客观独到。“鸦片战争的军事失败还不是民族致命伤。失败以后还不明了失败的理由力图改革，那才是民族的致命伤。”，振聋发聩。这是引起我对近代史感兴趣的入门书籍。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/5288371/">蒋经国传</a>》，四星推荐。此书可以从不同的视角佐证其他书籍中的近代中国史，而更值得重视的是经国先生如何将台湾从一个军事戒严的独裁政府平稳过渡到一个本地人做主的民主政府。经国在治理上海时期曾提出“只打老虎，不拍苍蝇”的口号，是不是很熟悉？衷心感谢经国先生领导台湾人民缔造了一个华人民主社会，楷模！经国有能力，有魄力，有度量来顺应潮流，启用台湾本土人，开放报禁，党禁，实现民主政治。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/3239549/">夹边沟记事</a>》：四星推荐，国内学者所著，难得，被翻译为英文（有很有噱头的封面与标题）。讲述59～61年期间“右派”在西北酒泉附近夹边沟/明水农场改造的非人经历，百分之七八十的人饿死了，活脱脱的饥饿实验室。当然在D的领导下他们都有正常死亡的病历的，若非作者的记录，这惨烈的历史将鲜为人知。作者文笔不错，寓深沉于木讷，寓悲愤于质朴，和大戈壁盐碱地上那些无声的惨烈浑然一体。</p></li>
+<li><p>关于近代史的最佳影视剧集：以前也推荐过，那就是《<a href="http://movie.douban.com/subject/1441794/">走向共和</a>》，60集，依然五星推荐。此外还有美国人Sue Williams制作的三集纪录片《<a href="http://movie.douban.com/subject/2042115/">中国，一个世纪的革命</a>》（China - A Century of Revolution），每集两小时，共六小时。该片从1911年一直叙述到1997年，横跨一个世纪的中国历史。较（与国内史书／教科书相较）为真实客观地还原了中国近百年的历史，该片中有许多在中国主流媒体上不可能看到的极为珍贵且罕见的历史镜头，如孙中山讲话、宋美龄在美筹款、访谈蒋经国、80年代末的某次运动、访谈崔健等等。这一点相当赞！。</p></li>
 </ul>
+
 
 <p>上面列的都是从历史的角度看中国的过去，下面这些则是从社会学人类学的角度来审视中国社会：</p>
 
 <ul>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/10532835/">乡土中国 生育制度 乡土重建</a>》 ：五星推荐，费孝通的名著。为什么中国人的乡土观念这么强，家族宗法制的形成背景，乡绅阶层与地方自治以及无讼是求之间的关系，在《乡土中国》里都讲的相当透彻；而《生育制度》则着重讲解中国特色的婚姻制度，家族观念之形成背景以及掩藏其礼俗表面下的缘由，进化因素，这对理解传统社会相当有帮助，对理解当今农村社会生活的一些习俗依然有非常重要的现实意义，比如理解娘亲舅大，爹亲叔大之缘由。《乡土重建》则是作者为民国政府重建农村经济出谋划策写的一些建议策略，对理解中国传统农村的经济状态非常有帮助。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/2988944/">金翼</a>》：四星推荐，人类学著作，成书于1940年。述说20 ~ 30年代两个农村家庭在中国民间传统文化与经济的背景下，面对新的商业社会的经济方式，如何调整适应以求新的发展或因不能适应而日渐衰落，再现了30年代前后中国农村生活的情景及经济变迁的剖断面。作者提出均衡理论：橡皮筋-竹竿模型来描述传统熟人社会里的人际均衡关系。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1082196/">林村的故事：一九四九年后的中国农村变革</a>》 ：四星推荐，也是人类学著作。这是一部关于解放初至改革开放初(85年)厦门城郊农村变迁过程的人类学著作，通过一个有个性有思想的村支书的之眼展现土地改革，公社，大跃进，大饥荒，四清运动，文革，家庭承包责任制，解体集体制，改革开放等众多社会大事对农村的影响。《金翼》写的是解放前，这本则是写解放后，这两本书衔接起来看，再加上《乡土中国》的理论分析，基本上就能对近一百年的农村概况有所了解了。这本书最好结合徐中约《中国近代史-下册》阅读，才能明白此书中各种政治运动的来龙去脉，因为这本书只是描述运动之现象。</p>
-  </li>
+<li><p>《<a href="http://book.douban.com/subject/10532835/">乡土中国 生育制度 乡土重建</a>》 ：五星推荐，费孝通的名著。为什么中国人的乡土观念这么强，家族宗法制的形成背景，乡绅阶层与地方自治以及无讼是求之间的关系，在《乡土中国》里都讲的相当透彻；而《生育制度》则着重讲解中国特色的婚姻制度，家族观念之形成背景以及掩藏其礼俗表面下的缘由，进化因素，这对理解传统社会相当有帮助，对理解当今农村社会生活的一些习俗依然有非常重要的现实意义，比如理解娘亲舅大，爹亲叔大之缘由。《乡土重建》则是作者为民国政府重建农村经济出谋划策写的一些建议策略，对理解中国传统农村的经济状态非常有帮助。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/2988944/">金翼</a>》：四星推荐，人类学著作，成书于1940年。述说20 ~ 30年代两个农村家庭在中国民间传统文化与经济的背景下，面对新的商业社会的经济方式，如何调整适应以求新的发展或因不能适应而日渐衰落，再现了30年代前后中国农村生活的情景及经济变迁的剖断面。作者提出均衡理论：橡皮筋-竹竿模型来描述传统熟人社会里的人际均衡关系。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1082196/">林村的故事：一九四九年后的中国农村变革</a>》 ：四星推荐，也是人类学著作。这是一部关于解放初至改革开放初(85年)厦门城郊农村变迁过程的人类学著作，通过一个有个性有思想的村支书的之眼展现土地改革，公社，大跃进，大饥荒，四清运动，文革，家庭承包责任制，解体集体制，改革开放等众多社会大事对农村的影响。《金翼》写的是解放前，这本则是写解放后，这两本书衔接起来看，再加上《乡土中国》的理论分析，基本上就能对近一百年的农村概况有所了解了。这本书最好结合徐中约《中国近代史-下册》阅读，才能明白此书中各种政治运动的来龙去脉，因为这本书只是描述运动之现象。</p></li>
 </ul>
 
-<p>OK，列举了一大堆中国历史的书，也来看看西方历史吧，虽然西方历史我还没有正式涉猎，仅仅看了下面这本还不错的入门书。</p>
+
+<p> OK，列举了一大堆中国历史的书，也来看看西方历史吧，虽然西方历史我还没有正式涉猎，仅仅看了下面这本还不错的入门书。</p>
 
 <ul>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/4201719/">西洋史</a>》：五星推荐。又一本民国牛书，倘若要推荐西方史书籍，这本绝对是第一。史料虽都一样，但能把那些能提纲挈领的事件以及这些事件之间的前后连贯的因果关系讲得明明明白的史书却少之又少。作者精辟地总结道：上古希腊罗马是入世观，中古黑暗时代是出世观，文艺复兴之后又复入世观。作者是陈衡哲作为我国第一位女教授。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1065142/">欧洲文明十五讲</a>》 ：三星推荐，根据北大课堂讲课整理而成。一本能让你了解欧洲历史发展整体脉络的书籍，非常不错的欧洲历史入门读物：从希伯来，希腊，罗马，中世纪，文艺复兴，启蒙运动，宗教革命，工业革命，近代英法大革命一路讲来，能激发兴趣，并推荐了进一步的读物。上古中古讲得很不错，近代尤其是第十一，十二讲有点水。对比着看中国历史，很有趣，中国在公元前221年政治早熟，由秦一统天下时，基督还没诞生呢，罗马帝国，中世纪影子都还没有呢。</p>
-  </li>
+<li><p>《<a href="http://book.douban.com/subject/4201719/">西洋史</a>》：五星推荐。又一本民国牛书，倘若要推荐西方史书籍，这本绝对是第一。史料虽都一样，但能把那些能提纲挈领的事件以及这些事件之间的前后连贯的因果关系讲得明明明白的史书却少之又少。作者精辟地总结道：上古希腊罗马是入世观，中古黑暗时代是出世观，文艺复兴之后又复入世观。作者是陈衡哲作为我国第一位女教授。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1065142/">欧洲文明十五讲</a>》 ：三星推荐，根据北大课堂讲课整理而成。一本能让你了解欧洲历史发展整体脉络的书籍，非常不错的欧洲历史入门读物：从希伯来，希腊，罗马，中世纪，文艺复兴，启蒙运动，宗教革命，工业革命，近代英法大革命一路讲来，能激发兴趣，并推荐了进一步的读物。上古中古讲得很不错，近代尤其是第十一，十二讲有点水。对比着看中国历史，很有趣，中国在公元前221年政治早熟，由秦一统天下时，基督还没诞生呢，罗马帝国，中世纪影子都还没有呢。</p></li>
 </ul>
+
 
 <p>本来想一口气写完的，实在太多了，只写了历史部分，那就算上篇吧。</p>
 ]]></content>
@@ -1685,52 +1750,49 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     <id>http://kesalin.github.io/blog/2014/05/02/century-of-revolution</id>
     <content type="html"><![CDATA[<p><img src="http://img5.douban.com/mpic/s3052908.jpg" alt="中国革命" /></p>
 
-<h3 id="section">纪录片简介</h3>
+<h3>纪录片简介</h3>
+
 <p>由美国人Sue Williams制作的三集纪录片《<a href="http://movie.douban.com/subject/2042115/">中国，一个世纪的革命</a>》（China - A Century of Revolution），从1911年一直叙述到1997年，横跨一个世纪的中国历史。较（与国内史书／教科书相较）为真实客观地还原了中国近百年的历史，该片中有许多在中国主流媒体上不可能看到的极为珍贵且罕见的历史镜头，如孙中山讲话、宋美龄在美筹款、访谈蒋经国、80年代末的某次运动、访谈崔健等等。这一点相当赞！</p>
 
 <!--more-->
+
 
 <p>20世纪，是中国历史上最为动荡同时也是变化最为深刻的时期，世界著名历史学家斯塔夫里阿诺斯认为：“在中国长达数千年的历史上，有过三次从根本上改变了中国的政治和社会结构的大革命。第一次发生于公元前221年，它结束了领主封建制，创立了实行中央集权制的帝国；第二次发生于1911年，它结束了帝国，建立了共和国；第三次发生在1949年，建立了共产党领导的政权。”（《<a href="http://book.douban.com/subject/1922216/">全球通史</a>》p160）</p>
 
 <p>而其中有两次大革命就发生在最近的一百年里。熟悉这百年历史的，都能读懂这些时间节点所发生的事件及其深刻影响。至于片中具体内容，实在难以尽述，一则因为文字乏力有图才有真相，二则即便能笔下生花，多半也会被和谐。是故，在这里略去不谈，请君阅片。</p>
 
-<h3 id="section-1">分集简介</h3>
+<h3>分集简介</h3>
+
 <p>该纪录片按时间顺序分为三集，每集两小时，三集共六小时。</p>
 
 <ul>
-  <li>
-    <p>第一集《<a href="http://movie.douban.com/subject/2042115/">中国革命</a>》（China in Revolution）（1911-1949），由两部分组成：为生存而战（1911-1936），为未来而战（1936-1949）。內容是民初北洋政府、民国、抗日、内战。</p>
-  </li>
-  <li>
-    <p>第二集《毛时代》（The Mao Years）（1949-1976）也分为两部分：追星揽月（1949-1960），造反有理（1960-1976）。内容是建国后毛泽东主政中国的27年，包括最为痛心的十多年浩劫。</p>
-  </li>
-  <li>
-    <p>第三集《生于红旗下》（Born Under the Red Flag）（1976-1997），可以说是邓时代，内容是邓和他的三位接班人对中国历史的影响，包括80年代末的那次著名运动。</p>
-  </li>
+<li><p>第一集《<a href="http://movie.douban.com/subject/2042115/">中国革命</a>》（China in Revolution）（1911-1949），由两部分组成：为生存而战（1911-1936），为未来而战（1936-1949）。內容是民初北洋政府、民国、抗日、内战。</p></li>
+<li><p>第二集《毛时代》（The Mao Years）（1949-1976）也分为两部分：追星揽月（1949-1960），造反有理（1960-1976）。内容是建国后毛泽东主政中国的27年，包括最为痛心的十多年浩劫。</p></li>
+<li><p>第三集《生于红旗下》（Born Under the Red Flag）（1976-1997），可以说是邓时代，内容是邓和他的三位接班人对中国历史的影响，包括80年代末的那次著名运动。</p></li>
 </ul>
+
 
 <p>如果想要了解清末到1911年之间的历史，推荐被河蟹的电视剧《走向共和​》。</p>
 
-<h3 id="section-2">下载链接</h3>
+<h3>下载链接</h3>
+
 <p>三集，每集两小时，共六小时。以下附迅雷下载链接</p>
 
 <ul>
-  <li>
-    <p>第一集 中国革命（China In Revolution） 
-<a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQjglODkuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU3JTk0JTlGJUU1JTlDJUE4JUU3JUJBJUEyJUU2JTk3JTk3JUU0JUI4JThCLkJvcm4uVW5kZXIudGhlLlJlZC5GbGFnLjE5OTcuRDUuSEFMRkNELVRMRihFRDIwMDAuQ09NKS5ta3Z8NTA3ODk4NTE4fEU4QTAwNzU4Q0RDOTA0NjA5MTA5QzU0QjY5MTdDQTQ5fC9aWg">迅雷下载</a></p>
-  </li>
-  <li>
-    <p>第二集 毛时代（The Mao years）
-<a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQkElOEMuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU2JUFGJTlCJUU2JTk3JUI2JUU0JUJCJUEzLlRoZS5NYW8uWWVhcnMuMTk5NC5ENS5IQUxGQ0QtVExGKEVEMjAwMC5DT00pLm1rdnw1MTgyNzczNTN8NkZDODhGNTZDQzZFMUI0NTg5QTEyNDBBRUU1NTQxRjF8L1pa/">迅雷下载</a></p>
-  </li>
+<li><p>第一集 中国革命（China In Revolution）
+<a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQjglODkuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU3JTk0JTlGJUU1JTlDJUE4JUU3JUJBJUEyJUU2JTk3JTk3JUU0JUI4JThCLkJvcm4uVW5kZXIudGhlLlJlZC5GbGFnLjE5OTcuRDUuSEFMRkNELVRMRihFRDIwMDAuQ09NKS5ta3Z8NTA3ODk4NTE4fEU4QTAwNzU4Q0RDOTA0NjA5MTA5QzU0QjY5MTdDQTQ5fC9aWg">迅雷下载</a></p></li>
+<li><p>第二集 毛时代（The Mao years）
+<a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQkElOEMuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU2JUFGJTlCJUU2JTk3JUI2JUU0JUJCJUEzLlRoZS5NYW8uWWVhcnMuMTk5NC5ENS5IQUxGQ0QtVExGKEVEMjAwMC5DT00pLm1rdnw1MTgyNzczNTN8NkZDODhGNTZDQzZFMUI0NTg5QTEyNDBBRUU1NTQxRjF8L1pa/">迅雷下载</a></p></li>
 </ul>
+
 
 <p>​* 第三集 生于红旗下（Born under the red flag）
 <a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQjglODAuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU5JTlEJUE5JUU1JTkxJUJEJUU0JUI4JUFEJUU3JTlBJTg0JUU0JUI4JUFEJUU1JTlCJUJELkNoaW5hLmluLlJldm9sdXRpb24uMTk4OS5ENS5IQUxGQ0QtVExGKEVEMjAwMC5DT00pLm1rdnw1MTI1MTI3NDN8NkRCREM4MUREOENCNUQ5REQ4OTI2M0M3NzNBQkE4MUJ8L1pa/">迅雷下载</a></p>
 
-<h3 id="section-3">更多介绍：</h3>
-<p><a href="http://www.360doc.com/content/11/0624/18/332078_129331107.shtml">总体介绍</a><br />
-​<a href="http://movie.douban.com/subject/2042115/​">第一集的豆瓣链接</a></p>
+<h3>更多介绍：</h3>
+
+<p><a href="http://www.360doc.com/content/11/0624/18/332078_129331107.shtml">总体介绍</a><br/>
+​<a href="http://movie.douban.com/subject/2042115/%E2%80%8B">第一集的豆瓣链接</a></p>
 ]]></content>
   </entry>
   
@@ -1743,7 +1805,8 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <!--more-->
 
-<h3 id="section">髓鞘质原理</h3>
+
+<h3>髓鞘质原理</h3>
 
 <p>人类的活动（练习）最终都是通过在神经纤维之间传导神经信号来完成的，习得一种技能就通过神经信号的触发在神经元之间建立有效连接来实现的。髓鞘质则是包裹在神经纤维上的一层层绝缘物质。包裹神经纤维的髓鞘质越厚，神经信号传递的速度就越快和精确度就越高，从而技能的反应速度和精准度就越好。髓鞘质的生成速度很缓慢，大量重复刻意的练习可以生成大量的髓鞘质，从而提高技能水平。你可以把神经元之间的连接想象成网线，而包裹在连接之上的髓鞘质想象成包裹网线的绝缘物质，练习越多绝缘物质就越厚，带宽就越高。这是从生理学角度解释习得技能的原因。</p>
 
@@ -1751,13 +1814,13 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>人不同于大多数动物，生下来时并没有预置太多工作良好的神经回路，像走路这样的技能都得靠后天的练习，而牛，马等动物则不同，它们一生下来就能走路。当然大自然这样的安排是巧夺天工，人类大脑中有的是建立神经回路所需的元件，组合好这些元件就能够习得各式各样的技能。换句话说，大多数动物就是定制版，出生了就不能修改；而人类是DIY（Do it yourself）的产物，要什么技能就自个玩呗。</p>
 
-<h3 id="section-1">十年法则/一万小时天才理论</h3>
+<h3>十年法则/一万小时天才理论</h3>
 
 <p>前面说了技能水平的提高得靠髓鞘质的生成，髓鞘质的生成得靠练习，而髓鞘质的很缓慢，所以需要大量重复的练习。经过研究，埃里克森同学提出了一条法则：要经过一万小时的精深练习才能达到世界级的水准。精深练习是很耗精力的，人每天最多进行3-5小时这样的练习，因而需要十年左右的时间才能练出世界级水平的技能。</p>
 
 <p>君不见网球娜姐，台球丁哥，钢琴朗朗艰苦练习的成长之路？要想取得成就，不要急躁，也别妄想一步登天，取得成就的生理限制就在那里，一步一个脚印地练习才是王道。</p>
 
-<h3 id="section-2">精深练习/刻意练习</h3>
+<h3>精深练习/刻意练习</h3>
 
 <p>为提高技能而进行的练习与普通的练习是大不同的。这种练习通常是明确和有计划的，是为了提高技能，且通常是需要外部(教练，老师等)帮助的；它能反复多次，并能从练习的结果中得到持续的反馈；无论是智力还是体力练习，它都极其耗费心神和枯燥乏味的。</p>
 
@@ -1765,11 +1828,11 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>一言以蔽之，精深练习就是选定合适的目标，努力练习，评估差距改进，不断地重复这个过程。</p>
 
-<h3 id="chunking">组块理论（Chunking）</h3>
+<h3>组块理论（Chunking）</h3>
 
-<p>组块理论是讲如何进行练习细节的。在学习一个知识点时，要遵循三个步骤：第一，整体吸收，整体了解任务。也就是先建立一个完整但并不那么有效的神经回路。第二，分拆任务，将任务分解成最基础的组块，针对这些组块进行练习。第三，放慢练习，花时间用慢动作练习。放慢节奏一则能使你更加关注错误，每一次都提高一点精确度；二则能更好地掌握技能的形状与节奏。 </p>
+<p>组块理论是讲如何进行练习细节的。在学习一个知识点时，要遵循三个步骤：第一，整体吸收，整体了解任务。也就是先建立一个完整但并不那么有效的神经回路。第二，分拆任务，将任务分解成最基础的组块，针对这些组块进行练习。第三，放慢练习，花时间用慢动作练习。放慢节奏一则能使你更加关注错误，每一次都提高一点精确度；二则能更好地掌握技能的形状与节奏。</p>
 
-<h3 id="section-3">激情/动力</h3>
+<h3>激情/动力</h3>
 
 <p>前面说到进行精深练习是极其耗费精力与枯燥无味的，而取得成就又得经历长达十年的艰苦练习。没有强劲的兴趣，激情与动力，绝大部分人是做不到的。激情在不同阶段需要不同的信号刺激。第一阶段是启动信号，让你对某个领域感兴趣；第二阶段是持续信号，让你能够坚持长久的精神练习而不轻易放弃。</p>
 
@@ -1783,27 +1846,27 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>对于激情，外部环境相当重要，而这些很多时候并不是我们个体能够控制的。</p>
 
-<h3 id="section-4">机遇</h3>
+<h3>机遇</h3>
 
 <p>上面说的1到5点大多是从个体方面来讲的，是所谓战术方面的问题；要想取得成功光靠战术是不行的，诸葛亮这么牛逼也没能让蜀国一统天下，怀才不遇的人多了去，接下来要讲讲战略问题，也就是机遇问题。</p>
 
-<p>首先，是要有机遇。生错人种，生不逢时，长错地方，都可能限制你在某些方面取得成就。比如说朝鲜人在当今世界上有取得辉煌成果的有几个？ 而今中国互联网的那些大佬如马云，李彦宏，马化腾，丁磊，张朝阳等为啥年龄都约在45岁至50岁之间？因为他们是在合适的年龄赶上了中国互联网的第一波浪潮（97~99年）。98年，腾讯，新浪，搜狐成立，99年阿里，百度成立。那时他们大约在30岁左右，拥有足够的行业知识，又赶上了互联网的第一班车。再如，1950~1960出生的美国富翁潮（比尔盖茨，乔布斯，施密特等），正好在10-20岁左右赶上美国历史上经济发生最大变革的时代（60年代-70年代）。如果仅从人口出生情况看，00后的机遇比我们80后要好得多（80~89年出生人口在两千万以上，99年出生人口不到一千二百万）。 </p>
+<p>首先，是要有机遇。生错人种，生不逢时，长错地方，都可能限制你在某些方面取得成就。比如说朝鲜人在当今世界上有取得辉煌成果的有几个？ 而今中国互联网的那些大佬如马云，李彦宏，马化腾，丁磊，张朝阳等为啥年龄都约在45岁至50岁之间？因为他们是在合适的年龄赶上了中国互联网的第一波浪潮（97~99年）。98年，腾讯，新浪，搜狐成立，99年阿里，百度成立。那时他们大约在30岁左右，拥有足够的行业知识，又赶上了互联网的第一班车。再如，1950~1960出生的美国富翁潮（比尔盖茨，乔布斯，施密特等），正好在10-20岁左右赶上美国历史上经济发生最大变革的时代（60年代-70年代）。如果仅从人口出生情况看，00后的机遇比我们80后要好得多（80~89年出生人口在两千万以上，99年出生人口不到一千二百万）。</p>
 
 <p>其次，是要把握住机遇。把握机会也是一种能力。或许这和情商有关。美国人斯托弗.兰根，智商高达195，一则成长环境有限，二则缺少把握机会的能力，所以没能取得多大成就。想想网球娜姐要是留在国家队会是怎样的结果？</p>
 
-<h3 id="section-5">累积效应</h3>
+<h3>累积效应</h3>
 
 <p>在一个群体中，如果一开始在某一方面有一丁点的优势，这个优势就会不断地积累放大，最终出类拔萃。比如说，美国梅迪辛哈特猛虎队棒球明星们，出生月份都靠前。他们小时候在练习棒球时比同年晚些月份出生的孩子有身体上的优势，从而表现较好，自然就会得到教练更多的关注，获得更多的资源，从而“利滚利”，越来越优秀了。中国父母“不能输在起跑线上”的观念也是有一定道理的。</p>
 
-<h3 id="section-6">总结</h3>
+<h3>总结</h3>
 
 <p>可以说那些获得成就的人都是外部机遇以及个人努力的合成物。</p>
 
 <hr />
 
 <p>扩展阅读：
-《<a href="http://book.douban.com/subject/4726323/">一万小时天才理论</a>》<br />
-《<a href="http://book.douban.com/subject/4010185/">哪来的天才——练习中的平凡与伟大</a>》<br />
+《<a href="http://book.douban.com/subject/4726323/">一万小时天才理论</a>》<br/>
+《<a href="http://book.douban.com/subject/4010185/">哪来的天才——练习中的平凡与伟大</a>》<br/>
 《<a href="http://book.douban.com/subject/3688489/">异类</a>》</p>
 ]]></content>
   </entry>
@@ -1817,82 +1880,68 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <!--more-->
 
-<h3 id="section">看过的书</h3>
 
-<p>这一年虽然忙碌，书还是看了一些，有不少是温故而知新的。如重看了《<a href="http://book.douban.com/subject/5325618/">高效能人士的7个习惯</a>》，《<a href="http://book.douban.com/subject/5287474/">影响力</a>》，《<a href="http://book.douban.com/subject/1008357/">水浒传</a>》以及一些技术书籍，也看了一些不错的新书：   </p>
+<h3>看过的书</h3>
+
+<p>这一年虽然忙碌，书还是看了一些，有不少是温故而知新的。如重看了《<a href="http://book.douban.com/subject/5325618/">高效能人士的7个习惯</a>》，《<a href="http://book.douban.com/subject/5287474/">影响力</a>》，《<a href="http://book.douban.com/subject/1008357/">水浒传</a>》以及一些技术书籍，也看了一些不错的新书：</p>
 
 <ol>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/4051739/">第五项修炼</a>》★★★★★
-这本书入手好几年了，可惜早几年没达到那境地，看不明白，今年终于读明白些了。这本书主要将如何系统地通过采用学习型组织的战略与行动步骤，来排除阻碍成长与发展的障碍，以达成理想的成就与目标。学得知识点：学习型组织/系统（全局）思维。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/4243770/">创新者的窘境</a>》★★★★★
-这本书虽然讲的是公司创新，其实可以泛化为一切领域的推陈出新，可以说就是讲《<a href="">易</a>》之道。书中讲述了两种创新模式：延续性创新和颠覆性创新。延续性创新就是在原有系统上的小扩展，如Nokia的功能机系统Symbian 3 延续升级到 Symbian 5；而颠覆性创新则是腾空出世，颠覆原有系统的大手笔，如苹果/Android智能机系统，如微博/微信的腾空出世。作者重点讲什么是颠覆性创新，为什么老系统会阻碍是颠覆性创新，怎样才能打破这些阻碍。作者虽然讲的是公司系统，其实在之后的领悟中，我发现一切领域都是如此。于我们个体而言，如何突破自己的思维定势，保持开明开放心态，接触了解新事物新思维也是如此。于一个国家，清朝的这样的老系统灭亡是必然（看《<a href="http://movie.douban.com/subject/1441794/">走向共和</a>》，《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》有感）。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1041385/">论美国的民主</a>》★★★★★ 
-这本书是托克维尔同学在法国大革命时期因抱有不同政见，托辞前往美国考察9个月之后写下的名作，我是在看了他的《<a href="http://book.douban.com/subject/11607261/">旧制度与大革命</a>》（这本据传官方高层曾向官员们推荐看看的）之后抱着牛人的书都应该看看心态入手这一本的。作者细致地分析和考察了美国成立的过程。在美国民主思想为什么那么深根蒂固呢？一则，英国的新教为了开辟纯净的教土离开英国本土前往美洲（新教是一种颠覆性创新），很有信仰信念的一批人；二则，落地在美国的每一个人一开始就没有贵族，望族，官二代，富二代等身份，等级，财富之差别，每个人都是凭借自己的才智勤劳取得成就，平等观念自然形成；三则，美洲得天独厚的地理条件，周边没有陈旧的强国虎视眈眈。所以幸运的美国几乎没有经历太多的流血反复就走向了民主共和。作者认为正是每一个个微小独立平等毫无依靠的个体，为最大程度地保障自己的利益，追求个人的幸福，才制定出最强大民主的宪法制度来限制政府以及一切他人来剥夺个人追求幸福之权利。所以我看好中国之未来，随着城镇化程度的扩大，每一个微小独立需靠自己拼搏奋斗的个体都有助于中国走向民主社会。独立的个体的增多这是因，走向民主社会只是果，这是必然的趋势，正所谓历史的滚滚车轮挡不住，那一天必将到来。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1336330/">冰与火之歌</a>》★★★ 
-萝卜白菜各有所爱吧，对我自己而言是五星的好小说，还是谦虚点三星推荐。一开始是追《<a href="http://movie.douban.com/subject/3016187/">权力的游戏</a>》这部美剧的（这部剧也是五星推荐，制作相当精致），可是一年才出一季，哥等不及了就看小说剧透了，可小说也才写到第五部（总计划七部），急急如令作者快点写，别玩太监书。废话少说，这部书为啥这么牛逼？<br />
-第一，作者对每一个主要角色都是用第一人称角度来讲述的，长这么大才碰到有这种写法的；<br />
-第二，情节吸引人，血腥暴力色情魔幻样样不少；<br />
-第三，从很多侧面可以了解到当时欧洲贵族/骑士制度的一些情形。</p>
-  </li>
+<li><p>《<a href="http://book.douban.com/subject/4051739/">第五项修炼</a>》★★★★★
+这本书入手好几年了，可惜早几年没达到那境地，看不明白，今年终于读明白些了。这本书主要将如何系统地通过采用学习型组织的战略与行动步骤，来排除阻碍成长与发展的障碍，以达成理想的成就与目标。学得知识点：学习型组织/系统（全局）思维。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/4243770/">创新者的窘境</a>》★★★★★
+这本书虽然讲的是公司创新，其实可以泛化为一切领域的推陈出新，可以说就是讲《<a href="">易</a>》之道。书中讲述了两种创新模式：延续性创新和颠覆性创新。延续性创新就是在原有系统上的小扩展，如Nokia的功能机系统Symbian 3 延续升级到 Symbian 5；而颠覆性创新则是腾空出世，颠覆原有系统的大手笔，如苹果/Android智能机系统，如微博/微信的腾空出世。作者重点讲什么是颠覆性创新，为什么老系统会阻碍是颠覆性创新，怎样才能打破这些阻碍。作者虽然讲的是公司系统，其实在之后的领悟中，我发现一切领域都是如此。于我们个体而言，如何突破自己的思维定势，保持开明开放心态，接触了解新事物新思维也是如此。于一个国家，清朝的这样的老系统灭亡是必然（看《<a href="http://movie.douban.com/subject/1441794/">走向共和</a>》，《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》有感）。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1041385/">论美国的民主</a>》★★★★★
+这本书是托克维尔同学在法国大革命时期因抱有不同政见，托辞前往美国考察9个月之后写下的名作，我是在看了他的《<a href="http://book.douban.com/subject/11607261/">旧制度与大革命</a>》（这本据传官方高层曾向官员们推荐看看的）之后抱着牛人的书都应该看看心态入手这一本的。作者细致地分析和考察了美国成立的过程。在美国民主思想为什么那么深根蒂固呢？一则，英国的新教为了开辟纯净的教土离开英国本土前往美洲（新教是一种颠覆性创新），很有信仰信念的一批人；二则，落地在美国的每一个人一开始就没有贵族，望族，官二代，富二代等身份，等级，财富之差别，每个人都是凭借自己的才智勤劳取得成就，平等观念自然形成；三则，美洲得天独厚的地理条件，周边没有陈旧的强国虎视眈眈。所以幸运的美国几乎没有经历太多的流血反复就走向了民主共和。作者认为正是每一个个微小独立平等毫无依靠的个体，为最大程度地保障自己的利益，追求个人的幸福，才制定出最强大民主的宪法制度来限制政府以及一切他人来剥夺个人追求幸福之权利。所以我看好中国之未来，随着城镇化程度的扩大，每一个微小独立需靠自己拼搏奋斗的个体都有助于中国走向民主社会。独立的个体的增多这是因，走向民主社会只是果，这是必然的趋势，正所谓历史的滚滚车轮挡不住，那一天必将到来。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1336330/">冰与火之歌</a>》★★★
+萝卜白菜各有所爱吧，对我自己而言是五星的好小说，还是谦虚点三星推荐。一开始是追《<a href="http://movie.douban.com/subject/3016187/">权力的游戏</a>》这部美剧的（这部剧也是五星推荐，制作相当精致），可是一年才出一季，哥等不及了就看小说剧透了，可小说也才写到第五部（总计划七部），急急如令作者快点写，别玩太监书。废话少说，这部书为啥这么牛逼？<br/>
+第一，作者对每一个主要角色都是用第一人称角度来讲述的，长这么大才碰到有这种写法的；<br/>
+第二，情节吸引人，血腥暴力色情魔幻样样不少；<br/>
+第三，从很多侧面可以了解到当时欧洲贵族/骑士制度的一些情形。</p></li>
 </ol>
+
 
 <p>其他读过一些还不错的，但目前算不上五星推荐（不是书不好，是我境界还没练到家）：</p>
 
 <ol>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/6082808/">百年孤独</a>》 
-讲一个家三代人在时间消磨下的家族孤独史，书中人物的名字很费脑，爷爷儿子孙子名字都一样，搞得你分不清谁是谁。套用一句话，在时间的魔力面前，一切都是浮云（跑题下，浮云出自孔夫子的”不义富且贵，于我如浮云”，老语变流行语）。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》
-从宏观角度，连贯地讲述中国历史的发展演变历程。这本书之所以叫大历史就是要从宏观的纵向跨度上前后连贯来讲述朝代更替的前因后果，来龙去脉。中国的历史教科书真是一坨屎，只会告诉你时间地人物，教会你李渊见糖留一把（李渊建立唐朝于公园618年）这种应试的伎俩，却没有系统地把历史演进的前因后果，来龙去脉讲清楚。就拿文体来说：从几字短句的诗经楚辞，五言七律的唐诗，到宋词，到元曲，到明清小说，到白话文，你看到连贯性了没？（文体越来越长，语言越来越简单明了）明白这种连贯性背后的因由没？（从甲骨，到鼎，到竹简，到丝绸，到纸张，到印刷术，书写成本越来越低，书写材料越来越易得，不用字字斟酌来减少书写成本）这些教科书是不会讲的。这本书了解自己国家历史不可不看，推测未来走向亦不可不看，用科泰老总陈榕同志的话来说就是：看得到多远的过去，就望得到多远的未来。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1019568/">三国演义</a>》
-之所以重看这本书，是看了《<a href="http://book.douban.com/subject/1041385/">论美国的民主</a>》，《<a href="http://book.douban.com/subject/1336330/">冰与火之歌</a>》，《<a href="http://movie.douban.com/subject/4769314/">唐顿庄园</a>》之后了解了一些欧洲的骑士贵族制度，联想到中国古代类似的武士诸侯制度，从士的精神”这个角度对比着阅读找来看的。在三国及汉之前那些个时代，中国还是很讲究些“士”的气质，“道义”的气节的，武勇文谋，认定一个人就忠诚地跟随，打仗不斩来使，也不杀降者，惜才不滥杀。之后就一代不一代，唐太祖还算讲民主的，臣子可以带佩剑入朝，到了宋太祖就杯酒释兵权，到明太祖就斩杀建国功臣，到毛太祖就整风文绉绉)革命。三国志是了解过去社会风情的一部好书，可惜它被后人篡改了太多以满足“道德”二字的标准，如刘安杀妻取肉招待刘备，刘备摔阿斗以示爱惜赵云等等，太假太做作了。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/1040538/">中国哲学史大纲</a>》★★★★ 
-大师胡适写的，讲述中国哲学的发展历演进程，有高屋建瓴，提纲挈领之作用。胡适搞研究很有一套，用他的话说研究中国哲学史有三大目标：明变（明白古今哲学的沿革变迁），求因（寻找沿革变迁的原因），评判（知道各家学说的价值以及影响后果）。这和《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》的研究写作思路相似，这个类似的思路可以用老子的”道“来描述，也即道理相通。记得看张国荣演的《<a href="http://movie.douban.com/subject/1297447/">倩女幽魂</a>》里面有个道士出场就是”道可道，非常道；名可名，非常名“，这句话熟悉得不能再熟悉了。可要不是看了这本书还真没琢磨过这句话的含义，这句话中的“常”古时候同“尚”，表示上等的意思，因此这句话讲的是手中无剑，心中有剑的境界：那些个可以说出来的道，不是（上等的）真正的道，那些个可以命名的名不是真正的名。这就是老子万事的无为思想，他这个思想也不是凭空而来的，而是因周朝末年到春秋三百年间，王室诸侯胡作非为，昏庸的政策频出，弄得老百姓民不聊生，所以老子就认为正是政府乱出政策给害的（有为，但是是胡作非为），要是政府无为而治，天下就自然太平了。</p>
-  </li>
-  <li>
-    <p>《<a href="http://book.douban.com/subject/10436418/">战争和革命中的西南联大</a>》★★★★ 
-老外写的，这个人是研究西南联大的专家，二十年就研究西南联大，佩服其专注与兴趣，也景仰支持他搞这种研究的社会制度。中国现在不是缺人才，而是没有这样的研究环境与社会环境。西南联大在战争非常时期，从北京搬往长沙，再搬往昆明，学校学生都穷苦，器材教材都缺乏，还不时面临日军战机的轰炸却大师辈出，培养出大批人才（杨振宁也曾在西南联大就学），必有一些可贵的精神所在，也必有一些特殊的社会环境所在（云南老大龙云与蒋介石不和，龙云在背后支持西南联大，让西南联大获得了不一般的自主自治）。看了这本书可以了解那时候的社会风气，乡村情况，以及知识分子的精神气概。</p>
-  </li>
-  <li>
-    <p>技术方面的一些书籍，全面偏向移动领域：<br />
-iPhone 3D Programming<br />
-Android框架揭秘<br />
-Android系统源代码情景分析</p>
-  </li>
+<li><p>《<a href="http://book.douban.com/subject/6082808/">百年孤独</a>》
+讲一个家三代人在时间消磨下的家族孤独史，书中人物的名字很费脑，爷爷儿子孙子名字都一样，搞得你分不清谁是谁。套用一句话，在时间的魔力面前，一切都是浮云（跑题下，浮云出自孔夫子的&#8221;不义富且贵，于我如浮云&#8221;，老语变流行语）。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》
+从宏观角度，连贯地讲述中国历史的发展演变历程。这本书之所以叫大历史就是要从宏观的纵向跨度上前后连贯来讲述朝代更替的前因后果，来龙去脉。中国的历史教科书真是一坨屎，只会告诉你时间地人物，教会你李渊见糖留一把（李渊建立唐朝于公园618年）这种应试的伎俩，却没有系统地把历史演进的前因后果，来龙去脉讲清楚。就拿文体来说：从几字短句的诗经楚辞，五言七律的唐诗，到宋词，到元曲，到明清小说，到白话文，你看到连贯性了没？（文体越来越长，语言越来越简单明了）明白这种连贯性背后的因由没？（从甲骨，到鼎，到竹简，到丝绸，到纸张，到印刷术，书写成本越来越低，书写材料越来越易得，不用字字斟酌来减少书写成本）这些教科书是不会讲的。这本书了解自己国家历史不可不看，推测未来走向亦不可不看，用科泰老总陈榕同志的话来说就是：看得到多远的过去，就望得到多远的未来。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1019568/">三国演义</a>》
+之所以重看这本书，是看了《<a href="http://book.douban.com/subject/1041385/">论美国的民主</a>》，《<a href="http://book.douban.com/subject/1336330/">冰与火之歌</a>》，《<a href="http://movie.douban.com/subject/4769314/">唐顿庄园</a>》之后了解了一些欧洲的骑士贵族制度，联想到中国古代类似的武士诸侯制度，从士的精神”这个角度对比着阅读找来看的。在三国及汉之前那些个时代，中国还是很讲究些“士”的气质，“道义”的气节的，武勇文谋，认定一个人就忠诚地跟随，打仗不斩来使，也不杀降者，惜才不滥杀。之后就一代不一代，唐太祖还算讲民主的，臣子可以带佩剑入朝，到了宋太祖就杯酒释兵权，到明太祖就斩杀建国功臣，到毛太祖就整风文绉绉)革命。三国志是了解过去社会风情的一部好书，可惜它被后人篡改了太多以满足“道德”二字的标准，如刘安杀妻取肉招待刘备，刘备摔阿斗以示爱惜赵云等等，太假太做作了。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1040538/">中国哲学史大纲</a>》★★★★
+大师胡适写的，讲述中国哲学的发展历演进程，有高屋建瓴，提纲挈领之作用。胡适搞研究很有一套，用他的话说研究中国哲学史有三大目标：明变（明白古今哲学的沿革变迁），求因（寻找沿革变迁的原因），评判（知道各家学说的价值以及影响后果）。这和《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》的研究写作思路相似，这个类似的思路可以用老子的”道“来描述，也即道理相通。记得看张国荣演的《<a href="http://movie.douban.com/subject/1297447/">倩女幽魂</a>》里面有个道士出场就是”道可道，非常道；名可名，非常名“，这句话熟悉得不能再熟悉了。可要不是看了这本书还真没琢磨过这句话的含义，这句话中的“常”古时候同“尚”，表示上等的意思，因此这句话讲的是手中无剑，心中有剑的境界：那些个可以说出来的道，不是（上等的）真正的道，那些个可以命名的名不是真正的名。这就是老子万事的无为思想，他这个思想也不是凭空而来的，而是因周朝末年到春秋三百年间，王室诸侯胡作非为，昏庸的政策频出，弄得老百姓民不聊生，所以老子就认为正是政府乱出政策给害的（有为，但是是胡作非为），要是政府无为而治，天下就自然太平了。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/10436418/">战争和革命中的西南联大</a>》★★★★
+老外写的，这个人是研究西南联大的专家，二十年就研究西南联大，佩服其专注与兴趣，也景仰支持他搞这种研究的社会制度。中国现在不是缺人才，而是没有这样的研究环境与社会环境。西南联大在战争非常时期，从北京搬往长沙，再搬往昆明，学校学生都穷苦，器材教材都缺乏，还不时面临日军战机的轰炸却大师辈出，培养出大批人才（杨振宁也曾在西南联大就学），必有一些可贵的精神所在，也必有一些特殊的社会环境所在（云南老大龙云与蒋介石不和，龙云在背后支持西南联大，让西南联大获得了不一般的自主自治）。看了这本书可以了解那时候的社会风气，乡村情况，以及知识分子的精神气概。</p></li>
+<li><p>技术方面的一些书籍，全面偏向移动领域：<br/>
+iPhone 3D Programming<br/>
+Android框架揭秘<br/>
+Android系统源代码情景分析</p></li>
 </ol>
+
 
 <p>总得来说，这一年的知识图谱在这几个点上穿梭，从欧洲骑士贵族制度到中国的士族制度，中国历史/哲学发展脉络，清末/民国社会风情，美国建国历程。</p>
 
-<h3 id="section-1">印象较深的那些电影：</h3>
+<h3>印象较深的那些电影：</h3>
 
-<p>地下 / Underground / 没有天空的都市 / 地下社会<br />
-被嫌弃的松子的一生<br />
-浪潮 / Die Welle / 恶魔教室(台) / 白恤暴潮(港)<br />
-V字仇杀队 / V for Vendetta / V煞(港) / V怪客(台)<br />
-熊的故事 / L’ours / 熊的故事 / 子熊故事  </p>
+<p>地下 / Underground / 没有天空的都市 / 地下社会<br/>
+被嫌弃的松子的一生<br/>
+浪潮 / Die Welle / 恶魔教室(台) / 白恤暴潮(港)<br/>
+V字仇杀队 / V for Vendetta / V煞(港) / V怪客(台)<br/>
+熊的故事 / L&#8217;ours / 熊的故事 / 子熊故事</p>
 
-<h3 id="section-2">最喜欢的两部剧：</h3>
-<p><a href="http://movie.douban.com/subject/3016187/">权力的游戏</a><br />
+<h3>最喜欢的两部剧：</h3>
+
+<p><a href="http://movie.douban.com/subject/3016187/">权力的游戏</a><br/>
 走向共和 / 满清末代皇朝(台) / For the sake of the Republic of China</p>
 
-<h3 id="section-3">最喜欢的两个词：</h3>
+<h3>最喜欢的两个词：</h3>
+
 <p>互联网思维，长尾理论</p>
 
-<h3 id="section-4">这一年的其他总结：</h3>
-<p>就消费来说是：网购猛于虎；<br />
+<h3>这一年的其他总结：</h3>
+
+<p>就消费来说是：网购猛于虎；<br/>
 就心态来说是：感恩。</p>
 ]]></content>
   </entry>
@@ -1907,6 +1956,7 @@ V字仇杀队 / V for Vendetta / V煞(港) / V怪客(台)<br />
 <p>最近重读了《<a href="http://book.douban.com/subject/5287474/">影响力</a>》，这至少是第三遍或第四遍读它了，我也在博客中多次推荐过。在读过诸多行为心理学，社会心理学书籍之后，这次重读对书中列举的各种例子和试验背后的心理因素了如指掌，深感又拉近了与当初西奥迪尼写这本书时境地的距离。好书就是这样的牛逼，你知道作者的境界在那里，但你却只能通过充实自己的阅历与见识，一遍一遍的重读，慢慢向作者写书时的境界靠近。</p>
 
 <!--more-->
+
 
 <p>重读之后，我并没有写书评的欲望，因为书中内容以及背后蕴含的心理因素我已经非常熟悉了。但今天上门来推销的一个小伙子的推销行为却激起我的兴趣来，于是学以致用，好好地分析了一把。</p>
 
@@ -1951,6 +2001,7 @@ V字仇杀队 / V for Vendetta / V煞(港) / V怪客(台)<br />
 
 <!--more-->
 
+
 <p>夫子曰：“三十而立”。很显然，夫子的标准不适用于张江男。夫张江男，名誉其外，苦逼其内。而我又恰是张江男之一。不知这是不幸中的万幸，抑或万幸中的不幸？在进入而立年之前，我曾想，夫子当时说而立的时候，这个立是指什么样的一种境界呢？我想必定不是婆子，房子，票子。据《论语》上说是指“立于礼”的，若用马斯洛的需求理论来衡量，那又该位于金字塔上的哪一层呢？</p>
 
 <p>今天看到一句话说：“与其说我害怕成为普通人，还不如说我害怕生活，害怕找不到一种自己喜欢的方式去度过人生，害怕不知道什么才是我想要的生活。”心有戚戚焉。或许，每一个人心底都有一对黑白小人，一个说：这就是你的生活，另一个说：这不是你想要的生活。三十岁与二十岁最大的区别是，二十岁真的不知道生活是啥样，三十岁知道生活的一种模式是啥样，却不知道或想知道其它的模式是啥样。其它模式会是啥样呢？或别有洞天，或别有地狱。或许这是我近来对了解不同人很有兴趣的原因之一，每个人都是某种生活模式的镜子。</p>
@@ -1978,6 +2029,7 @@ Slow is fast.
 
 <!--more-->
 
+
 <p>江了十年，湖了十年，一眨眼就过去了二十年，江湖看似依旧，实在波涛暗涌。江湖管委会日益庞大，管委会的嫡系徒子徒孙打着爱我江湖的旗号，招摇撞骗，作威作福。这在江湖上引起许多非议，尤其是南方的丐帮意见非常大。</p>
 
 <p>南方丐帮一向有着不怕死敢拼命的传统，百余年前，丐帮孙帮主就大闹了一场，将当时的江湖管委会给赶下来。如今，丐帮深受南洋气候影响，乃至西风吹拂，丐帮帮刊常有震聋发聩的檄文贴出，而民间各路英雄好汉亦或明或暗附和。</p>
@@ -2001,47 +2053,55 @@ Slow is fast.
 
 <!--more-->
 
+
 <p>下面透露下书情：以下摘自书中：</p>
 
 <ul>
-  <li>习惯一：主动积极（BE PROACTIVE）</li>
+<li>习惯一：主动积极（BE PROACTIVE）</li>
 </ul>
 
-<p>主动积极即采取主动，为自己过去、现在及未来的行为负责，并依据原则及价值观，而非情绪或外在环境来下决定。主动积极的人是改变的催生者，他们扬弃被动受害者角色，不怨恨别人，发挥了人类四项独特的禀赋–自觉、良知、想象力和主动意志，同时以由内而外的方式来创造改变，积极面对一切。他们选择创造自己的生命，这也是每个人最基本的决定。</p>
+
+<p>主动积极即采取主动，为自己过去、现在及未来的行为负责，并依据原则及价值观，而非情绪或外在环境来下决定。主动积极的人是改变的催生者，他们扬弃被动受害者角色，不怨恨别人，发挥了人类四项独特的禀赋&ndash;自觉、良知、想象力和主动意志，同时以由内而外的方式来创造改变，积极面对一切。他们选择创造自己的生命，这也是每个人最基本的决定。</p>
 
 <ul>
-  <li>习惯二：以终为始（BEGIN WITH THEN IN MIND）　　</li>
+<li>习惯二：以终为始（BEGIN WITH THEN IN MIND）　　</li>
 </ul>
 
-<p>所有事物都经过两次的创造–先是在脑海里酝酿，其次才是实质的创造。个人、家庭、团队和组织在做任何计划时，均先拟处愿景和目标，并据此创造未来，全心投注于自己最重视的原则、价值观、关系及目标之上。对个人、家庭或组织而言，使命宣言可说是愿景的最高形式，它是主要的决策，主宰了所有其他的决定。领导工作的核心，就是在共用的使命、原景和价值观之后，创造出一个文化。</p>
+
+<p>所有事物都经过两次的创造&ndash;先是在脑海里酝酿，其次才是实质的创造。个人、家庭、团队和组织在做任何计划时，均先拟处愿景和目标，并据此创造未来，全心投注于自己最重视的原则、价值观、关系及目标之上。对个人、家庭或组织而言，使命宣言可说是愿景的最高形式，它是主要的决策，主宰了所有其他的决定。领导工作的核心，就是在共用的使命、原景和价值观之后，创造出一个文化。</p>
 
 <ul>
-  <li>习惯三：要事第一（PUT FIRST THINGS FIRT）</li>
+<li>习惯三：要事第一（PUT FIRST THINGS FIRT）</li>
 </ul>
+
 
 <p>要事第一即实质的创造，是梦想（你的目标、愿景、价值观及要事处理顺序）的组织与实践。次要的事情不必摆在第一，要事也不能放在第二。无论迫切性如何，个人与组织均针对要事而来，重点是，把要事放在第一顺位。</p>
 
 <ul>
-  <li>习惯四: 双赢思维（THINK WIN）　　</li>
+<li>习惯四: 双赢思维（THINK WIN）　　</li>
 </ul>
 
-<p>双赢思维是一种基于互敬，寻求互惠的思考筐架与心意，目的是更丰盛的机会、财富及资源，而非患不足的敌对式竞争。双赢即非损人利己（赢输），亦非损人利人（输赢）。我们的工作伙伴及其家庭成员要从互赖式的角度来思考（”我们”而非”我”）。双赢思维鼓励我们解决问题，并协助个人找到互惠的解决办法，是一种资讯、力量、认可及报酬的分享。</p>
+
+<p>双赢思维是一种基于互敬，寻求互惠的思考筐架与心意，目的是更丰盛的机会、财富及资源，而非患不足的敌对式竞争。双赢即非损人利己（赢输），亦非损人利人（输赢）。我们的工作伙伴及其家庭成员要从互赖式的角度来思考（&#8221;我们&#8221;而非&#8221;我&#8221;）。双赢思维鼓励我们解决问题，并协助个人找到互惠的解决办法，是一种资讯、力量、认可及报酬的分享。</p>
 
 <ul>
-  <li>习惯五：知彼解己（SEEK FIRST TO UNDERSTAND,THEN TO BE UNDERSTOOD）</li>
+<li>习惯五：知彼解己（SEEK FIRST TO UNDERSTAND,THEN TO BE UNDERSTOOD）</li>
 </ul>
+
 
 <p>当我们舍弃回答问题心，改以了解心去聆听别人，便能开启真正的沟通，增进彼此关系。对方获得了解后，会觉得收到尊重和认可，进而卸下心防，坦然而谈，双方对彼此的了解也就更流畅自然。知彼需要仁慈心；解已需要勇气，能平衡两者，则可大幅提升沟通的效率。</p>
 
 <ul>
-  <li>习惯六：综合综效（SYNERGIZE）　　</li>
+<li>习惯六：综合综效（SYNERGIZE）　　</li>
 </ul>
 
-<p>综合综效的是创造第三种选择–即非按照我的方式，亦非遵循你的方式，而是第三种远胜过个人之见的办法。它是互相尊重的成果–不但是了解彼此，甚至是称许彼此的差异，欣赏对方解决问题及掌握机会的手法。个人的力量是团队和家庭统合综效的利基，能使整体获得一加一大于二的成效。</p>
+
+<p>综合综效的是创造第三种选择&ndash;即非按照我的方式，亦非遵循你的方式，而是第三种远胜过个人之见的办法。它是互相尊重的成果&ndash;不但是了解彼此，甚至是称许彼此的差异，欣赏对方解决问题及掌握机会的手法。个人的力量是团队和家庭统合综效的利基，能使整体获得一加一大于二的成效。</p>
 
 <ul>
-  <li>习惯七：不断更新（SHARPEN THE SAW）　　</li>
+<li>习惯七：不断更新（SHARPEN THE SAW）　　</li>
 </ul>
+
 
 <p>不断更新谈到的是，如何在四个基础生活面向（生理、社会、情感、心智及心灵）中，不断更新自己。这个习惯提升了其他七个习惯的实施效率。对组织而言，七习惯提供愿景、更新及不断的改善，使组织不至呈现老化及疲态，并迈向新的成长之径。对家庭而言，七习惯透过固定的个人及家庭活动，使家庭效能升级，就像建立系统，使家庭日新月异，即是一例。</p>
 
@@ -2049,7 +2109,7 @@ Slow is fast.
 
 <p><img src="http://i.imgur.com/7g3695I.jpg" alt="七个习惯的关系图" /></p>
 
-<p>作者认为人的成长分三个阶段，并在这三个阶段中不断重复习惯七：不断更新成长。依赖期：在生活，精神上依赖于他人。以“你”为中心，你为我的生活负责，你为我的得失成败买单，这个“你”可以扩大为外部环境；独立期：生活自理，思想独立。以“我”为中心，我为自己的生活负责，我可以靠我自己，我有权选择；互赖期：相互合作，形成 1 + 1 &gt; 2 的效应）。以“我们”为中心，我们可以做到，我们可以合作，共创伟业。</p>
+<p>作者认为人的成长分三个阶段，并在这三个阶段中不断重复习惯七：不断更新成长。依赖期：在生活，精神上依赖于他人。以“你”为中心，你为我的生活负责，你为我的得失成败买单，这个“你”可以扩大为外部环境；独立期：生活自理，思想独立。以“我”为中心，我为自己的生活负责，我可以靠我自己，我有权选择；互赖期：相互合作，形成 1 + 1 > 2 的效应）。以“我们”为中心，我们可以做到，我们可以合作，共创伟业。</p>
 
 <p>这七个习惯的前三个对从依赖期到独立期的转变非常重要，它们共同影响
 个人领域的成功：</p>
@@ -2096,6 +2156,7 @@ Slow is fast.
 
 <!--more-->
 
+
 <p>这里提到的璜壁堂，即现在的湖南省娄底市双峰县永丰镇源石村，而扶稼堂是原双峰县第三中学（三中）老食堂所在地。文章所说的事情，是东北中山中学在南京沦陷之后，一路向西，搬迁到永丰璜壁堂的事情。</p>
 
 <p>详情请参考：国破之痛，其中有如下文字：</p>
@@ -2106,7 +2167,7 @@ Slow is fast.
 中山中学被迫再次迁校。11月12日，中山中学从璜壁堂紧急撤退。”
 </code></pre>
 
-<p>《<a href="http://book.douban.com/subject/4842446/">巨流河</a>》一书中提到璜壁堂是明朝一支皇族的祠堂，这也是真实的情况。璜壁堂是朱明皇裔—-茶商巨子朱紫桂兄弟于清同治年间修建的第二座建筑，也是最大的一座庄院，建成后金壁辉煌，故名为“璜壁堂”，1938年曾被东北中山中学借用靠西边的部分院落作为校址，安置东北流亡师生近千人。土改期间分给朱家佃农作为民居，后相继改建成人民公社、金田乡政府、粮库、供销社、学校、幼儿园等，剩于部分作为几十户村民住宅，至二十世纪90年代因不断改建，原建筑群已基本损毁。</p>
+<p>《<a href="http://book.douban.com/subject/4842446/">巨流河</a>》一书中提到璜壁堂是明朝一支皇族的祠堂，这也是真实的情况。璜壁堂是朱明皇裔&mdash;-茶商巨子朱紫桂兄弟于清同治年间修建的第二座建筑，也是最大的一座庄院，建成后金壁辉煌，故名为“璜壁堂”，1938年曾被东北中山中学借用靠西边的部分院落作为校址，安置东北流亡师生近千人。土改期间分给朱家佃农作为民居，后相继改建成人民公社、金田乡政府、粮库、供销社、学校、幼儿园等，剩于部分作为几十户村民住宅，至二十世纪90年代因不断改建，原建筑群已基本损毁。</p>
 
 <p><a href="http://baike.baidu.com/view/3703408.htm?fr=aladdin">朱紫桂</a>（1838-1903），派名作卿，衔命光耀，系明太祖朱元璋第十七子宁王朱权之第十七代孙。双峰县沙田乡人，他是近代名满湖湘茶商巨子，其人其事先后编入《双峰县志·人物志》、《湖南省志·外贸志》和《湖南茶叶大观》。《娄底地区志》云：“同治六年（1867），沙田（今双峰县）朱紫桂经营红茶，经汉口转销俄、英、美等国，后致巨富”。朱氏兄弟后致官全省商务总会理事，在家乡广置房屋、田产，于光绪至民国年间先后修建筱山堂、璜壁堂、文甲堂、石壁堂、扶嫁堂、东明堂、沙田朱氏宗祠及五公祠等八大建筑，置田万余亩，并投资经营矿业、航运业和种植业等。时人将朱氏兄弟和曾国藩兄弟称为湘乡两大财主。</p>
 ]]></content>
@@ -2122,6 +2183,7 @@ Slow is fast.
 <p>也许也许很久很久没有过的迷茫阵痛期又要来了。记得当初毕业那阵子每隔几个月就要迷茫一下，那时候是为不知道以后会干什么，该学什么，也就是为一无所有以及不确定的前程迷茫。而现在的迷惑却是人活着为了啥？</p>
 
 <!--more-->
+
 
 <p>前段时间看了一篇文章《<a href="http://tieba.baidu.com/f?kz=1129761177">护士告诉你,病人临终前最后悔的五件事</a>》，里面说到很多人到死才懊悔一辈子或为名，或为利，或为责任，或为别的什么原因，而没去做自己想做的事情，没按自己的活法去活。</p>
 
@@ -2149,6 +2211,7 @@ Slow is fast.
     <content type="html"><![CDATA[<p>对于我们来说，近代历史并不遥远，学校教科书并不是我们获取近代史故事的唯一途径，而且学校教科书里面的历史很多都经过粉饰和扭曲。我们的父辈，祖辈们都是很好的历史讲述者，遗留的很多建筑也是很好的历史见证者，只是我们不曾仔细观察和探究过那些历史。现在我们的爷爷辈，父辈们都在逐渐老去，存在他们脑海中的真实记忆也将逐渐消退，这让我很有些紧迫感，觉得应该记录一些他们的故事，一则为纪念他们，二则为还原部分历史。</p>
 
 <!--more-->
+
 
 <p>以下为过年回家与老人们“发古”得知的一部分故事，仅此记录。我的爷爷们大概出生在 1920 年前后，不消说他们经历了很多特殊的年代，可惜的是，我知晓的并不多，一则未曾深入打探，二则我的家乡很是偏僻，即便有什么大事情未必能影响到。</p>
 
@@ -2203,6 +2266,7 @@ Slow is fast.
 
 <!--more-->
 
+
 <p><strong>心理账户误区</strong></p>
 
 <p>我们将通过不同途径获得的，用于不同用途的钱在心里有意识地放置到的账户里，很多时候因为心理账户这个思维误区的影响，使我们难以做出理性的投资与消费行为。</p>
@@ -2214,13 +2278,10 @@ Slow is fast.
 <p>比如：</p>
 
 <ul>
-  <li>
-    <p>情形1：《3D阿凡达》上映了，你买了150块的票，但是在家里出发的时候，你发现你把票丢了，这时候你还会再买票去看么？</p>
-  </li>
-  <li>
-    <p>情形2：《3D阿凡达》上映了，你打听到票价是150块（你还没有预先买），在家里出发的时候，你发现你把150块电话卡丢了，这时候你还会继续去电影院买票看么？</p>
-  </li>
+<li><p>情形1：《3D阿凡达》上映了，你买了150块的票，但是在家里出发的时候，你发现你把票丢了，这时候你还会再买票去看么？</p></li>
+<li><p>情形2：《3D阿凡达》上映了，你打听到票价是150块（你还没有预先买），在家里出发的时候，你发现你把150块电话卡丢了，这时候你还会继续去电影院买票看么？</p></li>
 </ul>
+
 
 <p>大部分人的思维是在第一种情况下不太可能会再买票看，而在第二中情况下很可能会买票去看。这是因为我们在心里往往将用于不同用途的钱放置在不同帐户里，从而认为：通讯费用那150块（电话卡）与娱乐费用150块（电影票）是有区别的，而实际上丢的都是价值150块的东西，不应该影响到我们是否继续看电影的决策。实际上，如果你觉得看《3D阿凡达》值150块且手头也宽裕就应该去继续买票去看；如果手头不够宽裕就不应该去看了。</p>
 
@@ -2260,21 +2321,21 @@ Slow is fast.
 情形4，刚开始对你持负面评价，后来慢慢对你持正面评价。
 </code></pre>
 
-<p>统计实验结果发现：你对这个人的喜爱程度，从强到弱排列是：情形4 &gt; 情形1 &gt; 情形2 &gt; 情形3 。也就是你最喜欢刚开始对你评价不好而后面慢慢变好的那个人，而最厌恶刚开始对你评价好而慢慢变得不好的那个人。这里面得失都对你有较大的影响。</p>
+<p>统计实验结果发现：你对这个人的喜爱程度，从强到弱排列是：情形4 > 情形1 > 情形2 > 情形3 。也就是你最喜欢刚开始对你评价不好而后面慢慢变好的那个人，而最厌恶刚开始对你评价好而慢慢变得不好的那个人。这里面得失都对你有较大的影响。</p>
 
 <p>根据得失效应我们可以推导出几条有益的法则：</p>
 
 <pre><code>1，好事分开享受。
-	每天都有好消息带来好心情，比一天几个好消息让你happy得更久一些。
+    每天都有好消息带来好心情，比一天几个好消息让你happy得更久一些。
 
 2，坏事一起承受。
-	每天都是坏消息带来坏心情，不如坏消息都发生在一天，坏心情就持续得短一些。
+    每天都是坏消息带来坏心情，不如坏消息都发生在一天，坏心情就持续得短一些。
 
 3，大好事与小坏事要一起经历。
-	大好事带来的好心情会冲淡小坏事带来的负面情绪。
+    大好事带来的好心情会冲淡小坏事带来的负面情绪。
 
 4，大坏事与小好事要分开经历。
-	你说是不是应该这样的呢？
+    你说是不是应该这样的呢？
 </code></pre>
 
 <p>聪明的小孩会在向父母汇报数学成绩考了98分之后，紧接着低声说我还打破了家里一个杯子，这样就可免去了责骂。</p>
@@ -2301,6 +2362,7 @@ Slow is fast.
 <p><img src="http://img5.douban.com/mpic/s1670978.jpg" alt="如何阅读一本书" /></p>
 
 <!--more-->
+
 
 <p>参考阅读：<a href="http://book.douban.com/subject/1013208/">如何阅读一本书</a></p>
 
@@ -2338,29 +2400,30 @@ Slow is fast.
     <link href="http://kesalin.github.io/blog/2010/08/26/feeling/"/>
     <updated>2010-08-26T20:17:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2010/08/26/feeling</id>
-    <content type="html"><![CDATA[<p>最近忙了点吧，很久都没好好静下来写点什么了。或许是时间安排的不够妥当，总感觉没什么时间，却又不见得做了什么值得一说的事情，因而隐隐有些焦虑，被压抑的一些梦想反而更加强烈起来。  </p>
+    <content type="html"><![CDATA[<p>最近忙了点吧，很久都没好好静下来写点什么了。或许是时间安排的不够妥当，总感觉没什么时间，却又不见得做了什么值得一说的事情，因而隐隐有些焦虑，被压抑的一些梦想反而更加强烈起来。</p>
 
 <!--more-->
 
-<p>8月初头去海边玩了一天，那个地方叫做金山海滨浴场，在上海的最南端，与宁波隔杭州湾相对望，也因此晓得宁波的具体地理位置。对于宁波格外有些记忆，一则因为周星驰用他不太标准的普通话自我介绍过“我是浙江宁波人”，二则是因为高中好友恺吧毕业之后曾在宁波飘过一段时间。跑题话，且表不提。到海边的时候正值正午，毒阳高照。由于经验不足，没有带长袖衣服避晒，或没能耐住性子等到下午再下水，虽然尽兴玩了一天，可是却花了好几天的时候来脱皮，康复晒伤。  </p>
+
+<p>8月初头去海边玩了一天，那个地方叫做金山海滨浴场，在上海的最南端，与宁波隔杭州湾相对望，也因此晓得宁波的具体地理位置。对于宁波格外有些记忆，一则因为周星驰用他不太标准的普通话自我介绍过“我是浙江宁波人”，二则是因为高中好友恺吧毕业之后曾在宁波飘过一段时间。跑题话，且表不提。到海边的时候正值正午，毒阳高照。由于经验不足，没有带长袖衣服避晒，或没能耐住性子等到下午再下水，虽然尽兴玩了一天，可是却花了好几天的时候来脱皮，康复晒伤。</p>
 
 <p>去看了一趟世博，园中建筑与表演节目倒是可圈可点，夜景格外亮丽，可是人暴多，排队时间暴长（大一点的馆基本都在3-5小时以上），太阳也贼晒，大大影响观景兴趣。世博园很大，很大，只匆匆在A，B区几个小馆溜达了一番，便到了晚上。早上出发坐的免费世博渡船，倒是值得，途径外滩，东方明珠，又过南浦大桥，一路好景。晚上的世博园，亮化工程相当绚烂，尤其是那个音乐喷泉值得一赞，喷泉随着音乐的节奏做出不同的样式，或快或慢，或聚或散。如果要再去看世博的话，我会选择夜场票，反正大馆的队是排不上的，倒不如凉凉爽爽看看夜景。</p>
 
-<p>说句公道话，世博其实有点像鸡肋，只是咱们政府好面子，一心要搞大。看的人少了就发动政府机关，事业单位，上海市民免费观看，拿着纳税人的钱肥着上海市民（上海市民每户发一张世博票，外加200块交通费）。我早已不是粪青，只是每个月看着工资单上的扣税，而想到这些钱被政府用来肥那些本来很肥的上海市民，用来建那些华丽丽的展完就拆的世博馆，心里就不痛快，党不心疼我心疼。  </p>
+<p>说句公道话，世博其实有点像鸡肋，只是咱们政府好面子，一心要搞大。看的人少了就发动政府机关，事业单位，上海市民免费观看，拿着纳税人的钱肥着上海市民（上海市民每户发一张世博票，外加200块交通费）。我早已不是粪青，只是每个月看着工资单上的扣税，而想到这些钱被政府用来肥那些本来很肥的上海市民，用来建那些华丽丽的展完就拆的世博馆，心里就不痛快，党不心疼我心疼。</p>
 
 <p>关于生存能力，承受能力，其实有很多想说的。早一段时间看了两则相似的新闻，说的是一个08界的大学生来到某市找工作，结果用光了盘缠，起初不好意思向家里寻求帮助，到后来又怯生生地不晓得怎么向他人求助，结果就这么在某市流浪者，当了一年多的流浪汉，最后流落到救助站，才得以与家人联系。悲哀啊！这样的人可说是没有用的人，书读得最多也是空读，一点基本的生存能力，社交能力都没有，就别奢求这样的人碰到困难，挫折，能挺得过去。</p>
 
-<p>也听了很多应届毕业生在陌生城市一个人求职立足的事迹，也有很多人承受能力，应变能力，处理能力实在不敢恭维。其实，很多当时认为是最困难的处境，放到整个人生的纵度上，放到社会困难事情的横度上比较，算不了什么。求职，找工作这样的历程，再怎么苦，难熬，总苦不过舟曲人，也险不过菲律宾旅游大巴上的香港人吧。人生需要多一点蛋定。  </p>
+<p>也听了很多应届毕业生在陌生城市一个人求职立足的事迹，也有很多人承受能力，应变能力，处理能力实在不敢恭维。其实，很多当时认为是最困难的处境，放到整个人生的纵度上，放到社会困难事情的横度上比较，算不了什么。求职，找工作这样的历程，再怎么苦，难熬，总苦不过舟曲人，也险不过菲律宾旅游大巴上的香港人吧。人生需要多一点蛋定。</p>
 
-<p>再唠叨一下鉴别能力，人一生要做很多的选择，如何辨别抉择就看这个能力了。鉴别能力这是建立在生存能力之上的，虽然很多人是拥有足够的生存能力的，但并不一定拥有足够的鉴别能力。很多出于各样的目的与原因，他们要么自愿上当，要么没有足够的鉴别能力被骗上当。比如说最近轰下神坛的养生大师张悟本，李一道长等等，鼓吹的那些所谓理论，大都无逻辑科学可言，可是一些靠他们出书挣钱，一些人靠他们做节目挣钱所以一个劲地帮其鼓吹宣传，以盲骗没有足够鉴别能力的大众。月光说《<a href="http://www.williamlong.info/archives/2290.html">电视引领“低智商社会”</a>》，很有道理，为了智商着想，远离电视，远离CCTV。要锻炼鉴别能力，需要培养正确的逻辑思维，吸纳足够的知识信息，还要善于总结借鉴，我觉得广泛阅读一些经典书籍是一种很好的快速成长方式。  </p>
+<p>再唠叨一下鉴别能力，人一生要做很多的选择，如何辨别抉择就看这个能力了。鉴别能力这是建立在生存能力之上的，虽然很多人是拥有足够的生存能力的，但并不一定拥有足够的鉴别能力。很多出于各样的目的与原因，他们要么自愿上当，要么没有足够的鉴别能力被骗上当。比如说最近轰下神坛的养生大师张悟本，李一道长等等，鼓吹的那些所谓理论，大都无逻辑科学可言，可是一些靠他们出书挣钱，一些人靠他们做节目挣钱所以一个劲地帮其鼓吹宣传，以盲骗没有足够鉴别能力的大众。月光说《<a href="http://www.williamlong.info/archives/2290.html">电视引领“低智商社会”</a>》，很有道理，为了智商着想，远离电视，远离CCTV。要锻炼鉴别能力，需要培养正确的逻辑思维，吸纳足够的知识信息，还要善于总结借鉴，我觉得广泛阅读一些经典书籍是一种很好的快速成长方式。</p>
 
-<p>八卦一下生活，胡同学做爸爸了，俺也快有侄儿辈了。80后的我们在自觉或不自觉，情愿或不情愿中长大成父子辈了。面对这种变化，其实我觉得，我们这一些同龄人，至少是我，在很多方面是还没有准备好的。我们还没能充分照顾好自己，更别说分心来照顾别人和下一代，自我鄙视一下，努力改造 ing。对感情，儿女情长，还是略去不提了吧，总之有哭有笑，不轻言放弃，我想我们会幸福的，虽然有时候也会拿捏不准自由时间的尺度。  </p>
+<p>八卦一下生活，胡同学做爸爸了，俺也快有侄儿辈了。80后的我们在自觉或不自觉，情愿或不情愿中长大成父子辈了。面对这种变化，其实我觉得，我们这一些同龄人，至少是我，在很多方面是还没有准备好的。我们还没能充分照顾好自己，更别说分心来照顾别人和下一代，自我鄙视一下，努力改造 ing。对感情，儿女情长，还是略去不提了吧，总之有哭有笑，不轻言放弃，我想我们会幸福的，虽然有时候也会拿捏不准自由时间的尺度。</p>
 
-<p>非惯例荐书，这两本都是最近读的，相当不错的： </p>
+<p>非惯例荐书，这两本都是最近读的，相当不错的：</p>
 
-<p>《<a href="http://book.douban.com/subject/1032501/">心理学与生活</a>》：极赞的一本心理学大众普及书籍，对感觉，知觉，意识，记忆以及人格有着不错的介绍，有点遗憾的是对社会心理学介绍的很简略，或许是因为社会心理学涉及的知识足够写出另外的经典了吧。推荐后续再阅读《社会心理学》或《社会性动物》等社会心理学相关的书籍。  </p>
+<p>《<a href="http://book.douban.com/subject/1032501/">心理学与生活</a>》：极赞的一本心理学大众普及书籍，对感觉，知觉，意识，记忆以及人格有着不错的介绍，有点遗憾的是对社会心理学介绍的很简略，或许是因为社会心理学涉及的知识足够写出另外的经典了吧。推荐后续再阅读《社会心理学》或《社会性动物》等社会心理学相关的书籍。</p>
 
-<p>《<a href="http://book.douban.com/subject/1315575/">找寻逝去的自我</a>》 ：关于记忆的经典书籍，如果你想了解记忆是如何工作的，记忆为何是不那么准确的，记忆又是如何被重构的，失忆症又是怎么回事，或想要提高记忆能力，强力推荐阅读此书。  </p>
+<p>《<a href="http://book.douban.com/subject/1315575/">找寻逝去的自我</a>》 ：关于记忆的经典书籍，如果你想了解记忆是如何工作的，记忆为何是不那么准确的，记忆又是如何被重构的，失忆症又是怎么回事，或想要提高记忆能力，强力推荐阅读此书。</p>
 ]]></content>
   </entry>
   

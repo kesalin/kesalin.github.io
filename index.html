@@ -92,7 +92,7 @@
   </header>
 
 
-  <div class="entry-content"><h3 id="section">安装</h3>
+  <div class="entry-content"><h3>安装</h3>
 
 <p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色啊。好在洋葱路由Tor发布4.0版本，使用了新的穿墙术：Meek，可以简单方便地翻墙了。特推荐大家使用。</p>
 
@@ -131,7 +131,8 @@
   </header>
 
 
-  <div class="entry-content"><h3 id="section">写在前面的话</h3>
+  <div class="entry-content"><h3>写在前面的话</h3>
+
 <p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
 
 <p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
@@ -173,22 +174,21 @@
   </header>
 
 
-  <div class="entry-content"><h3 id="section">写在前面的话：</h3>
+  <div class="entry-content"><h3>写在前面的话：</h3>
+
 <ol>
-  <li>
-    <p>本笔记结合《学问提问：批判性思维指南》<a href="http://book.douban.com/subject/1504957/">第七版</a>，<a href="http://book.douban.com/subject/20428922/">第十版</a>，<a href="http://blog.vsharing.com/qsxiao">萧秋水</a>的<a href="http://book.douban.com/review/4474858/">PPT形式的笔记摘要</a>，以及《<a href="http://book.douban.com/subject/7057936/">批判性思维.带你走出思维的误区</a>》整理而成，在此对以上作者表示感谢。</p>
-  </li>
-  <li>
-    <p>关于《学问提问：批判性思维指南》的版本选择。<br />
-个人推荐<a href="http://book.douban.com/subject/20428922/">第十版</a>，翻译尚可，内容更完善。</p>
-  </li>
+<li><p>本笔记结合《学问提问：批判性思维指南》<a href="http://book.douban.com/subject/1504957/">第七版</a>，<a href="http://book.douban.com/subject/20428922/">第十版</a>，<a href="http://blog.vsharing.com/qsxiao">萧秋水</a>的<a href="http://book.douban.com/review/4474858/">PPT形式的笔记摘要</a>，以及《<a href="http://book.douban.com/subject/7057936/">批判性思维.带你走出思维的误区</a>》整理而成，在此对以上作者表示感谢。</p></li>
+<li><p>关于《学问提问：批判性思维指南》的版本选择。<br/>
+个人推荐<a href="http://book.douban.com/subject/20428922/">第十版</a>，翻译尚可，内容更完善。</p></li>
 </ol>
+
 
 <hr />
 
-<h2 id="section-1">为什么要具备批判性思维？</h2>
+<h2>为什么要具备批判性思维？</h2>
 
-<h3 id="section-2">获取真相</h3>
+<h3>获取真相</h3>
+
 <p>在一个被泛滥信息包围的时代，我们需要从各种真真假假的信息中获取真相：</p>
 
 <pre><code>* 电视上说
@@ -200,7 +200,8 @@
 * ......
 </code></pre>
 
-<h3 id="section-3">培养会独立思考的公民</h3>
+<h3>培养会独立思考的公民</h3>
+
 <p>中国要真正进入现代文明，必须培养合格的公民。</p>
 
 <pre><code>* 群众：依赖权威和力量解决问题
@@ -249,17 +250,21 @@
   </header>
 
 
-  <div class="entry-content"><h2 id="section">简介</h2>
+  <div class="entry-content"><h2>简介</h2>
 
 <ul>
-  <li><strong><a href="http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7">可证伪性</a></strong>是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨<strong>科学与非科学</strong>的一种理论，他认为:
- &gt; 一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。  </li>
+<li><strong><a href="http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7">可证伪性</a></strong>是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨<strong>科学与非科学</strong>的一种理论，他认为:
+
+<blockquote><p>一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。</p></blockquote></li>
 </ul>
 
-<h2 id="what">定义/What</h2>
+
+<h2>定义/What</h2>
+
 <ul>
-  <li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。</li>
+<li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。</li>
 </ul>
+
 
 </div>
   
@@ -296,7 +301,8 @@
   </header>
 
 
-  <div class="entry-content"><h2 id="section">简介</h2>
+  <div class="entry-content"><h2>简介</h2>
+
 <p>本文介绍如何在 Subline Text 2 中安装 Markdown 插件。</p>
 
 </div>
@@ -336,7 +342,7 @@
 
   <div class="entry-content"><p>过了三十越发觉得时间之宝贵，三十之前觉得时间管理于我等无所作为的草民是不相干的，而今真有点只争朝夕的紧迫与仓促感。最近帮我老哥弄了个微信的公众平台，他发现我基本不上微信，觉得像我这样搞IT的不用微信很不可思议，包括不少朋友也有此同感。微信这玩意，非我不懂也，我只是没那么多时间和精力去刷那些个99%或是转发或是广告的垃圾信息。我的阵地在微博，豆瓣，QQ空间，微博提供技术/社会动态资讯；豆瓣提供读与看的资讯；QQ空间提供好友资讯，有此三者足以，而且每天浏览这些社交工具上的时间碎片加起来不会超过半小时。</p>
 
-<p>回顾2014上半年，看了不少有趣的影视剧（&gt;33部），也读了不少好玩的书，在此总结之，广而荐之。总的来说这半年关注的重点在历史，金融与社会学。</p>
+<p>回顾2014上半年，看了不少有趣的影视剧（>33部），也读了不少好玩的书，在此总结之，广而荐之。总的来说这半年关注的重点在历史，金融与社会学。</p>
 
 </div>
   
@@ -375,7 +381,8 @@
 
   <div class="entry-content"><p><img src="http://img5.douban.com/mpic/s3052908.jpg" alt="中国革命" /></p>
 
-<h3 id="section">纪录片简介</h3>
+<h3>纪录片简介</h3>
+
 <p>由美国人Sue Williams制作的三集纪录片《<a href="http://movie.douban.com/subject/2042115/">中国，一个世纪的革命</a>》（China - A Century of Revolution），从1911年一直叙述到1997年，横跨一个世纪的中国历史。较（与国内史书／教科书相较）为真实客观地还原了中国近百年的历史，该片中有许多在中国主流媒体上不可能看到的极为珍贵且罕见的历史镜头，如孙中山讲话、宋美龄在美筹款、访谈蒋经国、80年代末的某次运动、访谈崔健等等。这一点相当赞！</p>
 
 </div>

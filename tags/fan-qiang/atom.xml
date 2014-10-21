@@ -4,7 +4,7 @@
   <title><![CDATA[标签：翻墙 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/fan-qiang/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-21T08:02:46+08:00</updated>
+  <updated>2014-10-21T08:04:05+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -18,21 +18,23 @@
     <link href="http://kesalin.github.io/blog/2014/10/20/install-tor/"/>
     <updated>2014-10-20T20:55:02+08:00</updated>
     <id>http://kesalin.github.io/blog/2014/10/20/install-tor</id>
-    <content type="html"><![CDATA[<h3 id="section">安装</h3>
+    <content type="html"><![CDATA[<h3>安装</h3>
 
 <p>最近GFW嘚瑟的啊，VPN经常掉，洋葱路由Tor也被墙很久了，庆丰帝是强势的狠角色啊。好在洋葱路由Tor发布4.0版本，使用了新的穿墙术：Meek，可以简单方便地翻墙了。特推荐大家使用。</p>
 
 <!--more-->
 
+
 <ul>
-  <li>Ubuntu 64：<a href="http://pan.baidu.com/s/1kTspWhT">下载链接</a> 提取密码：2p56</li>
-  <li>Windows 64：<a href="http://pan.baidu.com/s/1pJqLPdp">下载链接</a> 提取密码: 5y2r</li>
-  <li>Mac OX：<a href="http://pan.baidu.com/s/1mg1bwHM">下载链接</a> 提取密码: 9fxx</li>
-  <li>有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。</li>
-  <li>官网：<a href="https://www.torproject.org/">https://www.torproject.org/</a></li>
+<li>Ubuntu 64：<a href="http://pan.baidu.com/s/1kTspWhT">下载链接</a> 提取密码：2p56</li>
+<li>Windows 64：<a href="http://pan.baidu.com/s/1pJqLPdp">下载链接</a> 提取密码: 5y2r</li>
+<li>Mac OX：<a href="http://pan.baidu.com/s/1mg1bwHM">下载链接</a> 提取密码: 9fxx</li>
+<li>有其它版本需要的可以留言，我会提供墙内的下载。也请大家多做备份，广播种。</li>
+<li>官网：<a href="https://www.torproject.org/">https://www.torproject.org/</a></li>
 </ul>
 
-<p><br />
+
+<p><br/>
 下载解压安装，Ubuntu 系统下只需要运行解压目录下的 start-tor-browser 脚本即可；</p>
 
 <p>安装过程中选择 Open Settings（设置）：</p>
@@ -57,16 +59,17 @@
 
 <p><img src="http://i.imgur.com/VqRuhJX.png?1" alt="穿墙而出" /></p>
 
-<h3 id="section-1">翻墙之后做什么</h3>
+<h3>翻墙之后做什么</h3>
 
 <p>很多人翻墙之后不知道做什么，处于一种利器在手，却茫然不知所用的无序感。下面就介绍一个网站，专门针对这种症状下药：<a href="http://fanqianghou.com/">翻墙后看什么</a></p>
 
 <p>注：<a href="http://fanqianghou.com/">翻墙后看什么</a>上提供的网站链接并不保证那些网站上内容的真实和客观性，需要看官自己鉴定判别(这也是为什么要学习<a href="http://kesalin.github.io/blog/2014/10/12/critical-thinking/">批判性思维</a>的理由之一)。它们只是突破国内一面倒的信息轰炸与封锁，提供了另一面的信息，会兼听则明嘛。</p>
 
-<h3 id="section-2">补充</h3>
+<h3>补充</h3>
+
 <p>对于喜欢使用 Google 的朋友，不用翻墙也可以使用这个<a href="https://wen.lu/">链接</a>访问 Google 的搜索服务，可以将链接<a href="https://wen.lu/">https://wen.lu/</a>添加到收藏夹。</p>
 
-<h3 id="meek-">Meek 简介</h3>
+<h3>Meek 简介</h3>
 
 <p>非技术控或对翻墙原理不感兴趣的朋友，就不用看下面的内容了。</p>
 

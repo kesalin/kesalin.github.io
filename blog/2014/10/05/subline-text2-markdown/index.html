@@ -89,65 +89,49 @@
   </header>
 
 
-<div class="entry-content"><h2 id="section">简介</h2>
+<div class="entry-content"><h2>简介</h2>
+
 <p>本文介绍如何在 Subline Text 2 中安装 Markdown 插件。</p>
 
 <!--more-->
 
-<h2 id="section-1">步骤</h2>
+
+<h2>步骤</h2>
 
 <ol>
-  <li>
-    <p>按 ctrl + ` 调出 console；  </p>
-  </li>
-  <li>
-    <p>粘贴以下代码到底部命令行并回车： </p>
-  </li>
+<li><p>按 ctrl + ` 调出 console；</p></li>
+<li><p>粘贴以下代码到底部命令行并回车：</p></li>
 </ol>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span><span class="p">;</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span><span class="p">;</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <ol>
-  <li>
-    <p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：<br />
-&gt; Please restart Sublime Text to finish installation   </p>
-  </li>
-  <li>
-    <p>然后重启 Subline Text 2，这时在菜单 Perferences -&gt; package settings 中会出现 package control 项；  </p>
-  </li>
-  <li>
-    <p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；  </p>
-  </li>
-  <li>
-    <p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p>
-  </li>
-  <li>
-    <p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p>
-  </li>
-  <li>
-    <p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；  </p>
-  </li>
-  <li>
-    <p>选择菜单 Tools -&gt; Build System -&gt; Markdown，然后选择 Tools -&gt; Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p>
-  </li>
-  <li>
-    <p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。 </p>
-  </li>
+<li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
+
+<blockquote><p>Please restart Sublime Text to finish installation</p></blockquote></li>
+<li><p>然后重启 Subline Text 2，这时在菜单 Perferences -> package settings 中会出现 package control 项；</p></li>
+<li><p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；</p></li>
+<li><p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p></li>
+<li><p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p></li>
+<li><p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；</p></li>
+<li><p>选择菜单 Tools -> Build System -> Markdown，然后选择 Tools -> Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p></li>
+<li><p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。</p></li>
 </ol>
+
 
 <hr />
+
 <p>补充：</p>
 
 <ol>
-  <li>
-    <p>Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；  </p>
-  </li>
-  <li>
-    <p>或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p>
-  </li>
+<li><p>Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；</p></li>
+<li><p>或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p></li>
 </ol>
+
 </div>
 
 

@@ -66,7 +66,7 @@ footer: true
   * [社会性动物](http://book.douban.com/subject/2328458/)
   * [社会心理学](http://book.douban.com/subject/1476651/)
   * [进化心理学](http://book.douban.com/subject/2143904/)
-  * [与“众”不同的心理学）](http://book.douban.com/subject/1221479/)
+  * [与“众”不同的心理学](http://book.douban.com/subject/1221479/)
   * [改变心理学的40项研究](http://book.douban.com/subject/1147347/)
   * [怪诞行为学](http://book.douban.com/subject/4929844/)
   * [乌合之众](http://book.douban.com/subject/1012611/)

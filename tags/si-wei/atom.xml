@@ -4,7 +4,7 @@
   <title><![CDATA[标签：思维 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/si-wei/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-28T21:44:17+08:00</updated>
+  <updated>2014-10-29T20:35:25+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -122,26 +122,43 @@ P(红球|乙)：乙箱子中拿到红球的概率</p></blockquote>
 <p>如此重复，直到经历8次红球修正（概率增加），4此绿球修正（概率减少）之后，选择的是甲箱子的概率为：96.7%。</p>
 
 <p>我写了一段 Python 代码来解这个问题：
-&#8220;` python 计算选择的是甲箱子的概率
-def bayesFunc(pIsBox1, pBox1, pBox2):
-    return (pIsBox1 * pBox1)/((pIsBox1 * pBox1) + (1 - pIsBox1) * pBox2)</p>
-
-<p>def redGreenBallProblem():
-    pIsBox1 = 0.5</p>
-
-<pre><code># consider 8 red ball
-for i in range(1, 9):
-    pIsBox1 = bayesFunc(pIsBox1, 0.7, 0.3)
-    print " After red %d &gt; in 甲 box: %f" % (i, pIsBox1)
-
-# consider 4 green ball
-for i in range(1, 5):
-    pIsBox1 = bayesFunc(pIsBox1, 0.3, 0.7)
-    print " After green %d &gt; in 甲 box: %f" % (i, pIsBox1)
-</code></pre>
-
-<p>redGreenBallProblem()
-&#8220;`
+<figure class='code'><figcaption><span>计算选择的是甲箱子的概率</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="n">pBox1</span><span class="p">,</span> <span class="n">pBox2</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">return</span> <span class="p">(</span><span class="n">pIsBox1</span> <span class="o">*</span> <span class="n">pBox1</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">pIsBox1</span> <span class="o">*</span> <span class="n">pBox1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">pIsBox1</span><span class="p">)</span> <span class="o">*</span> <span class="n">pBox2</span><span class="p">)</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="k">def</span> <span class="nf">redGreenBallProblem</span><span class="p">():</span>
+</span><span class='line'>    <span class="n">pIsBox1</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="c"># consider 8 red ball</span>
+</span><span class='line'><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">pIsBox1</span> <span class="o">=</span> <span class="n">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s">&quot; After red </span><span class="si">%d</span><span class="s"> &amp;gt; in 甲 box: </span><span class="si">%f</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">pIsBox1</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># consider 4 green ball</span>
+</span><span class='line'><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">pIsBox1</span> <span class="o">=</span> <span class="n">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s">&quot; After green </span><span class="si">%d</span><span class="s"> &amp;gt; in 甲 box: </span><span class="si">%f</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">pIsBox1</span><span class="p">)</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">redGreenBallProblem</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
 在这个调查问题里面，8次红球与4次绿球出现的顺序并不重要，因为红球的出现总是使选择的是甲箱子的概率增加，而绿球的出现总是减少。因此，为了简化编程，我将红球出现的情况以及绿球出现的情况摆在一起了。</p>
 
 <p>程序运行结果如下：

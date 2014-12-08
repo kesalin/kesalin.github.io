@@ -4,7 +4,7 @@
   <title><![CDATA[分类：工具软件 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/blog/categories/gong-ju-ruan-jian/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-12-08T17:33:13+08:00</updated>
+  <updated>2014-12-08T18:05:40+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -23,6 +23,9 @@
 <p>Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac &amp; Ubuntu &amp; Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要<strong>注意各机器上的 Synergy 版本要一致</strong>，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。</p>
 
 <p>在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。</p>
+
+<!--more-->
+
 
 <h2>工具下载</h2>
 

@@ -14,6 +14,8 @@ Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常
 
 在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。
 
+<!--more-->
+
 ## 工具下载
 QuickSynergy 工具下载：  
 Mac 版 QuickSynergy 下载链接一：[https://code.google.com/p/quicksynergy/](https://code.google.com/p/quicksynergy/)    

@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>还没二够，就奔三了 - 飘飘白云</title>
+  <title>利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标 - 飘飘白云</title>
   <meta name="author" content="飘飘白云">
 
   
-  <meta name="description" content="还没二够，就奔三了">
-  <meta name="keywords" content="奔三">
+  <meta name="description" content="利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标">
+  <meta name="keywords" content="Synergy">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://kesalin.github.io/blog/2013/04/16/thirty">
+  <link rel="canonical" href="http://kesalin.github.io/blog/2014/12/08/share-screen-with-synergy">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="飘飘白云" type="application/atom+xml">
@@ -73,7 +73,7 @@
   
   <header>
     
-      <h1 class="entry-title">还没二够，就奔三了</h1>
+      <h1 class="entry-title">利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标</h1>
     
     
       <p class="meta">
@@ -82,7 +82,7 @@
 
 
 
-<time class='entry-date' datetime='2013-04-16T18:31:42+08:00'><span class='date'>2013-04-16</span> <span class='time'>6:31 pm</span></time>
+<time class='entry-date' datetime='2014-12-08T13:03:34+08:00'><span class='date'>2014-12-08</span> <span class='time'>1:03 pm</span></time>
         
         
           | <a href="#comments">评论</a>
@@ -92,22 +92,56 @@
   </header>
 
 
-<div class="entry-content"><p>某人说：你还没二够，就奔三了。我也是这么想的，三不三，我还真没感觉。记得小时候，三十是个大事，一般都是要办酒席的，我还记得几个叔叔三十的时候办酒席的情景。在儿时的农村，三十岁的人一般都“立”起来了，家庭，子女都有了，且不论在事业/生活上是否真正立起来l了。成长路上，见证了很多叔叔辈的而立之路，而今，岁月无情的年轮终于碾到我了。</p>
+<div class="entry-content"><h2>简介</h2>
 
-<!--more-->
+<p>Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac &amp; Ubuntu &amp; Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要<strong>注意各机器上的 Synergy 版本要一致</strong>，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。</p>
+
+<p>在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。</p>
+
+<h2>工具下载</h2>
+
+<p>QuickSynergy 工具下载：<br/>
+Mac 版 QuickSynergy 下载链接一：<a href="https://code.google.com/p/quicksynergy/">https://code.google.com/p/quicksynergy/</a>  <br/>
+Mac 版 QuickSynergy 下载链接二：<a href="http://sourceforge.net/projects/quicksynergy/">http://sourceforge.net/projects/quicksynergy/</a><br/>
+Ubuntu 版 QuickSynergy 直接在 Ubuntu Software Center 中输入 QuickSynergy 查找安装即可。</p>
+
+<p>若使用 SynergyKM，可以从如下链接获取：<br/>
+SynergyKM 下载链接：<a href="http://synergykm.com/">http://synergykm.com/</a></p>
+
+<h2>安装配置</h2>
+
+<ol>
+<li><p>Ubuntu 下的安装配置</p>
+
+<p> 启动 QuickSynergy，显示界面有三个 Tab 页：</p>
+
+<ul>
+<li>Share Tab：该页面用于服务器。作为服务器的机器在该界面配置受其控制的客户端机器的主机名，然后点击 Excute 启动服务器端（实际上是执行程序：/usr/bin/synergys）；</li>
+<li>Use Tag：该页面用于客户端。作为客户端的机器在该界面配置服务器机器的IP地址或主机名，然后点击 Excute 启动客户端端（实际上是执行程序：/usr/bin/synergyc）；</li>
+<li>Setting Tag：该页面用于配置 Synergy 执行程序所在的目录</li>
+</ul>
 
 
-<p>夫子曰：“三十而立”。很显然，夫子的标准不适用于张江男。夫张江男，名誉其外，苦逼其内。而我又恰是张江男之一。不知这是不幸中的万幸，抑或万幸中的不幸？在进入而立年之前，我曾想，夫子当时说而立的时候，这个立是指什么样的一种境界呢？我想必定不是婆子，房子，票子。据《论语》上说是指“立于礼”的，若用马斯洛的需求理论来衡量，那又该位于金字塔上的哪一层呢？</p>
+<p> 在这里，使用 Ubuntu 机器作为服务器，所以只需要在 Share Tab 界面上的相应位置（上下左右，我的 Mac 机器在左边，所以在 left 位置设置）设置 Mac 机器的主机名即可。Mac 机器的主机名查看方法如下：启动 terminal，输入命令：hostname，就能得到主机名。</p>
 
-<p>今天看到一句话说：“与其说我害怕成为普通人，还不如说我害怕生活，害怕找不到一种自己喜欢的方式去度过人生，害怕不知道什么才是我想要的生活。”心有戚戚焉。或许，每一个人心底都有一对黑白小人，一个说：这就是你的生活，另一个说：这不是你想要的生活。三十岁与二十岁最大的区别是，二十岁真的不知道生活是啥样，三十岁知道生活的一种模式是啥样，却不知道或想知道其它的模式是啥样。其它模式会是啥样呢？或别有洞天，或别有地狱。或许这是我近来对了解不同人很有兴趣的原因之一，每个人都是某种生活模式的镜子。</p>
+<p> 设置界面如下：<br/>
+ <img src="http://i.imgur.com/ZhCLJVS.png" alt="Ubuntu QuickSynergy 设置" /></p>
 
-<p>而立之年，有很多事情需要去做，于家庭，于社会，也会有更多的担当；而立之年，深感好奇心，自由，时间，阅读之重要。然机会均等，鱼与熊掌不可兼得，得学会取舍。</p>
+<p> 然后点击启动。(注意需要先启动服务器端，然后再启动客户端)</p></li>
+<li><p>Mac 下的安装配置
+Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy，在 Share 页面设置 Server hostname/IP address 为 Ubuntu 机器的 IP 地址即可（Ubuntu 系统下启动 terminal，输入命令：ifconfig 即可查看 IP 地址，输入命令 hostname 即可查看主机名）。<br/>
+ 设置界面如下：<br/>
+ <img src="http://i.imgur.com/kKxpgnx.png" alt="Mac QuickSynergy 设置" /></p>
 
-<p>告诫自己：</p>
+<p> 然后点击 Run，这样就能够使用 Ubuntu 机器的键盘和鼠标操作 Mac 机器了。</p></li>
+<li><p>Mac 下 SynergyKM 的安装配置<br/>
+由于 QuickSynergy 不带日志输出窗口，有时候操作不成功也不知道是怎么回事，这时可以安装 SynergyKM 来解决问题。下载 Mac 版 SynergyKM，双击安装，在安装过程中选择 Client 模式，并设置 Screen Name 为 Mac 机器的主机名（也可以在安装完毕之后在菜单 Perferences/Setting 界面设置）。安装完毕之后启动 SynergyKM，勾选 Client 选择框，在 Server IP 处填写服务器机器 Ubuntu 的 IP 地址。<br/>
+ 设置界面如下：
+ <img src="http://i.imgur.com/nNcKVPg.png" alt="Mac SynergyKM 设置" /></p>
 
-<pre><code>别光顾着走，而迷失了前行的方向。
-Slow is fast.
-</code></pre>
+<p> 然后点击 Apply 和 Start，就能在 Log 输出窗口查看日志，根据日志信息就能够知道是版本不匹配还是主机名设置错误等等。</p></li>
+</ol>
+
 </div>
 
 
@@ -124,12 +158,12 @@ Slow is fast.
 
 
 
-<time class='entry-date' datetime='2013-04-16T18:31:42+08:00'><span class='date'>2013-04-16</span> <span class='time'>6:31 pm</span></time>
+<time class='entry-date' datetime='2014-12-08T13:03:34+08:00'><span class='date'>2014-12-08</span> <span class='time'>1:03 pm</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/sui-sui-nian/'>碎碎念</a>
+    <a class='category' href='/blog/categories/gong-ju-ruan-jian/'>工具软件</a>
   
 </span>
 
@@ -138,7 +172,7 @@ Slow is fast.
 
 <span class="tags">
   
-    <a class='tag' href='/tags/xin-qing/'>心情</a>, <a class='tag' href='/tags/sui-sui-nian/'>碎碎念</a>
+    <a class='tag' href='/tags/gong-ju/'>工具</a>
   
 </span>
 
@@ -198,11 +232,9 @@ UY END &#8211;>
 
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/05/17/influence-boy/" title="下一篇: 那个推销的小伙子《影响力》你一定读过！">&laquo; 那个推销的小伙子《影响力》你一定读过！</a>
-      
 
       
-        <a class="basic-alignment right" href="/blog/2012/06/30/tianchao/" title="上一篇: 大宋末年">大宋末年 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/10/29/brainwash/" title="上一篇: [转]洗脑秘笈：占领思想舆论阵地的十八个招式">[转]洗脑秘笈：占领思想舆论阵地的十八个招式 &raquo;</a>
       
     </p>
   
@@ -214,7 +246,7 @@ UY END &#8211;>
 
   <section>
     <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-title="还没二够，就奔三了"></div>
+<div class="ds-thread" data-title="利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标"></div>
 
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"kesalin"};

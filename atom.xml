@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://kesalin.github.io/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-10-29T23:09:43+08:00</updated>
+  <updated>2014-12-08T17:33:13+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -12,6 +12,64 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标]]></title>
+    <link href="http://kesalin.github.io/blog/2014/12/08/share-screen-with-synergy/"/>
+    <updated>2014-12-08T13:03:34+08:00</updated>
+    <id>http://kesalin.github.io/blog/2014/12/08/share-screen-with-synergy</id>
+    <content type="html"><![CDATA[<h2>简介</h2>
+
+<p>Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac &amp; Ubuntu &amp; Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要<strong>注意各机器上的 Synergy 版本要一致</strong>，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。</p>
+
+<p>在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。</p>
+
+<h2>工具下载</h2>
+
+<p>QuickSynergy 工具下载：<br/>
+Mac 版 QuickSynergy 下载链接一：<a href="https://code.google.com/p/quicksynergy/">https://code.google.com/p/quicksynergy/</a>  <br/>
+Mac 版 QuickSynergy 下载链接二：<a href="http://sourceforge.net/projects/quicksynergy/">http://sourceforge.net/projects/quicksynergy/</a><br/>
+Ubuntu 版 QuickSynergy 直接在 Ubuntu Software Center 中输入 QuickSynergy 查找安装即可。</p>
+
+<p>若使用 SynergyKM，可以从如下链接获取：<br/>
+SynergyKM 下载链接：<a href="http://synergykm.com/">http://synergykm.com/</a></p>
+
+<h2>安装配置</h2>
+
+<ol>
+<li><p>Ubuntu 下的安装配置</p>
+
+<p> 启动 QuickSynergy，显示界面有三个 Tab 页：</p>
+
+<ul>
+<li>Share Tab：该页面用于服务器。作为服务器的机器在该界面配置受其控制的客户端机器的主机名，然后点击 Excute 启动服务器端（实际上是执行程序：/usr/bin/synergys）；</li>
+<li>Use Tag：该页面用于客户端。作为客户端的机器在该界面配置服务器机器的IP地址或主机名，然后点击 Excute 启动客户端端（实际上是执行程序：/usr/bin/synergyc）；</li>
+<li>Setting Tag：该页面用于配置 Synergy 执行程序所在的目录</li>
+</ul>
+
+
+<p> 在这里，使用 Ubuntu 机器作为服务器，所以只需要在 Share Tab 界面上的相应位置（上下左右，我的 Mac 机器在左边，所以在 left 位置设置）设置 Mac 机器的主机名即可。Mac 机器的主机名查看方法如下：启动 terminal，输入命令：hostname，就能得到主机名。</p>
+
+<p> 设置界面如下：<br/>
+ <img src="http://i.imgur.com/ZhCLJVS.png" alt="Ubuntu QuickSynergy 设置" /></p>
+
+<p> 然后点击启动。(注意需要先启动服务器端，然后再启动客户端)</p></li>
+<li><p>Mac 下的安装配置
+Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy，在 Share 页面设置 Server hostname/IP address 为 Ubuntu 机器的 IP 地址即可（Ubuntu 系统下启动 terminal，输入命令：ifconfig 即可查看 IP 地址，输入命令 hostname 即可查看主机名）。<br/>
+ 设置界面如下：<br/>
+ <img src="http://i.imgur.com/kKxpgnx.png" alt="Mac QuickSynergy 设置" /></p>
+
+<p> 然后点击 Run，这样就能够使用 Ubuntu 机器的键盘和鼠标操作 Mac 机器了。</p></li>
+<li><p>Mac 下 SynergyKM 的安装配置<br/>
+由于 QuickSynergy 不带日志输出窗口，有时候操作不成功也不知道是怎么回事，这时可以安装 SynergyKM 来解决问题。下载 Mac 版 SynergyKM，双击安装，在安装过程中选择 Client 模式，并设置 Screen Name 为 Mac 机器的主机名（也可以在安装完毕之后在菜单 Perferences/Setting 界面设置）。安装完毕之后启动 SynergyKM，勾选 Client 选择框，在 Server IP 处填写服务器机器 Ubuntu 的 IP 地址。<br/>
+ 设置界面如下：
+ <img src="http://i.imgur.com/nNcKVPg.png" alt="Mac SynergyKM 设置" /></p>
+
+<p> 然后点击 Apply 和 Start，就能在 Log 输出窗口查看日志，根据日志信息就能够知道是版本不匹配还是主机名设置错误等等。</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[[转]洗脑秘笈：占领思想舆论阵地的十八个招式]]></title>
@@ -3801,36 +3859,6 @@ Slow is fast.
 <p>《<a href="http://book.douban.com/subject/4842446/">巨流河</a>》一书中提到璜壁堂是明朝一支皇族的祠堂，这也是真实的情况。璜壁堂是朱明皇裔&mdash;-茶商巨子朱紫桂兄弟于清同治年间修建的第二座建筑，也是最大的一座庄院，建成后金壁辉煌，故名为“璜壁堂”，1938年曾被东北中山中学借用靠西边的部分院落作为校址，安置东北流亡师生近千人。土改期间分给朱家佃农作为民居，后相继改建成人民公社、金田乡政府、粮库、供销社、学校、幼儿园等，剩于部分作为几十户村民住宅，至二十世纪90年代因不断改建，原建筑群已基本损毁。</p>
 
 <p><a href="http://baike.baidu.com/view/3703408.htm?fr=aladdin">朱紫桂</a>（1838-1903），派名作卿，衔命光耀，系明太祖朱元璋第十七子宁王朱权之第十七代孙。双峰县沙田乡人，他是近代名满湖湘茶商巨子，其人其事先后编入《双峰县志·人物志》、《湖南省志·外贸志》和《湖南茶叶大观》。《娄底地区志》云：“同治六年（1867），沙田（今双峰县）朱紫桂经营红茶，经汉口转销俄、英、美等国，后致巨富”。朱氏兄弟后致官全省商务总会理事，在家乡广置房屋、田产，于光绪至民国年间先后修建筱山堂、璜壁堂、文甲堂、石壁堂、扶嫁堂、东明堂、沙田朱氏宗祠及五公祠等八大建筑，置田万余亩，并投资经营矿业、航运业和种植业等。时人将朱氏兄弟和曾国藩兄弟称为湘乡两大财主。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[找回使命感，重燃激情！]]></title>
-    <link href="http://kesalin.github.io/blog/2011/07/18/passion/"/>
-    <updated>2011-07-18T22:21:42+08:00</updated>
-    <id>http://kesalin.github.io/blog/2011/07/18/passion</id>
-    <content type="html"><![CDATA[<p>近来心态非常滴不踏实，不淡定。怎么说呢，就像一个拧紧发条向前冲的人，突然停下来想：这么冲为了啥呢？于是乎，心底疑惑起来，其余的一切依然在惯性的作用下看似如往常一样运转前行。</p>
-
-<p>也许也许很久很久没有过的迷茫阵痛期又要来了。记得当初毕业那阵子每隔几个月就要迷茫一下，那时候是为不知道以后会干什么，该学什么，也就是为一无所有以及不确定的前程迷茫。而现在的迷惑却是人活着为了啥？</p>
-
-<!--more-->
-
-
-<p>前段时间看了一篇文章《<a href="http://tieba.baidu.com/f?kz=1129761177">护士告诉你,病人临终前最后悔的五件事</a>》，里面说到很多人到死才懊悔一辈子或为名，或为利，或为责任，或为别的什么原因，而没去做自己想做的事情，没按自己的活法去活。</p>
-
-<p>大家都会说都会彼此祝福：要幸福快乐地过一辈子。可有多少人觉得自己过得幸福快乐呢，尤其是生活在大宋时代的我们呢？不知道从什么时候开始，我开始有了一种淡定，浮云的心态。我一直都认同，人一生的历程中没有哪一件事重大到可以影响他的整个人生。正是基于这样的认同，我对很多事情都不在乎。既然一切都是过隙浮云，何必在乎？尤其对那些不合理的浮云，所以我不畏惧也不认同权威，也不喜欢高高在上的那种人，也很藐视任何形势的等级制度（无论是公司的还是社会的）。或许这样的心态久了，慢慢迷失了自己，似乎没什么东西可以在乎的了，于是慢慢地纠结出人活着为了啥？</p>
-
-<p>我不是悲观主义，只是最近一直在心里纠结这个问题。按照康德对自由的解释，自由是按照自己定的规则/信念行事。</p>
-
-<p>什么叫做自己定的规则/信念。比如你施舍了一个乞丐。在行动上你是自由的，你或许是因为今天是雷锋日，感觉要对得起雷锋，于是模仿效之，这实际上你是按照雷锋同志或设定雷锋日的那些人的规则行事，你不是真正自由的；又或许是你觉得要做个好人，而施舍是一种好人应该做的事情，这实际上你是按照社会认同的好人标准在行事，那也不是你自己定的规则；又或许你觉得这么做，可以获得好评，博得好感，这实际上你是被你自己对别人对你的期望所操纵而行事。</p>
-
-<p>那什么才算得上康德同学所说的自由呢? 他认为，你认同内心抛开一切杂念而秉持的那种始终如一的信念，促使你去行那些符合这一信念的事情，这才是真正的自由。而对于这里所说的施舍，你内心如果秉持的是悲悯天下的善意，那你的行动是符合你自己的规则的，你在这件事情上是真正的自由。</p>
-
-<p>看似说上了这么一大堆废话，其实我是想说明真正的自由是怎样的。而根据这一标准来衡量我们生活中的所作所为，有多少人是真正自由的？你每天内心渴望去上班么，或认同你去上班是为了履行自己的某种使命感么？我想很多人仅仅是为了某种形式的交换而去上班，当然我觉得现在的我在很大程度上也是，虽然我们或许可以获得可观的收入，可是并不快乐，更说不上有激情，更不可能认同那是因某种使命感而去做某种事情，而做这种事情的行为又恰好符合是你的工作岗位的描述。简单点就是：如果你先去做某种事，而后才创建一个职位名称来描述你做这事情，或某种职位正好符合对你做这事情的描述，那你是自由。可悲的时候，很多时候，不是我们上了某个职位，而是某个职位上了我们。</p>
-
-<p>我只是举个工作的例子来说明生活中的真正自由，其实我们做的很多事情，抉择，都可以参照这个例子来衡量自己是否是真正的自由。按照上面的标准/规则衡量，我想我绝对不是自由的。虽然我明白了真正自由的含义，也渴望真正的自由，可是我内心还不足够强大，还做不到真正的自由。这是我迷惑的原因所在。至于如何克服这种迷惑，或找到能让自己接受的说法来解释它，是我现在的瓶颈所在。或许一切都是这该死的一成不变的生活惹的祸。</p>
-
-<p>或许我该走动走动了，或西进，或南下，或往天上走。我知道我自己一直有一个理想的梦在那里，即使现实残酷无比，我还是想去瞧瞧，而不是保有那种朦胧美。人不安分了就会胡思乱想。</p>
 ]]></content>
   </entry>
   

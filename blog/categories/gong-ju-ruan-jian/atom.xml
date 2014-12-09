@@ -4,7 +4,7 @@
   <title><![CDATA[分类：工具软件 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/blog/categories/gong-ju-ruan-jian/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-12-09T14:09:41+08:00</updated>
+  <updated>2014-12-09T14:17:26+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -73,7 +73,7 @@ Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy�
 <p>  然后点击 Apply 和 Start，就能在 Log 输出窗口查看日志，根据日志信息就能够知道是版本不匹配还是主机名设置错误等等。</p></li>
 <li><p>修改 key-Mapping<br/>
 由于 Mac 机键盘与非 Mac 机键盘的物理按键不同，所以在 Ubuntu 机器上的 Ctrl + C 并不能在 Mac 系统上产生同样的效果，这就需要在 Synergy 的配置文件中添加按键映射关系。首先关闭 Ubuntu 系统上的 QuickSynergy（每次启动 QuickSynergy 都会重新生成新的 synergy.conf），再在作为服务器的机器上的 terminal 中输入命令：<code>gedit ~/.quicksynergy/synergy.conf</code> 打开 synergy.conf，修改其内容如下：
- <code>
+ <code>python
  section: screens
      kesalin-ubuntu:
      kesalin-iMac:

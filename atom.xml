@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://kesalin.github.io/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2014-12-09T14:17:26+08:00</updated>
+  <updated>2014-12-09T14:19:04+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -72,31 +72,47 @@ Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy�
 
 <p>  然后点击 Apply 和 Start，就能在 Log 输出窗口查看日志，根据日志信息就能够知道是版本不匹配还是主机名设置错误等等。</p></li>
 <li><p>修改 key-Mapping<br/>
-由于 Mac 机键盘与非 Mac 机键盘的物理按键不同，所以在 Ubuntu 机器上的 Ctrl + C 并不能在 Mac 系统上产生同样的效果，这就需要在 Synergy 的配置文件中添加按键映射关系。首先关闭 Ubuntu 系统上的 QuickSynergy（每次启动 QuickSynergy 都会重新生成新的 synergy.conf），再在作为服务器的机器上的 terminal 中输入命令：<code>gedit ~/.quicksynergy/synergy.conf</code> 打开 synergy.conf，修改其内容如下：
- <code>python
- section: screens
-     kesalin-ubuntu:
-     kesalin-iMac:
-         ctrl = meta
-         meta = ctrl
-         alt = alt
-         super = super
- end
- section: links
-     kesalin-ubuntu:
-         left = kesalin-iMac
-     kesalin-iMac:
-         right = kesalin-ubuntu
- end
-</code></p></li>
+由于 Mac 机键盘与非 Mac 机键盘的物理按键不同，所以在 Ubuntu 机器上的 Ctrl + C 并不能在 Mac 系统上产生同样的效果，这就需要在 Synergy 的配置文件中添加按键映射关系。首先关闭 Ubuntu 系统上的 QuickSynergy（每次启动 QuickSynergy 都会重新生成新的 synergy.conf），再在作为服务器的机器上的 terminal 中输入命令：<code>gedit ~/.quicksynergy/synergy.conf</code> 打开 synergy.conf，修改其内容如下：</p></li>
 </ol>
 
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>section: screens
+</span><span class='line'>  kesalin-ubuntu:
+</span><span class='line'>  kesalin-iMac:
+</span><span class='line'>      ctrl = meta
+</span><span class='line'>      meta = ctrl
+</span><span class='line'>      alt = alt
+</span><span class='line'>      super = super
+</span><span class='line'>end
+</span><span class='line'>section: links
+</span><span class='line'>  kesalin-ubuntu:
+</span><span class='line'>      left = kesalin-iMac
+</span><span class='line'>  kesalin-iMac:
+</span><span class='line'>      right = kesalin-ubuntu
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 
 <p>然后在 terminal 上输入命令：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy.conf</code> 根据特定配置启动 synergys 服务端，就可以实现按键映射了。</p>
 
 <p>为了避免每次启动系统之后都需要敲入上面的启动命令，可以在 Ubuntu 的启动项中添加上面的命令：点击 Perference->Startup Applications Perferences->Add，在 command 栏输入：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy.conf</code> 即可。注意由于每次启动 QuickSynergy 都会重新生成新的 synergy.conf 覆盖我们修改好的配置文件，所以最好将修改好的 synergy.conf 拷贝备份为 synergy-keymap.conf，然后使用命令：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy-keymap.conf</code> 作为自启动命令。</p>
 
-<h1>参考链接</h1>
+<h2>参考链接</h2>
 
 <p><a href="https://help.ubuntu.com/community/SynergyHowto">SynergyHowto</a><br/>
 <a href="http://superuser.com/questions/90223/synergy-key-mapping">Synergy key mapping</a></p>

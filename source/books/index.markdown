@@ -73,13 +73,13 @@ footer: true
   * [马斯洛的智慧](http://book.douban.com/subject/1426702/)
 
 <br/>
-####  大脑与记忆
+#### 大脑与记忆
   * [大脑与心智](http://book.douban.com/subject/1104764/)
   * [找寻逝去的自我](http://book.douban.com/subject/1315575/)
   * [你的记忆怎么了？](http://book.douban.com/subject/3129154/)
 
 <br/>
-####  认知
+#### 认知
   * [影响力](http://book.douban.com/subject/1786387/)
   * [态度改变与社会影响](http://book.douban.com/subject/2328178/)
   * [决策与判断](http://book.douban.com/subject/1193621/)
@@ -91,7 +91,7 @@ footer: true
   * [黑天鹅：如何应对不可知的未来](http://book.douban.com/subject/3025921/)
 
 <br/>
-####  人物
+#### 人物
   * [绝非偶然](http://book.douban.com/subject/19949881/)
   * [追寻记忆的痕迹](http://book.douban.com/subject/1944205/)
 
@@ -108,6 +108,8 @@ footer: true
   * [中国近代史-徐中约，港版](http://book.douban.com/subject/2376486/)
   * [中国近代史](http://book.douban.com/subject/1060025/)
   * [近代中国社会的新陈代谢](http://book.douban.com/subject/10825612/)
+  * [毛泽东最后的革命]，哈佛大学出版社出版，电子版
+  * [“文化大革命”十年史](http://book.douban.com/subject/3035113/)
 
 <br/>
 #### 欧洲史
@@ -171,6 +173,8 @@ footer: true
 ### 政治
 #### 制度
   * [通往奴役之路](http://book.douban.com/subject/1077528/)
+  * [自由与繁荣的国度](http://book.douban.com/subject/1043419/)
+  * [历史决定论的贫困](http://book.douban.com/subject/3803268/)
   * [论美国的民主](http://book.douban.com/subject/1041385/)
   * [民主的细节](http://book.douban.com/subject/3813669/)
 
@@ -203,6 +207,8 @@ footer: true
 #### 中国
   * [乡土中国 生育制度 乡土重建](http://book.douban.com/subject/10532835/)
   * [士与中国文化](http://book.douban.com/subject/25732836/)
+  * [中国古代文化常识](http://book.douban.com/subject/10571214/)
+  * [论中国学术思想变迁之大势](http://book.douban.com/subject/1882032/)
   * [中国人的精神](http://book.douban.com/subject/25732836/)
   * [吾国与吾民](http://book.douban.com/subject/3200831/)
   * [文化苦旅](http://book.douban.com/subject/1050339/)

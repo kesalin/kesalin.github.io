@@ -108,7 +108,7 @@ footer: true
   * [中国近代史-徐中约，港版](http://book.douban.com/subject/2376486/)
   * [中国近代史](http://book.douban.com/subject/1060025/)
   * [近代中国社会的新陈代谢](http://book.douban.com/subject/10825612/)
-  * [毛泽东最后的革命]，哈佛大学出版社出版，电子版
+  * [毛泽东最后的革命](http://blog.tianya.cn/blogger/post_show.asp?BlogID=351212&PostID=26574314)，哈佛大学出版社出版，电子版
   * [“文化大革命”十年史](http://book.douban.com/subject/3035113/)
 
 <br/>
@@ -181,7 +181,7 @@ footer: true
 <br/>
 #### 变革
   * [旧制度与大革命](http://book.douban.com/subject/1032063/)
-  * 从独裁到民主（电子版）
+  * [从独裁到民主](http://article.yeeyan.org/view/99430/298410)（电子版）
 
 <br/>
 #### 小说

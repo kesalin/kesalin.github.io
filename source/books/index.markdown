@@ -9,15 +9,14 @@ footer: true
 
 ### 说明
 
-这是我读过的且觉得非常好的有关思维，心理，管理，历史，政治，经济，哲学，科技等各方各面的书籍与记录片。入选的标准是实用，纯消遣类小说不在此列。
+这是我读过且觉得非常好的有关思维，心理，管理，历史，政治，经济，哲学，科技等多方面的书籍与记录片。入选的标准是实用，纯消遣类小说不在此列。
 
 何为实用？
->
-    * 或能改善思维认知模式
-    * 或能陶冶情操
->   * 或能颠覆既有观念（对于系统地接受洗脑教育的国人尤其如此）
->   * 或能整合已有知识形成新的见解
->   * 或能增长见识
+> 或能改善思维认知模式  
+> 或能陶冶情操  
+> 或能颠覆既有观念（对于系统地接受洗脑教育的国人尤其如此）  
+> 或能整合已有知识形成新的见解  
+> 或能增长见识
 
 我在豆瓣上建立了一个名为[心智成长](http://www.douban.com/doulist/1133232/)的豆列，在那上面写下了我的阅读心得，欢迎访问。
 
@@ -109,15 +108,26 @@ footer: true
   * [中国史纲](http://book.douban.com/subject/1055347/)
   * [中国历代政治得失](http://book.douban.com/subject/1003479/)
   * [中国大历史](http://book.douban.com/subject/1015699/)
-  * [中国近代史-徐中约，港版](http://book.douban.com/subject/2376486/)
+  * [中国近代史-徐中约](http://book.douban.com/subject/2376486/)，请读繁体港版
   * [中国近代史](http://book.douban.com/subject/1060025/)
   * [近代中国社会的新陈代谢](http://book.douban.com/subject/10825612/)
+  * [戰爭與革命中的西南聯大](http://book.douban.com/subject/4822151/)，请读繁体台湾版
   * [毛泽东最后的革命](http://blog.tianya.cn/blogger/post_show.asp?BlogID=351212&PostID=26574314)，哈佛大学出版社出版，电子版
   * [“文化大革命”十年史](http://book.douban.com/subject/3035113/)
-
+  
+<br/>
+#### 中国史影片
+  * [东周列国·春秋篇](http://movie.douban.com/subject/2341884/)
+  * [东周列国·战国篇](http://movie.douban.com/subject/2972189/)
+  * [走向共和](http://movie.douban.com/subject/1441794/)
+  * [一寸河山一寸血](http://movie.douban.com/subject/3713664/)，抗日纪录片
+  * [中国，一个世纪的革命](http://kesalin.github.io/blog/2014/05/02/century-of-revolution/)，纪录片
+  
 <br/>
 #### 欧洲史
   * [西洋史](http://book.douban.com/subject/4201719/)
+  * [你一定爱读的极简欧洲史](http://book.douban.com/subject/5366248/)
+  * [英国史（钱端升译）](http://book.douban.com/subject/11580186/)
   * [古拉格：一部历史](http://book.douban.com/subject/20503529/)
 
 <br/>
@@ -126,15 +136,17 @@ footer: true
 
 <br/>
 #### 人物
-  * [蒋经国传](http://book.douban.com/subject/5288371/)
+  * [蒋介石与现代中国](http://book.douban.com/subject/10797092/)，请读繁体台湾版
+  * [蒋经国传](http://book.douban.com/subject/5288371/)，请读繁体台湾版
   * [无法直面的人生：鲁迅传](http://book.douban.com/subject/1052242/)
 
 <br/>
 #### 小说
-  * [活着](http://book.douban.com/subject/1082154/)
+  * [活着](http://book.douban.com/subject/1082154/)，书籍与同名电影都不错
   * [万历十五年](http://book.douban.com/subject/1041482/)
   * [夹边沟记事](http://book.douban.com/subject/3239549/)
-  * [巨流河](http://book.douban.com/subject/4842446/)
+  * [巨流河](http://book.douban.com/subject/3822618/)，请读繁体台湾版
+  * [大江大海1949](http://baike.baidu.com/link?url=BqfpUn9yRx9fqbPdkqa0Ys83SsWKwKpbw8rd5c_oVD_nwm0904LQjRUOdNcL-bOGcoHJoQo8yrcA6nCltK0TA_)
 
 <br/>
 
@@ -145,6 +157,14 @@ footer: true
   * [老子今注今译](http://book.douban.com/subject/1253292/)
   * [中国哲学史大纲](http://book.douban.com/subject/4201709/)
   * [中国哲学简史](http://book.douban.com/subject/4879726/)
+  * [儒家哲学](http://book.douban.com/subject/4097069/)
+
+<br/>
+#### 西方哲学
+  * [哲学家们都干了些什么？](http://book.douban.com/subject/6425061/)
+  * [苏菲的世界](http://book.douban.com/subject/1045818/)
+  * [西方哲学史（梯利）](http://book.douban.com/subject/1005692/)
+  * [西方哲学史（罗素）](http://book.douban.com/subject/2283920/)
 
 <br/>
 
@@ -284,6 +304,10 @@ footer: true
 #### 思想
   * [失控](http://book.douban.com/subject/5375620/)
   * [思想的未来](http://book.douban.com/subject/1186899/)
+
+<br/>
+#### 计算机
+  * [编码](http://book.douban.com/subject/4822685/)
 
 <br/>
 #### 生物

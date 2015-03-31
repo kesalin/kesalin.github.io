@@ -158,6 +158,8 @@ footer: true
   * [中国哲学史大纲](http://book.douban.com/subject/4201709/)
   * [中国哲学简史](http://book.douban.com/subject/4879726/)
   * [儒家哲学](http://book.douban.com/subject/4097069/)
+  * [先秦政治思想史](http://book.douban.com/subject/5990878/)
+  * [论中国学术思想变迁之大势](http://book.douban.com/subject/1882032/)
 
 <br/>
 #### 西方哲学
@@ -201,11 +203,13 @@ footer: true
   * [历史决定论的贫困](http://book.douban.com/subject/3803268/)
   * [论美国的民主](http://book.douban.com/subject/1041385/)
   * [民主的细节](http://book.douban.com/subject/3813669/)
+  * [独裁者手册](http://book.douban.com/subject/25881102/)
 
 <br/>
 #### 变革
   * [旧制度与大革命](http://book.douban.com/subject/1032063/)
   * [从独裁到民主](http://article.yeeyan.org/view/99430/298410)（电子版）
+  * [狂热分子](http://book.douban.com/subject/3057556/)
 
 <br/>
 #### 小说
@@ -232,7 +236,6 @@ footer: true
   * [乡土中国 生育制度 乡土重建](http://book.douban.com/subject/10532835/)
   * [士与中国文化](http://book.douban.com/subject/25732836/)
   * [中国古代文化常识](http://book.douban.com/subject/10571214/)
-  * [论中国学术思想变迁之大势](http://book.douban.com/subject/1882032/)
   * [中国人的精神](http://book.douban.com/subject/25732836/)
   * [吾国与吾民](http://book.douban.com/subject/3200831/)
   * [文化苦旅](http://book.douban.com/subject/1050339/)
@@ -275,7 +278,10 @@ footer: true
   * [从优秀到卓越](http://book.douban.com/subject/1059769/)
   * [卓有成效的管理者](http://book.douban.com/subject/1322025/)
   * [光环效应](http://book.douban.com/subject/2249558/)
-  * [技术领导之路](http://book.douban.com/subject/4187478/)
+  * [技术领导之路](http://book.douban.com/su  * [先秦政治思想史]
+  bject/4187478/)
+  * [四步创业法](http://book.douban.com/subject/11516567/)
+  * [先秦政治思想史]
 
 <br/>
 #### 组织

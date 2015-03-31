@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "中文版《独裁者手册》之缺失手册"
+title: "中文版《独裁者手册》之和谐手册"
 date: 2015-03-26 10:00:34 +0800
 comments: true
 categories: [书评影评, 社会杂谈]
@@ -15,11 +15,15 @@ keywords: 独裁者手册
 
 [《独裁者手册》](http://book.douban.com/subject/25881102/)
 
+《独裁者手册》是一部解析权力--尤其是政治权力--运作机制的大作，这套机制适用于民主政府，也适用于独裁政府，还适用于一切有权力的场所，如公司、组织等等。总的来说，就是从如何获取权力，如何维持权力的角度来分析现有的政治制度、公司制度。
+
+中文版由江苏文艺出版社出版，这样一本书能在中国出版实属不易，自然翻译过程中译者必须做一些和谐的功夫。坦白地说，这本书译文流畅，观点忠于原著，只有部分和中国相关的“敏感”论据被删除，其余都保留完整，实属佳品。鉴于很多人怀疑心重，我也有心一睹原著风貌，因此搜寻原文，将我找到的中英差异列在这里，让大家对这本删节书的质量心里有个谱。
+
 <!--more-->
 
 ## 正文
 
-查询关键词：China/Chinese
+查询关键词：China、Chinese，英文粗体部分为被河蟹的部分。
 
 ### 英文版P12/190
 > The second stratum of politics consists of the real selectorate. This is the group that actually chooses the leader. **In today’s China (as in the old Soviet Union), it consists of all voting members of the Communist Party;** in Saudi Arabia’s monarchy it is the senior members of the royal family; in Great Britain, the voters backing members of parliament from the majority party. 

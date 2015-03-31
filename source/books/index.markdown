@@ -278,10 +278,8 @@ footer: true
   * [从优秀到卓越](http://book.douban.com/subject/1059769/)
   * [卓有成效的管理者](http://book.douban.com/subject/1322025/)
   * [光环效应](http://book.douban.com/subject/2249558/)
-  * [技术领导之路](http://book.douban.com/su  * [先秦政治思想史]
-  bject/4187478/)
+  * [技术领导之路](http://book.douban.com/subject/4187478/)
   * [四步创业法](http://book.douban.com/subject/11516567/)
-  * [先秦政治思想史]
 
 <br/>
 #### 组织

@@ -248,6 +248,7 @@ footer: true
   * [三国演义](http://book.douban.com/subject/1019568/)
   * [水浒传](http://book.douban.com/subject/2701443/)
   * [大地三部曲](http://book.douban.com/subject/4067609/)
+  * [呼兰河传](http://book.douban.com/subject/1060852/)
   * [寻路中国](http://book.douban.com/subject/5414391/)
   * [中国在梁庄](http://book.douban.com/subject/5350804/)
   * [平凡的世界](http://book.douban.com/subject/1200840/)

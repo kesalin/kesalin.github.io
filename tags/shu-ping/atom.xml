@@ -4,7 +4,7 @@
   <title><![CDATA[标签：书评 | 飘飘白云]]></title>
   <link href="http://kesalin.github.io/tags/shu-ping/atom.xml" rel="self"/>
   <link href="http://kesalin.github.io/"/>
-  <updated>2015-04-02T17:14:29+08:00</updated>
+  <updated>2015-04-02T18:36:41+08:00</updated>
   <id>http://kesalin.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Android框架学习资料]]></title>
+    <link href="http://kesalin.github.io/blog/2015/04/02/study-android-fw/"/>
+    <updated>2015-04-02T19:00:34+08:00</updated>
+    <id>http://kesalin.github.io/blog/2015/04/02/study-android-fw</id>
+    <content type="html"><![CDATA[<h2>前言</h2>
+
+<p>这两年在做一个与 Android 类似的系统（参考：<a href="http://blog.csdn.net/kesalin/article/details/10474007">招聘：有兴趣做一个与Android对等的操作系统么？</a>），因此有机会对 Android framework 进行系统地学习与研究。期间也阅读了一些不错的书籍与资料，特此分享在这里，或许对其他有兴趣研究 Android framework 的朋友有所帮助。</p>
+
+<!--more-->
+
+
+<h2>推荐资料</h2>
+
+<h3><a href="http://book.douban.com/subject/11530748/">Android开发精要</a></h3>
+
+<p>这一本是作为入门本，主要是从 app 开发者的角度来介绍 framework 中的各要素，从这个角度来理解框架中哪些部分直接和 App 开发相关，又起什么作用。要仔细研究 framework 内部机制，首先从外部特性入手，这样在横向层面对 framework 有一个整体的认识与把握。第3章至第6章是这本书的精华所在，重点介绍了 Android 的组件思想以及组件之间的交互媒介 Intent。</p>
+
+<h3><a href="http://book.douban.com/subject/10570841/">Android框架揭秘</a></h3>
+
+<p>对比过《深入理解Android》等书籍，还是觉得这本书讲得有体系，透彻，著者非常用心。尤其是对 C++/Java 两个层面的 framework，以及对 Client/Server 的交互过程讲得比较详细。</p>
+
+<h3><a href="http://blog.csdn.net/universus/article/details/6211589/">Android Bander设计与实现 - 设计篇</a></h3>
+
+<p>引用原文内容：</p>
+
+<blockquote><p>这篇文章首先通过介绍 Binder 通信模型和 Binder 通信协议了解 Binder 的设计需求；然后分别阐述 Binder 在系统不同部分的表述方式和起的作用；最后还会解释 Binder 在数据接收端的设计考虑，包括线程池管理，内存映射和等待队列管理等。通过本文对 Binder 的详细介绍以及与其它 IPC 通信方式的对比，读者将对 Binder 的优势和使用 Binder 作为 Android 主要 IPC 方式的原因有深入了解。</p></blockquote>
+
+<h3><a href="http://book.douban.com/subject/19986441/">Android系统源代码情景分析</a></h3>
+
+<p>这是讲解 Android Binder 以及匿名共享内存最详细的书，没有之一。作者花了进200页的篇幅来透彻讲解 Binder，此外对各种组件的启动过程也介绍得相当详细，如 Activity、Service、Content Provider 等。</p>
+
+<h3><a href="http://book.douban.com/subject/25921329/">深入理解Android内核设计思想</a></h3>
+
+<p>从操作系统的基础知识入手，讲解进程线程、内存管理、Binder 机制、Surface、SurfaceFlinger、WindowManagerService、View 体系、音频系统、输入系统等在 Android framework 中的实现原理。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[中文版《独裁者手册》之和谐手册]]></title>
@@ -364,52 +402,6 @@ V字仇杀队 / V for Vendetta / V煞(港) / V怪客(台)<br/>
 
 <p>就消费来说是：网购猛于虎；<br/>
 就心态来说是：感恩。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[那个推销的小伙子《影响力》你一定读过！]]></title>
-    <link href="http://kesalin.github.io/blog/2013/05/17/influence-boy/"/>
-    <updated>2013-05-17T03:42:38+08:00</updated>
-    <id>http://kesalin.github.io/blog/2013/05/17/influence-boy</id>
-    <content type="html"><![CDATA[<p><img src="http://img5.douban.com/mpic/s4552058.jpg" alt="影响力" /></p>
-
-<p>最近重读了《<a href="http://book.douban.com/subject/5287474/">影响力</a>》，这至少是第三遍或第四遍读它了，我也在博客中多次推荐过。在读过诸多行为心理学，社会心理学书籍之后，这次重读对书中列举的各种例子和试验背后的心理因素了如指掌，深感又拉近了与当初西奥迪尼写这本书时境地的距离。好书就是这样的牛逼，你知道作者的境界在那里，但你却只能通过充实自己的阅历与见识，一遍一遍的重读，慢慢向作者写书时的境界靠近。</p>
-
-<!--more-->
-
-
-<p>重读之后，我并没有写书评的欲望，因为书中内容以及背后蕴含的心理因素我已经非常熟悉了。但今天上门来推销的一个小伙子的推销行为却激起我的兴趣来，于是学以致用，好好地分析了一把。</p>
-
-<p>今天周日在家，下午有个小伙子前门，说是“最近多人反映蟑螂等虫子多发，社区委员会决定上门服务帮助清理。”，小伙子穿着非常职业，带着工作证，虽然我没细看到牌子上面都写着什么。我当时一听是社区来的，就让他进来了。小伙子一进门就上下观察，一边赞您可真是爱整洁的人，屋子里面这么干净，一面又吹捧一看就是有修养的成功人士云云（当时我心里就觉得此人必有所求），最后询问厨房在哪里？我指给他看，小伙子径直走到灶台前，打开门柜，在门柜上撒上杀虫的药剂，并一边示范说，“这药剂要每隔20公分洒一点才有效果。”，撒完之后，就拿出一个册子，说“为了表示愿意配合这次社区杀虫，很多社区居民都签名了，请您在这里签名，同时也证明我确实来过”之类的话。册子上有不少楼层的人签名，当时我没有细想就签名了。最后他问“您在这里是长住呢还是短住？”，我说“不确定。”，他就拿出两盒药剂塞到我手里说“长住一般需要六盒药剂配合后续使用，短住的话需要两盒配合后续使用，既然你不太确定就先给你两盒吧。你准备一下后续药剂的费用就好了，50元一盒。”</p>
-
-<p>听到最后一句，我就完全明白了，好一个打着社区委员会幌子的骗子!在我的质疑和追问下，他没法自圆其说：他到底代表谁？这活动到底是谁组织的？自愿的还是商业的？。最后他的阴谋自然没有得逞，被我毫不客气的请出去了。但我对小伙子在整个过程中采取的行为与《影响力》中描述的策略惊人地一致很感兴趣，也对这个过程中我没有及早发觉他的真实目的进行了反思。</p>
-
-<p><strong>权威</strong></p>
-
-<p>小伙子一身职业装，挂着工作证的牌子，口中声称是社区委员会派来的。无疑他在这点上是非常成功的，以至于当时我没有怀疑。事后我想了想，倘若我不被他的装饰的“权威”所迷惑，必定会想到这样的活动社区里面的布告栏里一定会有告示的，而且社区服务的工作人员一般都是大妈，这么年轻的小伙子相当可疑。</p>
-
-<p><strong>喜好</strong></p>
-
-<p>小伙子一进来就东称道西赞美，一个劲儿地套近乎，可惜他这套手艺还没到家，套的太空太露骨了，引起我的怀疑了。</p>
-
-<p><strong>互惠</strong></p>
-
-<p>小伙子自作主张地喷洒药剂，制造了一个“互惠”的假象。然后又为我“着想”，只安排了两盒药剂的后续杀虫任务。</p>
-
-<p><strong>承诺一致</strong></p>
-
-<p>小伙子要求在册子上签名表示愿意配合这次杀毒任务。</p>
-
-<p><strong>社会认同</strong></p>
-
-<p>小伙子的册子上面显示着许多或真或假的社区居民的签名。</p>
-
-<p><strong>短缺</strong></p>
-
-<p>小伙子杜撰了一个最近多人反映遭受虫害的故事，造成若不及时除虫害，会带来很大损失的规避风险的心理情境。</p>
-
-<p>短短的三五分钟，《影响力》的六大武器全部被小伙子给用上了，虽然运用得有些牵强，而且带着一定的欺骗性质（伪装成社区委员会派来的）。</p>
 ]]></content>
   </entry>
   

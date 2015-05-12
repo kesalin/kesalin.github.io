@@ -12,17 +12,20 @@ footer: true
 这是我读过且觉得非常好的有关思维，心理，管理，历史，政治，经济，哲学，科技等多方面的书籍与记录片。入选的标准是实用，纯消遣类小说不在此列。
 
 何为实用？
-> 或能改善思维认知模式  
-> 或能陶冶情操  
-> 或能颠覆既有观念（对于系统地接受洗脑教育的国人尤其如此）  
-> 或能整合已有知识形成新的见解  
+> 或能改善思维认知模式
+> 或能陶冶情操
+> 或能颠覆既有观念（对于系统地接受洗脑教育的国人尤其如此）
+> 或能整合已有知识形成新的见解
 > 或能增长见识
 
 我在豆瓣上建立了一个名为[心智成长](http://www.douban.com/doulist/1133232/)的豆列，在那上面写下了我的阅读心得，欢迎访问。
 
----
+通过整理这个书单以及上面豆列中的评论，我在知乎上系统地回答了[有哪些让人三观端正的书籍推荐？](http://www.zhihu.com/question/29114634/answer/44400202?group_id=578888300425814016)这个问题。
+
+----------
 
 ### 方法论
+----------
 
 #### 技能
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
@@ -36,12 +39,15 @@ footer: true
 * [我们如何思维](http://book.douban.com/subject/4201118/)
 * [思维导图](http://book.douban.com/subject/3691437/)
 
-<br/>
-#### 书写
-* [金字塔原理](http://book.douban.com/subject/1020644/)
-* [风格的要素](http://book.douban.com/subject/1451400/)  
+----------
 
-<br/>
+#### 沟通表达
+* [金字塔原理](http://book.douban.com/subject/1020644/)
+* [非暴力沟通](http://book.douban.com/subject/3533221/)
+* [孩子，把你的手给我](http://book.douban.com/subject/3533221/)
+
+----------
+
 #### 观念
 * [高效能人士的七个习惯](http://book.douban.com/subject/1048007/)
 * [哪来的天才？](http://book.douban.com/subject/4010185/)
@@ -51,19 +57,22 @@ footer: true
 * [低智商社会](http://book.douban.com/subject/4292120/)
 * [即战力](http://book.douban.com/subject/2128625/)
 
-<br/>
+----------
+
 #### 情商
 * [活出意义来](http://book.douban.com/subject/1359005/)
 
-<br>
+----------
+
 #### GTD
 * [如何掌控自己的时间和生活](http://book.douban.com/subject/1436707/)
 * [Power Sleep](http://book.douban.com/subject/1984347/)
 
-<br/>
+----------
 
----
 ### 心理学
+----------
+
 #### 理论
   * [心理学与生活](http://book.douban.com/subject/1032501/)
   * [社会性动物](http://book.douban.com/subject/2328458/)
@@ -75,13 +84,15 @@ footer: true
   * [乌合之众](http://book.douban.com/subject/1012611/)
   * [马斯洛的智慧](http://book.douban.com/subject/1426702/)
 
-<br/>
+----------
+
 #### 大脑与记忆
   * [大脑与心智](http://book.douban.com/subject/1104764/)
   * [找寻逝去的自我](http://book.douban.com/subject/1315575/)
   * [你的记忆怎么了？](http://book.douban.com/subject/3129154/)
 
-<br/>
+----------
+
 #### 认知
   * [影响力](http://book.douban.com/subject/1786387/)
   * [态度改变与社会影响](http://book.douban.com/subject/2328178/)
@@ -93,15 +104,17 @@ footer: true
   * [随机致富的傻瓜](http://book.douban.com/subject/1962687/)
   * [黑天鹅：如何应对不可知的未来](http://book.douban.com/subject/3025921/)
 
-<br/>
+----------
+
 #### 人物
   * [绝非偶然](http://book.douban.com/subject/19949881/)
   * [追寻记忆的痕迹](http://book.douban.com/subject/1944205/)
 
-<br/>
+----------
 
----
 ### 历史
+----------
+
 #### 中国史
   * [中国历史研究法](http://book.douban.com/subject/1022938/)
   * [东周列国志](http://book.douban.com/subject/3409620/)
@@ -114,33 +127,38 @@ footer: true
   * [戰爭與革命中的西南聯大](http://book.douban.com/subject/4822151/)，请读繁体台湾版
   * [毛泽东最后的革命](http://blog.tianya.cn/blogger/post_show.asp?BlogID=351212&PostID=26574314)，哈佛大学出版社出版，电子版
   * [“文化大革命”十年史](http://book.douban.com/subject/3035113/)
-  
-<br/>
+
+----------
+
 #### 中国史影片
   * [东周列国·春秋篇](http://movie.douban.com/subject/2341884/)
   * [东周列国·战国篇](http://movie.douban.com/subject/2972189/)
   * [走向共和](http://movie.douban.com/subject/1441794/)
   * [一寸河山一寸血](http://movie.douban.com/subject/3713664/)，抗日纪录片
   * [中国，一个世纪的革命](http://kesalin.github.io/blog/2014/05/02/century-of-revolution/)，纪录片
-  
-<br/>
+
+----------
+
 #### 欧洲史
   * [西洋史](http://book.douban.com/subject/4201719/)
   * [你一定爱读的极简欧洲史](http://book.douban.com/subject/5366248/)
   * [英国史（钱端升译）](http://book.douban.com/subject/11580186/)
   * [古拉格：一部历史](http://book.douban.com/subject/20503529/)
 
-<br/>
+----------
+
 #### 美洲史
   * [论美国的民主](http://book.douban.com/subject/1041385/)
 
-<br/>
+----------
+
 #### 人物
   * [蒋介石与现代中国](http://book.douban.com/subject/10797092/)，请读繁体台湾版
   * [蒋经国传](http://book.douban.com/subject/5288371/)，请读繁体台湾版
   * [无法直面的人生：鲁迅传](http://book.douban.com/subject/1052242/)
 
-<br/>
+----------
+
 #### 小说
   * [活着](http://book.douban.com/subject/1082154/)，书籍与同名电影都不错
   * [万历十五年](http://book.douban.com/subject/1041482/)
@@ -148,10 +166,11 @@ footer: true
   * [巨流河](http://book.douban.com/subject/3822618/)，请读繁体台湾版
   * [大江大海1949](http://baike.baidu.com/link?url=BqfpUn9yRx9fqbPdkqa0Ys83SsWKwKpbw8rd5c_oVD_nwm0904LQjRUOdNcL-bOGcoHJoQo8yrcA6nCltK0TA_)
 
-<br/>
+----------
 
----
 ### 哲学
+----------
+
 #### 东方哲学
   * [论语译注](http://book.douban.com/subject/10743516/)
   * [老子今注今译](http://book.douban.com/subject/1253292/)
@@ -161,42 +180,48 @@ footer: true
   * [先秦政治思想史](http://book.douban.com/subject/5990878/)
   * [论中国学术思想变迁之大势](http://book.douban.com/subject/1882032/)
 
-<br/>
+----------
+
 #### 西方哲学
   * [哲学家们都干了些什么？](http://book.douban.com/subject/6425061/)
   * [苏菲的世界](http://book.douban.com/subject/1045818/)
   * [西方哲学史（梯利）](http://book.douban.com/subject/1005692/)
   * [西方哲学史（罗素）](http://book.douban.com/subject/2283920/)
 
-<br/>
+----------
 
----
 ### 经济学
+----------
+
 #### 理论
   * [经济学原理：微观经济学分册](http://book.douban.com/subject/3719533/)
   * [经济学原理：宏观经济学分册](http://book.douban.com/subject/3719531/)
   * [长尾理论](http://book.douban.com/subject/1919072/)
 
-<br/>
+----------
+
 #### 金融
   * [金融的逻辑](http://book.douban.com/subject/3891900/)
 
-<br/>
+----------
+
 #### 市场营销
   * [定位](http://book.douban.com/subject/5421787/)
   * [引爆点](http://book.douban.com/subject/1473323/)
 
-<br/>
+----------
+
 #### 投资理财
   * [小狗钱钱](http://book.douban.com/subject/3576486/)
   * [新手炒股入门](http://book.douban.com/subject/19949372/)
   * [炒股的智慧](http://book.douban.com/subject/1182173/)
   * [股票作手回忆录](http://book.douban.com/subject/1021346/)
 
-<br/>
+----------
 
----
 ### 政治
+----------
+
 #### 制度
   * [通往奴役之路](http://book.douban.com/subject/1077528/)
   * [自由与繁荣的国度](http://book.douban.com/subject/1043419/)
@@ -205,33 +230,39 @@ footer: true
   * [民主的细节](http://book.douban.com/subject/3813669/)
   * [独裁者手册](http://book.douban.com/subject/25881102/)
 
-<br/>
+----------
+
 #### 变革
   * [旧制度与大革命](http://book.douban.com/subject/1032063/)
   * [从独裁到民主](http://article.yeeyan.org/view/99430/298410)（电子版）
   * [狂热分子](http://book.douban.com/subject/3057556/)
 
-<br/>
+----------
+
 #### 小说
   * [1984 动物农场](http://book.douban.com/subject/22988752/)
   * [美丽新世界](http://book.douban.com/subject/1321789/)
 
-<br/>
+----------
+
 #### 杂谈
   * [鲁迅全集](http://book.douban.com/subject/1044994/)
   * [常识](http://book.douban.com/subject/3344676/)
   * [王小波散文精选](http://book.douban.com/subject/4023216/)
   * [野火集](http://book.douban.com/subject/2033284/)
   * [重新发现社会](http://book.douban.com/subject/4199761/)
+  * [容忍与自由](http://book.douban.com/subject/6558202/)
 
-<br/>
+----------
+
 #### 其它
   * [黑猩猩的政治](http://book.douban.com/subject/3785326/)
 
-<br/>
+----------
 
----
 ### 文化人类学
+----------
+
 #### 中国
   * [乡土中国 生育制度 乡土重建](http://book.douban.com/subject/10532835/)
   * [士与中国文化](http://book.douban.com/subject/25732836/)
@@ -242,7 +273,8 @@ footer: true
   * [金翼](http://book.douban.com/subject/1027210/)
   * [林村的故事](http://book.douban.com/subject/1082196/)
 
-<br/>
+----------
+
 #### 小说
   * [红楼梦](http://book.douban.com/subject/1007305/)
   * [三国演义](http://book.douban.com/subject/1019568/)
@@ -253,26 +285,30 @@ footer: true
   * [中国在梁庄](http://book.douban.com/subject/5350804/)
   * [平凡的世界](http://book.douban.com/subject/1200840/)
 
-<br/>
+----------
+
 #### 日本
   * [菊与刀](http://book.douban.com/subject/1022238/)
   * [源氏物语](http://book.douban.com/subject/1028816/)
   * [武士道](http://book.douban.com/subject/1013058/)
   * [日本与日本人](http://book.douban.com/subject/1488601/)
 
-<br/>
+----------
+
 #### 美国
   * [飘](http://book.douban.com/subject/1068920/)
 
-<br/>
+----------
+
 #### 其它
   * [天真的人类学家](http://book.douban.com/subject/1129216/)
   * [隐藏的逻辑](http://book.douban.com/subject/3766438/)
 
-<br/>
+----------
 
----
 ### 公司管理
+----------
+
 #### 管理
   * [德鲁克管理思想精要](http://book.douban.com/subject/4020870/)
   * [首先，打破一切常规](http://book.douban.com/subject/1015133/)
@@ -282,52 +318,61 @@ footer: true
   * [技术领导之路](http://book.douban.com/subject/4187478/)
   * [四步创业法](http://book.douban.com/subject/11516567/)
 
-<br/>
+----------
+
 #### 组织
   * [第五项修炼](http://book.douban.com/subject/4051739/)
   * [未来是湿的](http://book.douban.com/subject/3735295/)
 
-<br/>
+----------
+
 #### 理念
   * [Facebook效应](http://book.douban.com/subject/5313010/)
   * [世界是平的](http://book.douban.com/subject/1861805/)
 
-<br/>
+----------
+
 #### 产品
   * [创新者的窘境](http://book.douban.com/subject/4243770/)
   * [启示录：打造用户喜爱的产品](http://book.douban.com/subject/5914587/)
   * [写给大家看的设计书](http://book.douban.com/subject/3323633/)
 
-<br/>
+----------
+
 #### 人物
   * [赢：韦尔奇一生的管理智慧](http://book.douban.com/subject/1313124/)
 
-<br/>
+----------
 
----
 ### 科学技术
+----------
+
 #### 思想
   * [失控](http://book.douban.com/subject/5375620/)
   * [思想的未来](http://book.douban.com/subject/1186899/)
 
-<br/>
+----------
+
 #### 计算机
   * [编码](http://book.douban.com/subject/4822685/)
 
-<br/>
+----------
+
 #### 生物
   * [植物知道生命的答案](http://book.douban.com/subject/25793667/)
+  * [自私的基因](http://book.douban.com/subject/1292405/)
 
-<br/>
+----------
+
 #### 其它
   * [从一到无穷大](http://book.douban.com/subject/1441922/)
 
-<br/>
+----------
 
----
 ### 育儿
 * [怀孕圣经](http://book.douban.com/subject/10511318/)
 * [从出生到3岁](http://book.douban.com/subject/1967845/)
 * [0-6岁A+育儿法](http://book.douban.com/subject/11538005/)
+* [孩子，把你的手给我](http://book.douban.com/subject/3533221/)
 
 ---

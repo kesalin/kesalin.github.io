@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>用Python编写博客导出工具 - 飘飘白云</title>
+  <meta name="author" content="飘飘白云">
+
+  
+  <meta name="description" content="用Python编写博客导出工具">
+  <meta name="keywords" content="博客导出工具, Python">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kesalin.github.io/blog/2014/10/12/export-blog-using-python-on-windows">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="飘飘白云" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script -->
+  <script src="//libs.baidu.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="/javascripts/open-in-blank.js"></script>
+
+<!-- meta name="baidu-site-verification" content="ipeMpIhayI" -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">飘飘白云</a></h1>
+  
+    <h2>所读，所看，所思</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://wen.lu/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kesalin.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">归档</a></li>
+  <li><a href="/blog/archives/tags.html">标签</a></li>
+  <li><a href="/books">书单</a></li>
+  <li><a href="/about">关于我</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">用Python编写博客导出工具</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-12T08:35:02+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>8:35 am</span></time>
+        
+        
+          | <a href="#comments">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3>写在前面的话</h3>
+
+<p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
+
+<p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
+
+<p>本文源代码在这里：<a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">ExportCSDNBlog.py</a></p>
+
+<!--more-->
+
+
+<p>考虑到大部分非程序员使用Windows系统，下面将介绍在Windows下如何编写这个工具。</p>
+
+<h3>下载工具</h3>
+
+<p>在 Windows 下安装Python开发环境（Linux/Mac下用pip安装相应包即可，程序员自己解决咯）：</p>
+
+<p><strong>Python 2.7.3</strong><br/>
+请安装这个版本，更高版本的Python与一些库不兼容。<br/>
+<a href="https://www.python.org/download/releases/2.7.3/">下载页面</a><br/>
+下载完毕双击可执行文件进行安装，默认安装在C:\Python2.7。</p>
+
+<p><strong>six</strong><br/>
+<a href="https://pypi.python.org/pypi/six">下载页面</a>
+下载完毕，解压到Python安装目录下，如C:\Python2.7\six-1.8.0目录下。</p>
+
+<p><strong>BeautifulSoup 4.3.2</strong><br/>
+<a href="http://www.crummy.com/software/BeautifulSoup/bs4/download/">下载页面</a>，
+下载完毕，解压到Python安装目录下，如C:\Python2.7\BeautifulSoup目录下。</p>
+
+<p><strong>html5lib</strong><br/>
+<a href="https://pypi.python.org/pypi/html5lib">下载页面</a>
+下载完毕，解压到Python安装目录下，如C:\Python2.7\html5lib-0.999目录下。</p>
+
+<h3>安装工具</h3>
+
+<p>Windows下启动命令行，依次进入如下目录，执行setup.py install进行安装：</p>
+
+<pre><code>C:\Python2.7\six-1.8.0&gt;setup.py install  
+C:\Python2.7\html5lib-0.999&gt;setup.py install  
+C:\Python2.7\BeautifulSoup&gt;setup.py install  
+</code></pre>
+
+<h3>参考文档</h3>
+
+<p><a href="https://docs.python.org/2/">Python 2.X文档</a><br/>
+<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html">BeautifulSoup文档</a><br/>
+<a href="http://www.regexlab.com/zh/regref.htm">正则表达式文档</a><br/>
+<a href="http://tool.oschina.net/regex">正则表达式在线测试</a></p>
+
+<h3>用到的Python语法</h3>
+
+<p>这个工具只用到了一些基本的Python语法，如果你没有Python基础，稍微了解一下如下博文是很有好处的。</p>
+
+<ul>
+<li>string: 字符串操作，参考<a href="http://www.cnblogs.com/sevenyuan/archive/2010/12/10/1902145.html">python: string的操作函数</a></li>
+<li>list: 列表操作，参考<a href="http://www.cnblogs.com/zhengyuxin/articles/1938300.html">Python list 操作</a></li>
+<li>dictionary: 字典操作，参考<a href="http://www.cnblogs.com/yangyongzhi/archive/2012/09/17/2688326.html">Python中dict详解</a></li>
+<li>datetime: 日期时间，参考<a href="http://www.cnblogs.com/lhj588/archive/2012/04/23/2466653.html">python datetime处理时间</a></li>
+</ul>
+
+
+<p><br/></p>
+
+<h3>编写博客导出工具</h3>
+
+<h4>分析</h4>
+
+<p>首先来分析这样一个工具的需求：</p>
+
+<pre><code>导出所有CSDN博客文章为Markdown文本。
+</code></pre>
+
+<p>这个总需求其实可以分两步来做：</p>
+
+<pre><code>* 获得CSDN博客文章
+* 将文章转换为Markdown文本
+</code></pre>
+
+<p>针对第一步：如何获取博客文章呢？</p>
+
+<p>打开任何一个CSDN博客，我们都可以看到下方的页面导航显示“XXX条数据 共XXX页 1 2 3 &hellip; 尾页”，我们从这个地方入手考虑。每个页面上都会显示属于该页的文章标题及文章链接，如果我们依次访问这些页面链接，就能从每个页面链接中找出属于该页面的文章标题及文章链接。这样所有的文章标题以及文章链接就都获取到了，有了这些文章链接，我们就能获取对应文章的html内容，然后通过解析这些html页面来生成相应Markdown文本了。</p>
+
+<h4>实现</h4>
+
+<p>从上面的分析可以看出，首先我们需要根据首页获取所有的页面链接，然后遍历每一个页面链接来获取文章链接。</p>
+
+<ul>
+<li>获取页面链接的代码：</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>获取所有的页面的 url</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 获取所有的页面的 url</span>
+</span><span class='line'>    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print data</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class='line'>    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">pageList</span> <span class="ow">in</span> <span class="n">pageListDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">hrefDocs</span> <span class="o">=</span> <span class="n">pageList</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">lastArticleHrefDoc</span> <span class="o">=</span> <span class="n">hrefDocs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+</span><span class='line'>            <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="n">lastArticleHrefDoc</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="p">[]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print &quot; &gt; last page href:&quot; + lastArticleHref</span>
+</span><span class='line'>    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+</span><span class='line'>    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">lastPageNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">pageUrl</span> <span class="o">=</span> <span class="n">urlInfo</span> <span class="o">+</span> <span class="s">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">pageUrlList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt; page &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">pageUrl</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total pages: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pageUrlList</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">pageUrlList</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>参数 url = &ldquo;<a href="http://blog.csdn.net/">http://blog.csdn.net/</a>&rdquo; + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。</p>
+
+<p>有了html页面内容，接下来就用BeautifulSoup来解析它。BeautifulSoup极大地减少了我们的工作量。我会详细在这里介绍它的使用，后面再次出现类似的解析就会从略了。soup.find_all(id=&ldquo;papelist&rdquo;) 将会查找html页面中所有id=&ldquo;papelist&#8221;的tag，然后返回包含这些tag的list。对应 CSDN 博文页面来说，只有一处地方：</p>
+
+<figure class='code'><figcaption><span>papelist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;papelist&quot;</span> <span class="na">class=</span><span class="s">&quot;pagelist&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span&gt;</span> 236条数据  共12页<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;strong&gt;</span>1<span class="nt">&lt;/strong&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/3&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/4&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/5&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>下一页<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/12&quot;</span><span class="nt">&gt;</span>尾页<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>好，我们获得了papelist 的tag对象，通过这个tag对象我们能够找出尾页tag a对象，从这个tag a解析出对应的href属性，获得尾页的编号12，然后自己拼出所有page页面的访问url来，并保存在pageUrlList中返回。page页面的访问url形式示例如下：</p>
+
+<pre><code>&gt; page 1: http://blog.csdn.net/kesalin/article/list/1
+</code></pre>
+
+<ul>
+<li>根据page来获取文章链接的代码：</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>根据page来获取文章链接</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 获取所有的文章的 url/title</span>
+</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
+</span><span class='line'>    <span class="n">pageNum</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>        <span class="n">pageNum</span> <span class="o">=</span> <span class="n">pageNum</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="n">pageNumStr</span> <span class="o">=</span> <span class="n">strPage</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageNum</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">print</span> <span class="n">pageNumStr</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">while</span> <span class="n">retryCount</span> <span class="o">&lt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">try</span><span class="p">:</span>
+</span><span class='line'>                <span class="n">retryCount</span> <span class="o">=</span> <span class="n">retryCount</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class='line'>                <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>                <span class="c">#print data</span>
+</span><span class='line'>                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>                <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span><span class='line'>                <span class="k">break</span>
+</span><span class='line'>            <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+</span><span class='line'>                <span class="k">print</span> <span class="s">&quot;getArticleList exception:</span><span class="si">%s</span><span class="s">, url:</span><span class="si">%s</span><span class="s">, retry count:</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">pageUrl</span><span class="p">,</span> <span class="n">retryCount</span><span class="p">)</span>
+</span><span class='line'>                <span class="k">pass</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">articleListDoc</span> <span class="ow">in</span> <span class="n">articleListDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">linkDocs</span> <span class="o">=</span> <span class="n">articleListDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_title&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">for</span> <span class="n">linkDoc</span> <span class="ow">in</span> <span class="n">linkDocs</span><span class="p">:</span>
+</span><span class='line'>            <span class="c">#print linkDoc.prettify().encode(&#39;UTF-8&#39;)</span>
+</span><span class='line'>            <span class="n">link</span> <span class="o">=</span> <span class="n">linkDoc</span><span class="o">.</span><span class="n">a</span>
+</span><span class='line'>            <span class="n">url</span> <span class="o">=</span> <span class="n">link</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">oneHref</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">url</span>
+</span><span class='line'>            <span class="c">#log(&quot;   &gt; title:&quot; + title + &quot;, url:&quot; + oneHref)</span>
+</span><span class='line'>            <span class="n">artices</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">oneHref</span><span class="p">,</span> <span class="n">title</span><span class="p">])</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total articles: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">artices</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">artices</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>从page的html内容中查找置顶的文章（article_toplist）以及普通的文章（article_list）的tag对象，然后将这些tag保存到articleListDocs中。</p>
+
+<p>article_toplist示例：(article_list的格式是类似的)</p>
+
+<figure class='code'><figcaption><span>article_toplist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;article_toplist&quot;</span> <span class="na">class=</span><span class="s">&quot;list&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item article_item&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;article_title&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ico ico_type_Original&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;h1&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;link_title&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/details/10474007&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>[置顶]<span class="nt">&lt;/font&gt;</span>
+</span><span class='line'>                招聘：有兴趣做一个与Android对等的操作系统么？
+</span><span class='line'>                <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>        ... ...
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>    ... ...
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>然后遍历所有的保存到articleListDocs里的tag对象，从中解析出link_title的span tag对象保存到linkDocs中；然后从中解析出链接的url和标题，这里去掉了置顶文章标题中的“置顶”两字；最后将url和标题保存到artices列表中返回。artices列表中的每一项内容示例：</p>
+
+<pre><code>   title:招聘：有兴趣做一个与Android对等的操作系统么？  
+   url:http://blog.csdn.net/kesalin/article/details/10474007
+</code></pre>
+
+<ul>
+<li>根据文章链接获取文章html内容并解析转换为Markdown文本</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>根据文章链接获取文章html内容并解析转换为Markdown文本</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 下载文章，并保存为 markdown 格式</span>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class='line'>    <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class='line'>    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">break</span>
+</span><span class='line'>        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="k">try</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class='line'>            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="k">break</span>
+</span><span class='line'>        <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">exstr</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, retry: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;, error:&quot;</span> <span class="o">+</span> <span class="n">exstr</span><span class="p">)</span>
+</span><span class='line'>            <span class="k">pass</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">return</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print data</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class='line'>    <span class="n">titleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_title&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">titleDoc</span> <span class="ow">in</span> <span class="n">titleDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">titleStr</span> <span class="o">=</span> <span class="n">titleDoc</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">title</span> <span class="o">=</span> <span class="n">titleStr</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>        <span class="c">#log(&quot; &gt;&gt; title: &quot; + title)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">categoryDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_categories&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categoryDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">categories</span> <span class="o">=</span> <span class="n">categoryDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">postDateDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_postdate&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">postDateDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">postDateStr</span> <span class="o">=</span> <span class="n">postDateDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">postDateStr</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">contentDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_content&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">contentDoc</span> <span class="ow">in</span> <span class="n">contentDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">htmlContent</span> <span class="o">=</span> <span class="n">contentDoc</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">content</span> <span class="o">=</span> <span class="n">htmlContent2String</span><span class="p">(</span><span class="n">htmlContent</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">exportToMarkdown</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">postDate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。</p>
+
+<figure class='code'><figcaption><span>转换html文档内容</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">htmlContent2String</span><span class="p">(</span><span class="n">contentStr</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">patternImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;img.+?src=&quot;)(.+?)(&quot;.+ /&gt;)&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">patternHref</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;a.+?href=&quot;)(.+?)(&quot;.+?&gt;)(.+?)(&lt;/a&gt;)&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">patternRemoveHtml</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;&lt;/?[^&gt;]+&gt;&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternImg</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;![image_mark](\2)&#39;</span><span class="p">,</span> <span class="n">contentStr</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternHref</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;[\4](\2)&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">patternRemoveHtml</span><span class="p">,</span> <span class="s">r&#39;&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">decodeHtmlSpecialCharacter</span><span class="p">(</span><span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">resultContent</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>目前仅仅是删除所有的html标签，并在函数decodeHtmlSpecialCharacter中转换转义字符。</p>
+
+<ul>
+<li>生成Markdown文本文件</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>生成Markdown文本文件</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">exportToMarkdown</span><span class="p">(</span><span class="n">exportDir</span><span class="p">,</span> <span class="n">postdate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">titleDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">contentDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M:%S %z&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">titleDate</span> <span class="o">+</span> <span class="s">&#39;-&#39;</span> <span class="o">+</span> <span class="n">title</span>
+</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">repalceInvalidCharInFilename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">filepath</span> <span class="o">=</span> <span class="n">exportDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s">&#39;.markdown&#39;</span>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; save as &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">newFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&quot;utf8&quot;</span><span class="p">),</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;layout: post&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;title: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;date: &#39;</span> <span class="o">+</span> <span class="n">contentDate</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;comments: true&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;categories: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;tags: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;description: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;keywords: &#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>生成Markdown文本文件就很简单了，在这里我需要生成github page用的Markdown博文形式，所以内容如此，你可以根据你的需要修改为其他形式的文本内容。</p>
+</div>
+
+
+  
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">飘飘白云</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-12T08:35:02+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>8:35 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/gong-ju-ruan-jian/'>工具软件</a>, <a class='category' href='/blog/categories/ruan-jian-kai-fa/'>软件开发</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tags/python/'>Python</a>, <a class='tag' href='/tags/gong-ju/'>工具</a>
+  
+</span>
+
+
+      
+
+<DIV style="font-size:12px;BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; BACKGROUND: #f6f6f6; HEIGHT: 120px; BORDER-TOP: #bbbbbb 1px solid; BORDER-RIGHT: #bbbbbb 1px solid" class=kesalinlicense> 
+	<DIV style="MARGIN-TOP: 10px; FLOAT: left; MARGIN-LEFT: 5px; MARGIN-RIGHT: 10px"> 
+		<IMG alt="" src="http://pic.cnitblog.com/avatar/81194/20130411221004.png" width=90 height=100>
+	</DIV> 
+	<DIV style="LINE-HEIGHT: 200%; MARGIN-TOP: 10px; COLOR: #000000"> 
+		作者： <A href="http://kesalin.github.io/">飘飘白云/罗朝辉</A> <BR> 
+		出处： <A href="http://kesalin.github.io/">http://kesalin.github.io/</A> 
+		<BR>本文基于<a target="_blank" title="Creative Commons Attribution 2.5 China Mainland License" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">署名-非商业性使用-相同方式共享 2.5 中国大陆</a>许可协议发布
+		<BR>欢迎非商业目的转载，须保持文章完整，并保留署名<a href="http://kesalin.github.io/">飘飘白云/罗朝辉</a>与<a href="http://kesalin.github.io/">出处</a>。 
+	</DIV>
+</DIV> 
+
+    </p>
+    
+    
+      <div class="sharing">
+  
+  
+  
+
+  
+      <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+	<span class="jiathis_txt">分享到：</span>
+	<a class="jiathis_button_tsina">微博</a>
+	<a class="jiathis_button_weixin">微信</a>
+	<a class="jiathis_button_qzone">Qzone</a>
+	<a class="jiathis_button_douban">豆瓣</a>
+	<a class="jiathis_button_googleplus">G+</a>
+	<a class="jiathis_button_twitter">Twitter</a>
+	<a class="jiathis_button_evernote">Evernote</a>
+	<a href="http://www.jiathis.com/share?uid=1972291" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1972291" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      <!-- UY BEGIN 
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1972291"></script>
+UY END &#8211;>
+
+<!-- UJian Button BEGIN -->
+<div class="ujian-hook"></div>
+<script type="text/javascript">var ujian_config = {num:4,showType:3,lkrc:5};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1972291"></script>
+<!-- UJian Button END -->
+  
+</div>
+
+    
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/20/install-tor/" title="下一篇: 翻墙工具Tor4.0安装">&laquo; 翻墙工具Tor4.0安装</a>
+      
+
+      
+        <a class="basic-alignment right" href="/blog/2014/10/12/critical-thinking/" title="上一篇: 学会提问：批判性思维指南">学会提问：批判性思维指南 &raquo;</a>
+      
+    </p>
+  
+  </footer>
+
+</article>
+
+
+
+  <section>
+    <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread" data-title="用Python编写博客导出工具"></div>
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"kesalin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- Duoshuo Comment END --></div>
+  </section>
+
+
+</div>
+
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>分类目录</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/shu-ping-ying-ping/'>书评影评 (27)</a></li>
+<li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (4)</a></li>
+<li class='category'><a href='/blog/categories/xin-zhi-si-wei/'>心智思维 (4)</a></li>
+<li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
+<li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (10)</a></li>
+<li class='category'><a href='/blog/categories/du-shu-bi-ji/'>读书笔记 (2)</a></li>
+<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (2)</a></li>
+<li class='category'><a href='/blog/categories/bian-zou-bian-kan/'>边走边看 (2)</a></li>
+
+  </ul>
+</section><section>
+  <h1>最新文章</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/01/01/books-annual-review/">2015私人阅读十五佳</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/02/study-android-fw/">Android框架学习资料</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/26/miss-of-the-dictatos-handbook/">中文版《独裁者手册》之和谐手册</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/06/my-father/">我的父亲</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/08/share-screen-with-synergy/">利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+<h1>最新评论</h1>
+<ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="0" data-excerpt-length="18"></ul>
+
+
+</section><section>
+	<h1>新浪微博</h1>
+	<ul id="weibo">
+		<li>
+		<iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1149948411&verifier=62074399&dpc=1"></iframe>
+    	</li>
+    </ul>
+</section><section>
+  	<h1>我的豆瓣</h1>
+  	<div>
+  		<script type="text/javascript" src="http://www.douban.com/service/badge/kesalin/?selection=favorite&amp;picsize=small&amp;show=collection&amp;n=9&amp;cat=movie%7Cbook&amp;columns=3"></script>
+  	</div>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - 飘飘白云 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+<!---
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e6a2ee91c6c870ace5a0ed541a6826c' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&#8211;>
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

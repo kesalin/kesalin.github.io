@@ -1,0 +1,18 @@
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="n">pBox1</span><span class="p">,</span> <span class="n">pBox2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">pIsBox1</span> <span class="o">*</span> <span class="n">pBox1</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">pIsBox1</span> <span class="o">*</span> <span class="n">pBox1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">pIsBox1</span><span class="p">)</span> <span class="o">*</span> <span class="n">pBox2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">redGreenBallProblem</span><span class="p">():</span>
+    <span class="n">pIsBox1</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+    <span class="c"># consider 8 red ball</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>
+        <span class="n">pIsBox1</span> <span class="o">=</span> <span class="n">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s">&quot; After red </span><span class="si">%d</span><span class="s"> &gt; in 甲 box: </span><span class="si">%f</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">pIsBox1</span><span class="p">)</span>
+
+    <span class="c"># consider 4 green ball</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">pIsBox1</span> <span class="o">=</span> <span class="n">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s">&quot; After green </span><span class="si">%d</span><span class="s"> &gt; in 甲 box: </span><span class="si">%f</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">pIsBox1</span><span class="p">)</span>
+
+<span class="n">redGreenBallProblem</span><span class="p">()</span>
+</pre></div>

@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标 - 飘飘白云</title>
+  <meta name="author" content="飘飘白云">
+
+  
+  <meta name="description" content="利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标">
+  <meta name="keywords" content="Synergy">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kesalin.github.io/blog/2014/12/08/share-screen-with-synergy">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="飘飘白云" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script -->
+  <script src="//libs.baidu.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<script type="text/javascript" src="/javascripts/open-in-blank.js"></script>
+
+<!-- meta name="baidu-site-verification" content="ipeMpIhayI" -->
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">飘飘白云</a></h1>
+  
+    <h2>所读，所看，所思</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://wen.lu/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:kesalin.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">归档</a></li>
+  <li><a href="/blog/archives/tags.html">标签</a></li>
+  <li><a href="/books">书单</a></li>
+  <li><a href="/about">关于我</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-08T13:03:34+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>1:03 pm</span></time>
+        
+        
+          | <a href="#comments">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>简介</h2>
+
+<p>Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac &amp; Ubuntu &amp; Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要<strong>注意各机器上的 Synergy 版本要一致</strong>，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。</p>
+
+<p>在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。</p>
+
+<!--more-->
+
+
+<h2>工具下载</h2>
+
+<p>QuickSynergy 工具下载：<br/>
+Mac 版 QuickSynergy 下载链接一：<a href="https://code.google.com/p/quicksynergy/">https://code.google.com/p/quicksynergy/</a>  <br/>
+Mac 版 QuickSynergy 下载链接二：<a href="http://sourceforge.net/projects/quicksynergy/">http://sourceforge.net/projects/quicksynergy/</a><br/>
+Ubuntu 版 QuickSynergy 直接在 Ubuntu Software Center 中输入 QuickSynergy 查找安装即可。</p>
+
+<p>若使用 SynergyKM，可以从如下链接获取：<br/>
+SynergyKM 下载链接：<a href="http://synergykm.com/">http://synergykm.com/</a></p>
+
+<h2>安装配置</h2>
+
+<ol>
+<li><p>Ubuntu 下的安装配置</p>
+
+<p> 启动 QuickSynergy，显示界面有三个 Tab 页：</p>
+
+<ul>
+<li>Share Tab：该页面用于服务器。作为服务器的机器在该界面配置受其控制的客户端机器的主机名，然后点击 Excute 启动服务器端（实际上是执行程序：<code>/usr/bin/synergys</code>）；</li>
+<li>Use Tag：该页面用于客户端。作为客户端的机器在该界面配置服务器机器的IP地址或主机名，然后点击 Excute 启动客户端端（实际上是执行程序：<code>/usr/bin/synergyc</code>）；</li>
+<li>Setting Tag：该页面用于配置 Synergy 执行程序所在的目录</li>
+</ul>
+
+
+<p> 在这里，使用 Ubuntu 机器作为服务器，所以只需要在 Share Tab 界面上的相应位置（上下左右，我的 Mac 机器在左边，所以在 left 位置设置）设置 Mac 机器的主机名即可。Mac 机器的主机名查看方法如下：启动 terminal，输入命令：<code>hostname</code>，就能得到主机名。</p>
+
+<p> 设置界面如下：<br/>
+ <img src="http://i.imgur.com/ZhCLJVS.png" alt="Ubuntu QuickSynergy 设置" /></p>
+
+<p> 然后点击启动。(注意需要先启动服务器端，然后再启动客户端)</p></li>
+<li><p>Mac 下的安装配置
+Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy，在 Share 页面设置 Server hostname/IP address 为 Ubuntu 机器的 IP 地址即可（Ubuntu 系统下启动 terminal，输入命令：<code>ifconfig</code> 即可查看 IP 地址，输入命令 <code>hostname</code> 即可查看主机名）。</p>
+
+<p>  设置界面如下：<br/>
+  <img src="http://i.imgur.com/kKxpgnx.png" alt="Mac QuickSynergy 设置" /></p>
+
+<p>  然后点击 Run，这样就能够使用 Ubuntu 机器的键盘和鼠标操作 Mac 机器了。</p></li>
+<li><p>Mac 下 SynergyKM 的安装配置<br/>
+由于 QuickSynergy 不带日志输出窗口，有时候操作不成功也不知道是怎么回事，这时可以安装 SynergyKM 来解决问题。下载 Mac 版 SynergyKM，双击安装，在安装过程中选择 Client 模式，并设置 Screen Name 为 Mac 机器的主机名（也可以在安装完毕之后在菜单 Perferences/Setting 界面设置）。安装完毕之后启动 SynergyKM，勾选 Client 选择框，在 Server IP 处填写服务器机器 Ubuntu 的 IP 地址。</p>
+
+<p>  设置界面如下：
+  <img src="http://i.imgur.com/nNcKVPg.png" alt="Mac SynergyKM 设置" /></p>
+
+<p>  然后点击 Apply 和 Start，就能在 Log 输出窗口查看日志，根据日志信息就能够知道是版本不匹配还是主机名设置错误等等。</p></li>
+<li><p>修改 key-Mapping<br/>
+由于 Mac 机键盘与非 Mac 机键盘的物理按键不同，所以在 Ubuntu 机器上的 Ctrl + C 并不能在 Mac 系统上产生同样的效果，这就需要在 Synergy 的配置文件中添加按键映射关系。首先关闭 Ubuntu 系统上的 QuickSynergy（每次启动 QuickSynergy 都会重新生成新的 synergy.conf），再在作为服务器的机器上的 terminal 中输入命令：<code>gedit ~/.quicksynergy/synergy.conf</code> 打开 synergy.conf，修改其内容如下：</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>section: screens
+</span><span class='line'>  kesalin-ubuntu:
+</span><span class='line'>  kesalin-iMac:
+</span><span class='line'>      ctrl = meta
+</span><span class='line'>      meta = ctrl
+</span><span class='line'>      alt = alt
+</span><span class='line'>      super = super
+</span><span class='line'>end
+</span><span class='line'>section: links
+</span><span class='line'>  kesalin-ubuntu:
+</span><span class='line'>      left = kesalin-iMac
+</span><span class='line'>  kesalin-iMac:
+</span><span class='line'>      right = kesalin-ubuntu
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>然后在 terminal 上输入命令：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy.conf</code> 根据特定配置启动 synergys 服务端，就可以实现按键映射了。</p>
+
+<p>为了避免每次启动系统之后都需要敲入上面的启动命令，可以在 Ubuntu 的启动项中添加上面的命令：点击 Perference->Startup Applications Perferences->Add，在 command 栏输入：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy.conf</code> 即可。注意由于每次启动 QuickSynergy 都会重新生成新的 synergy.conf 覆盖我们修改好的配置文件，所以最好将修改好的 synergy.conf 拷贝备份为 synergy-keymap.conf，然后使用命令：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy-keymap.conf</code> 作为自启动命令。</p>
+
+<h2>参考链接</h2>
+
+<p><a href="https://help.ubuntu.com/community/SynergyHowto">SynergyHowto</a><br/>
+<a href="http://superuser.com/questions/90223/synergy-key-mapping">Synergy key mapping</a></p>
+</div>
+
+
+  
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">飘飘白云</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-12-08T13:03:34+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>1:03 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/gong-ju-ruan-jian/'>工具软件</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tags/gong-ju/'>工具</a>
+  
+</span>
+
+
+      
+
+<DIV style="font-size:12px;BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; BACKGROUND: #f6f6f6; HEIGHT: 120px; BORDER-TOP: #bbbbbb 1px solid; BORDER-RIGHT: #bbbbbb 1px solid" class=kesalinlicense> 
+	<DIV style="MARGIN-TOP: 10px; FLOAT: left; MARGIN-LEFT: 5px; MARGIN-RIGHT: 10px"> 
+		<IMG alt="" src="http://pic.cnitblog.com/avatar/81194/20130411221004.png" width=90 height=100>
+	</DIV> 
+	<DIV style="LINE-HEIGHT: 200%; MARGIN-TOP: 10px; COLOR: #000000"> 
+		作者： <A href="http://kesalin.github.io/">飘飘白云/罗朝辉</A> <BR> 
+		出处： <A href="http://kesalin.github.io/">http://kesalin.github.io/</A> 
+		<BR>本文基于<a target="_blank" title="Creative Commons Attribution 2.5 China Mainland License" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">署名-非商业性使用-相同方式共享 2.5 中国大陆</a>许可协议发布
+		<BR>欢迎非商业目的转载，须保持文章完整，并保留署名<a href="http://kesalin.github.io/">飘飘白云/罗朝辉</a>与<a href="http://kesalin.github.io/">出处</a>。 
+	</DIV>
+</DIV> 
+
+    </p>
+    
+    
+      <div class="sharing">
+  
+  
+  
+
+  
+      <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+	<span class="jiathis_txt">分享到：</span>
+	<a class="jiathis_button_tsina">微博</a>
+	<a class="jiathis_button_weixin">微信</a>
+	<a class="jiathis_button_qzone">Qzone</a>
+	<a class="jiathis_button_douban">豆瓣</a>
+	<a class="jiathis_button_googleplus">G+</a>
+	<a class="jiathis_button_twitter">Twitter</a>
+	<a class="jiathis_button_evernote">Evernote</a>
+	<a href="http://www.jiathis.com/share?uid=1972291" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1972291" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      <!-- UY BEGIN 
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1972291"></script>
+UY END &#8211;>
+
+<!-- UJian Button BEGIN -->
+<div class="ujian-hook"></div>
+<script type="text/javascript">var ujian_config = {num:4,showType:3,lkrc:5};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1972291"></script>
+<!-- UJian Button END -->
+  
+</div>
+
+    
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/03/06/my-father/" title="下一篇: 我的父亲">&laquo; 我的父亲</a>
+      
+
+      
+        <a class="basic-alignment right" href="/blog/2014/10/29/brainwash/" title="上一篇: [转]洗脑秘笈：占领思想舆论阵地的十八个招式">[转]洗脑秘笈：占领思想舆论阵地的十八个招式 &raquo;</a>
+      
+    </p>
+  
+  </footer>
+
+</article>
+
+
+
+  <section>
+    <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread" data-title="利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标"></div>
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"kesalin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- Duoshuo Comment END --></div>
+  </section>
+
+
+</div>
+
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>分类目录</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/shu-ping-ying-ping/'>书评影评 (27)</a></li>
+<li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (4)</a></li>
+<li class='category'><a href='/blog/categories/xin-zhi-si-wei/'>心智思维 (4)</a></li>
+<li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
+<li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (10)</a></li>
+<li class='category'><a href='/blog/categories/du-shu-bi-ji/'>读书笔记 (2)</a></li>
+<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (2)</a></li>
+<li class='category'><a href='/blog/categories/bian-zou-bian-kan/'>边走边看 (2)</a></li>
+
+  </ul>
+</section><section>
+  <h1>最新文章</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/01/01/books-annual-review/">2015私人阅读十五佳</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/02/study-android-fw/">Android框架学习资料</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/26/miss-of-the-dictatos-handbook/">中文版《独裁者手册》之和谐手册</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/06/my-father/">我的父亲</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/08/share-screen-with-synergy/">利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+<h1>最新评论</h1>
+<ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="0" data-excerpt-length="18"></ul>
+
+
+</section><section>
+	<h1>新浪微博</h1>
+	<ul id="weibo">
+		<li>
+		<iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1149948411&verifier=62074399&dpc=1"></iframe>
+    	</li>
+    </ul>
+</section><section>
+  	<h1>我的豆瓣</h1>
+  	<div>
+  		<script type="text/javascript" src="http://www.douban.com/service/badge/kesalin/?selection=favorite&amp;picsize=small&amp;show=collection&amp;n=9&amp;cat=movie%7Cbook&amp;columns=3"></script>
+  	</div>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - 飘飘白云 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+<!---
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e6a2ee91c6c870ace5a0ed541a6826c' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&#8211;>
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

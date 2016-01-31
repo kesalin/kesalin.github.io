@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://kesalin.github.io/sitemap.xml 
